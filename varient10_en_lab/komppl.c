@@ -489,8 +489,8 @@ struct
 };
 
 /*
-***** � � � � � � �  ������� ��������� - ������ ���������� �������
-***** ����������
+***** Table of the adjacency matrix - the basis for constructing the matrix
+***** successors
 */
 
 char TPR [ NVXOD ] [ NNETRM ] =
@@ -640,10 +640,10 @@ L2:    continue;
 
 /*..........................................................................*/
 
-void build_TPR ()                                 /* ���������� �������     */
-						  /* ���������� �� �������  */
-						  /* ��������� �� ��������� */
-						  /* ��������               */
+void build_TPR ()                                 /* Building a table */
+/* successors from the matrix */
+/* adjacency by algorithm */
+/* Warshalla */
  {
   for ( I1 = 0; I1 < NNETRM; I1++ )
    {
@@ -660,9 +660,9 @@ void build_TPR ()                                 /* ���������
 
 /*..........................................................................*/
 
-void mcel ( char* T1, int T2, int T3 )            /* ��������� ����������   */
- {                                                /* ������ ����� ���������-*/
-						  /* ��� �����              */
+void mcel ( char* T1, int T2, int T3 )            /* filling program */
+ {                                                /* stack cells set-*/
+						                                      /* goals. */
   strcpy ( CEL [ K ].CEL1, T1 );
   CEL [ K ].CEL2 = T2;
   CEL [ K ].CEL3 = T3;
@@ -672,9 +672,9 @@ void mcel ( char* T1, int T2, int T3 )            /* ���������
 /*..........................................................................*/
 
 void mdst ( char* T1, int T2, int T3, int T4, int T5 )
- {                                                /* ��������� ����������   */
-  strcpy ( DST [ L ].DST1, T1 );                  /* ������ ����� ��������- */
-  DST [ L ].DST2 = T2;                            /* ��� �����              */
+ {                                                /*  */
+  strcpy ( DST [ L ].DST1, T1 );                  /*  */
+  DST [ L ].DST2 = T2;                            /*  */
   DST [ L ].DST3 = T3;
   DST [ L ].DST4 = T4;
   DST [ L ].DST5 = T5;
@@ -683,11 +683,11 @@ void mdst ( char* T1, int T2, int T3, int T4, int T5 )
 
 
 /*..........................................................................*/
-						  /* � � � � � � � � �      */
-int numb ( char* T1, int T2 )                     /* ���������� ����������� */
-						  /* ������ ������ � ����.  */
-						  /* VXOD, ���������������  */
-						  /* ������-��������� �����.*/
+						  /* Program      */
+int numb ( char* T1, int T2 )                     /* ordinal calculations */
+						  /* line numbers in the table.  */
+						  /* VXOD corresponding  */
+						  /* line-parameter of the function. */
  {
   int k;
 
@@ -709,11 +709,11 @@ numb1:
  }
 
 /*..........................................................................*/
-						  /*   � � � � � � � � �    */
-int sint_ANAL ()                                  /*   ����������  ������   */
-						  /*��������������� �������,*/
- {                                                /*����������� ���� ������-*/
-						  /*��������� �����������   */
+						  /*  Program   */
+int sint_ANAL ()                                  /*   Build semantic tress  */
+						  /* doing,*/
+ {                                                /* syntax*/
+						  /* analyze  */
   I4 = 0;
 
 L1:
@@ -854,19 +854,18 @@ L10:
 
 /*..........................................................................*/
 
-struct                                            /* ������� ���� ����� �   */
- {                                                /* ����������, �����������*/
-  char NAME [8];                                  /* �� ������ ������� ��-  */
-  char TYPE;                                      /* ������������ ����������*/
-  char RAZR [5];                                  /* � ������������ �� ���- */
-  char INIT [50];                                 /* ��� ������� ����������-*/
- } SYM [ NSYM ];                                  /* ���� ����������        */
+struct                                            /* table of label names and */
+ {                                                /* variables to be filled */
+  char NAME [8];                                  /* on the first pass se- */
+  char TYPE;                                      /* mantic calculation */
+  char RAZR [5];                                  /* and used for second- */
+  char INIT [50];                                 /* rum passage semantic- */
+ } SYM [ NSYM ];                                  /* whom calculations */
 
-int ISYM = 0;                                     /* ������� ������ ������� */
+int ISYM = 0;                                     /* current index of table */
 						  /* ����                   */
 
-char NFIL [30]="\x0";                             /* ��������� ����� �����- */
-						  /* �������� ���������     */
+char NFIL [30]="\x0";                             /*  */
 
 /*..........................................................................*/
 
@@ -1261,7 +1260,7 @@ int AVI2 ()
 	     ( ASS_CARD._BUFCARD.OPERAND ) ] = ' ';
 
 	    memcpy ( ASS_CARD._BUFCARD.COMM,      /* � ���������� ����������*/
-	     "�������� ���������� � �������", 29 );
+	     "Loading a variable into a register", 29 );
 
 	    ZKARD ();                             /* ��������� �������� ��- */
 						  /* ��������  �            */
@@ -1337,7 +1336,7 @@ int AVI2 ()
 		  ( ASS_CARD._BUFCARD.OPERAND )] =/* - ����������� ������;  */
 					      ' ';
 	    memcpy ( ASS_CARD._BUFCARD.COMM,
-	   "������������ �������������� ��������",/* - ���������� ����������*/
+	   "Generate intermediate value",/* - ���������� ����������*/
 					     36 );
 	    ZKARD ();                             /* ����������� ��������-  */
 						  /* ������� ��������       */
@@ -1677,7 +1676,7 @@ int OPR2 ()
   memcpy ( ASS_CARD._BUFCARD.OPERAC, "START", 5 );/* ����������� ��� � ���- */
   memcpy ( ASS_CARD._BUFCARD.OPERAND, "0", 1 );   /* �����  �  START-������-*/
   memcpy ( ASS_CARD._BUFCARD.COMM,                /* �������� ����������    */
-		      "Start of the program������ ���������", 16 );
+		      "Start of the program...", 16 );
   ZKARD ();                                       /* ���������� ����� �����-*/
 						  /* �����                  */
 
@@ -1685,14 +1684,14 @@ int OPR2 ()
   memcpy ( ASS_CARD._BUFCARD.OPERAND,             /* ����������             */
 				  "RBASE,0", 7 );
   memcpy ( ASS_CARD._BUFCARD.COMM,
-		  "Load base register", 22 );
+		  "Load base register...", 22 );
   ZKARD ();                                       /* � ���������� ��        */
 
   memcpy ( ASS_CARD._BUFCARD.OPERAC, "USING", 5 );/* ��������� USING-������-*/
   memcpy ( ASS_CARD._BUFCARD.OPERAND,             /* �������� ����������    */
 				   "*,RBASE", 7 );
   memcpy ( ASS_CARD._BUFCARD.COMM,
-		  "Set register as base", 23 );
+		  "Set register as base...", 23 );
   ZKARD ();                                       /* � ���������� ��        */
 
   return 0;                                       /* ��������� ������������ */
@@ -1942,7 +1941,7 @@ else                                            /* otherwise */
 						  /* then: */
 
        printf ( "%s\n",                           /* - diagnostic message; */
-	"Translation completed successfully!" );
+	"[OK]Translation completed successfully!" );
        return;                                    /* - end the translation */
 
 

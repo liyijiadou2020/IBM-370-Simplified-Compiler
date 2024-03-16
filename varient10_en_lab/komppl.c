@@ -1041,11 +1041,11 @@ int MAN1 ()
 
 /*..........................................................................*/
 
-						  /* � � � � � � � � �      */
-						  /* ��������. ����������   */
-						  /* ����������� ODC �� ���-*/
-						  /* ��� �������.   �����   */
-						  /* ODC - "������.��1- DCL"*/
+						  /* #TODO */
+						  /* */
+						  /* */
+						  /* */
+						  /* OPERANT : DCL*/
 int ODC1 ()
  {
   int i;
@@ -1068,15 +1068,23 @@ int ODC1 ()
 						  /* ������ � ������������ �*/
 						  /* ����.SYM               */
 
-  if ( !strcmp ( FORMT [2], "BIN" ) &&            /* ���� ������������� ��- */
-		  !strcmp ( FORMT [3], "FIXED" ) )/* ������� ��� bin fixed, */
+  if ( !strcmp ( FORMT [2], "BIN" ) &&            /* BIN FIXED */
+		  !strcmp ( FORMT [3], "FIXED" ) )/*  */
    {
     SYM [ISYM].TYPE = 'B';                        /* �� ������������� ���   */
 						  /* �������������� = 'B' � */
     goto ODC11;                                   /* ���� �� ����������� ��-*/
 						  /* �������, �             */
    }
-  else                                            /* �����                  */
+     else if ( !strcmp ( FORMT [2], "DEC" ) && !strcmp ( FORMT [3], "FIXED" ) ) /* Li: add for DCL DEC FIXED*/
+    {
+      SYM [ISYM].TYPE = 'D';
+    }
+    else if ( !strcmp ( FORMT [2], "BIT" ) ) /* Li: DCL BIT*/
+    {
+      SYM [ISYM].TYPE = 'b';
+    }
+  else                                            /* OR                  */
    {
     SYM [ISYM].TYPE = 'U';                        /* ������������� ��� ����-*/
 						  /* ���������� = 'U'  �    */
@@ -1084,8 +1092,8 @@ int ODC1 ()
 						  /* �� ������              */
    }
 
-ODC11:                                            /* ���� �������������     */
-						  /* ����� ��������� �����- */
+ODC11:                                            /* if the identificator has init. value     */
+						  /* then */
   if ( !strcmp ( FORMT [5], "INIT" )  )           /* ��������, �� ��������- */
    strcpy ( SYM [ISYM++].INIT, FORMT [6] );       /* �� � ����. SYM ��� ��- */
 						  /* ������� ��������, �    */

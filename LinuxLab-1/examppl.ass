@@ -1,0 +1,19 @@
+| Метка | КОП  | Операнды | Пояснения
+
+EXAMP   START   0            Start programm..
+        BALR    RBASE,0      Загрузить р�
+        USING   *,RBASE      Назначить ре
+        L       RRAB,A       Загрузка переме
+        A       RRAB,B       Формирование проме�
+        S       RRAB,C       Формирование проме�
+        ST      RRAB,D       Формирование значен                        
+        BCR     15,14        Выход из п
+A       DC      F'3'         Определение
+B       DC      F'4'         Определение
+C       DC      F'5'         Определение
+D       DC      F'0'         Определение
+RBASE   EQU     15
+RRAB    EQU     5
+
+END   EXAMP        Конец пр
+     

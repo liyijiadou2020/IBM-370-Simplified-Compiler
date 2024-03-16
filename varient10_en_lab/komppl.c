@@ -1076,14 +1076,15 @@ int ODC1 ()
     goto ODC11;                                   /* ���� �� ����������� ��-*/
 						  /* �������, �             */
    }
-     else if ( !strcmp ( FORMT [2], "DEC" ) && !strcmp ( FORMT [3], "FIXED" ) ) /* Li: add for DCL DEC FIXED*/
-    {
-      SYM [ISYM].TYPE = 'D';
-    }
-    else if ( !strcmp ( FORMT [2], "BIT" ) ) /* Li: DCL BIT*/
-    {
-      SYM [ISYM].TYPE = 'b';
-    }
+    //  else if ( !strcmp ( FORMT [2], "DEC" ) && !strcmp ( FORMT [3], "FIXED" ) ) /* Li: add for DCL DEC FIXED*/
+    // {
+    //   SYM [ISYM].TYPE = 'D';
+    //   printf("[DEBUG] DEC FIXED!");
+    // }
+    // else if ( !strcmp ( FORMT [2], "BIT" ) ) /* Li: DCL BIT*/
+    // {
+    //   SYM [ISYM].TYPE = 'b';
+    // }
   else                                            /* OR                  */
    {
     SYM [ISYM].TYPE = 'U';                        /* ������������� ��� ����-*/

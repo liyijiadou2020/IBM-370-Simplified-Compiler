@@ -1,0 +1,6 @@
+EX07:	PROC  OPTIONS  ( MAIN );
+		DCL	A	BIT  ( 3 )  INIT  ( ‘10’B );
+		DCL	B	BIT  ( 3 )  INIT  ( ‘101’B );
+		DCL	C	BIT  ( 16 );
+		C = SUBSTR  ( ( B !! A ), 2, 3 );
+	END  EX07;	

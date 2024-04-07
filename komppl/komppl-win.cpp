@@ -46,9 +46,9 @@ int I, J, K, L;                                      /*текущие индек
 /* - стеке поставленных целей; */
 /* - стеке достигнутых целей; */
 
-union                                             /*шаблон для генерации    */
-{                                                /*записи выходного файла  */
-  char    BUFCARD[80];                           /*на АССЕМБЛЕРЕ IBM 370   */
+union                                             /*шаблон для генерации записи выходного файла на АССЕМБЛЕРЕ IBM 370 */
+{                     
+  char    BUFCARD[80];
   struct
   {
     char METKA[8];
@@ -66,15 +66,6 @@ char ASSTXT[MAXLTXT][80];                      /*массив для хране�
 /*выходного текста на     */
 /*АССЕМБЛЕРЕ IBM 370      */
 
-// TODO: init_ASSTXT()
-
-void init_ASSTXT() {
-  for (int i = 0; i < MAXLTXT; i++) {
-    for (int j = 0; j < 80; j++) {
-      ASSTXT[i][j] = ' ';
-    }
-  }
-}
 
 int  IASSTXT;                                     /*индекс выходного массива*/
 
@@ -651,7 +642,7 @@ void mdst(char* T1, int T2, int T3, int T4, int T5)
 
 /*..........................................................................*/
               /* п р о г р а м м а      */
-int numb(const char* T1, int T2)                     /* вычисления порядкового */
+int get_number_of_VXOD(const char* T1, int T2)                     /* вычисления порядкового */
 /* номера строки в табл.  */
 /* VXOD, соответствующей  */
 /* строке-параметру функц.*/
@@ -689,12 +680,12 @@ L1:
   J = 1;
   mcel("PRO", I, 999);
 
-  if (!TPR[numb(&STROKA[I], 1)][numb("PRO", 3)])
+  if (!TPR[get_number_of_VXOD(&STROKA[I], 1)][get_number_of_VXOD("PRO", 3)])
     return 1;
 /*根据所选假设对非终结符进行投影(проецирования нетерминала по выбранной гипотезе )*/
 L2: /*Вход в граф */
 
-  J = VXOD[numb(&STROKA[I], 1)].VX;
+  J = VXOD[get_number_of_VXOD(&STROKA[I], 1)].VX;
 
 L3: /* Проверка терм. 1 */
 
@@ -707,7 +698,7 @@ L31:
   if (I > I4)
     I4 = I;
 
-  if (VXOD[numb(SINT[J].DER, 3)].TYP == 'T')
+  if (VXOD[get_number_of_VXOD(SINT[J].DER, 3)].TYP == 'T')
   {
     if (STROKA[I] == SINT[J].DER[0])
       goto L3;
@@ -726,8 +717,8 @@ L4:
       if (!strcmp(CEL[K - 1].CEL1, "PRO"))
         return 0; // 成功返回
     L5:
-      if (TPR[numb(CEL[K - 1].CEL1, 3)][numb(CEL[K - 1].CEL1, 3)]) {
-        J = VXOD[numb(CEL[K - 1].CEL1, 3)].VX;
+      if (TPR[get_number_of_VXOD(CEL[K - 1].CEL1, 3)][get_number_of_VXOD(CEL[K - 1].CEL1, 3)]) {
+        J = VXOD[get_number_of_VXOD(CEL[K - 1].CEL1, 3)].VX;
         goto L3;
       }
 
@@ -737,15 +728,15 @@ L4:
       goto L3;
     }
 
-    if (!TPR[numb(SINT[J].DER, 3)][numb(CEL[K - 1].CEL1, 3)])
+    if (!TPR[get_number_of_VXOD(SINT[J].DER, 3)][get_number_of_VXOD(CEL[K - 1].CEL1, 3)])
       goto L9; // Обратный поиск 2
 
     mdst(SINT[J].DER, CEL[K - 1].CEL2, 0, I, J);
-    J = VXOD[numb(SINT[J].DER, 3)].VX;
+    J = VXOD[get_number_of_VXOD(SINT[J].DER, 3)].VX;
     goto L3;
   }
 
-  if (!TPR[numb(&STROKA[I], 1)][numb(SINT[J].DER, 3)])
+  if (!TPR[get_number_of_VXOD(&STROKA[I], 1)][get_number_of_VXOD(SINT[J].DER, 3)])
     goto L8;
 
   mcel(SINT[J].DER, I, J);
@@ -765,7 +756,7 @@ L9: /* Обратный поиск 2 */
 
   J = SINT[J].PRED;
 
-  if( (VXOD[numb(SINT[J].DER, 3)].TYP == 'N')
+  if( (VXOD[get_number_of_VXOD(SINT[J].DER, 3)].TYP == 'N')
       &&
       (SINT[J].PRED > 0) ) {
     mcel(DST[L - 1].DST1, DST[L - 1].DST2, DST[L - 1].DST3);
@@ -777,7 +768,7 @@ L9: /* Обратный поиск 2 */
     goto L9;
   }
 
-  if( (VXOD[numb(SINT[J].DER, 3)].TYP == 'N')
+  if( (VXOD[get_number_of_VXOD(SINT[J].DER, 3)].TYP == 'N')
       &&
       (SINT[J].PRED == 0) ) {
     if (!strcmp(CEL[K - 1].CEL1, DST[L - 1].DST1))
@@ -1743,10 +1734,10 @@ int gen_COD() /*интерпретации строк сте-*/
   };
 
   for (I2 = 0; I2 < L; I2++)                    /* организация первого  прохода семантического вычисления */
-    if ((NOSH = FUN[numb(DST[I2].DST1, 3)][0]()) != 0)
+    if ((NOSH = FUN[get_number_of_VXOD(DST[I2].DST1, 3)][0]()) != 0)
       return (NOSH); /* выход из программы по ошибке*/      
     for (I2 = 0; I2 < L; I2++)                    /* организация второго прохода семантического вычисления */
-      if ((NOSH = FUN[numb(DST[I2].DST1, 3)][1]()) != 0)
+      if ((NOSH = FUN[get_number_of_VXOD(DST[I2].DST1, 3)][1]()) != 0)
         return (NOSH);       /* выход из программы по ошибке*/          
   return 0;    /* успешное завершение программы  */          
 }
@@ -1838,7 +1829,7 @@ main1:                                            /* по завершении �
   printf("Text after compress:\n%s\n", STROKA);
 
   build_TPR();                                   /* построение матрицы     */
-  /* преемников             */
+  /* преемников */
 
   if ((sint_ANAL()))                           /* синтаксический анализ  исходного текста */
   {                                             

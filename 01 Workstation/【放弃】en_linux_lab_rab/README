@@ -1,0 +1,12 @@
+1. This kit, consisting of three elements of an educational programming system
+and test task:
+     - PL/1 compiler --> Assembler (komppl.c),
+     - assembler compiler --> object image (kompassr.c),
+     - absolute loader, emulator and debugger (absloadm.c),
+     - test task ( examppl.pli and spismod ).
+    
+2. To obtain executable modules of two compilers and an absolute loader
+you should run the GenSysProgr Bash script.
+
+3. After receiving the executable code, compilers can be launched for execution
+test case using Bash script StartTestTask.

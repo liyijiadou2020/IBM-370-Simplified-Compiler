@@ -1,0 +1,1 @@
+EX10: PROC OPTIONS (MAIN);                                                     DCL A DEC FIXED INIT ( 5 );                                              DCL B BIN ( 16 );                                                           B = A;                                                                  END EX10;                                                                      

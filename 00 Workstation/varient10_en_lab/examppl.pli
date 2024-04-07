@@ -1,0 +1,1 @@
+EXAMP: PROC OPTIONS (MAIN);                                                     DCL A DEC FIXED INIT ( 5 );                                              DCL B BIT (16);                                             B=A;                                                                          END EXAMP;                                                                      

@@ -2,6 +2,8 @@
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
 
 #define MAXNISXTXT 50
 // #define NSINT     201
@@ -22,6 +24,7 @@
 
 
 
+char* getDateTime(); // 打印时间
 
 FILE* fp_out;                                  /* 用于写出到log.txt */
 
@@ -1787,6 +1790,19 @@ int gen_COD() /*интерпретации строк сте-*/
   return 0;    /* успешное завершение программы  */          
 }
 
+
+
+char* getDateTime()
+{
+  static char nowtime[20];
+  time_t rawtime;
+  struct tm* ltime;
+  time(&rawtime);
+  ltime = localtime(&rawtime);
+  strftime(nowtime, 20, "%Y-%m-%d %H:%M:%S", ltime);
+  return nowtime;
+}
+
 /*..........................................................................*/
 
               /*  п р о г р а м м а,    */
@@ -1800,8 +1816,12 @@ int main(int argc, char** argv)
 {                                                /* рабочие переменные:    */
   FILE* fp;                                       /* - указатель на файл;   */    
   
+  char* nowtime = getDateTime();
+
   fp_out = fopen("log.txt", "a+");                                  /* Li: 用于读取debug的结果 */
   setbuf(fp_out, NULL);
+  fprintf(fp_out, "\n\n --------------------------------------- %s ---------------------------\n", nowtime);
+  fflush(fp_out);
 
   if (NULL == fp_out) {
     printf("open log.txt failed! \n");   
@@ -1880,8 +1900,11 @@ main1:                                            /* по завершении �
   /* ского файла            */
 
   compress_ISXTXT();                             /* лексический анализ     */
-  /* исходного текста       */
-  printf("Text after compress:\n%s\n", STROKA);
+  /* исходного текста       */  
+  
+  fprintf(fp_out, "Text after compress:\n%s\n\n", STROKA);
+  fflush(fp_out);
+
 
   build_TPR();                                   /* построение матрицы     */
   /* преемников */

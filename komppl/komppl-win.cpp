@@ -678,9 +678,7 @@ int get_number_of_VXOD(const char* T1, int T2)                     /* вычис
       if ((*(T1 + k) != VXOD[I1].SYM[k]))
         goto numb1;
     }
-    if ((VXOD[I1].SYM[k] == '\x0') ||
-      (VXOD[I1].SYM[k] == ' ')
-      )
+    if ((VXOD[I1].SYM[k] == '\x0') || (VXOD[I1].SYM[k] == ' '))
       return (I1);
   numb1:
     continue;
@@ -891,14 +889,19 @@ FORM1:
 }
 
 /*..........................................................................*/
+/* 从 ASS_CARD 拷贝到 ASSTXT 中 */
               /* п р о г р а м м а      */
 void ZKARD() /* записи очередной сгене-*/
 {            /* рированной записи вы-  */
              /* ходного файла в массив */
              /* ASSTXT                 */
+  fprintf(fp_out, "%s\n", "---> void ZKARD()");
+  fprintf(fp_out, "%s = %d\n", "IASSTXT", IASSTXT);
+  fprintf(fp_out, "%s = %s <--- \n", "ASS_CARD.BUFCARD", ASS_CARD.BUFCARD);
+  fflush(fp_out);
+
   char i;
-  memcpy(ASSTXT[IASSTXT++],
-    ASS_CARD.BUFCARD, 80);
+  memcpy(ASSTXT[IASSTXT++], ASS_CARD.BUFCARD, 80);
 
   for (i = 0; i < 79; i++)
     ASS_CARD.BUFCARD[i] = ' ';
@@ -1587,8 +1590,7 @@ int OEN2()
 
   memcpy(ASS_CARD._BUFCARD.METKA, "RBASE", 5); /* формирование EQU-псев- */
   memcpy(ASS_CARD._BUFCARD.OPERAC, "EQU", 3);   /* дооперации определения */
-  memcpy(ASS_CARD._BUFCARD.OPERAND, "15", 2);  /* номера базового регист-*/
-  /* ра общего назначения   */
+  memcpy(ASS_CARD._BUFCARD.OPERAND, "15", 2);  /* номера базового регистра общего назначения*/  
   /*           и            */
   ZKARD();                                       /* запоминание ее         */
 
@@ -1734,6 +1736,17 @@ int OPR2()
   return 0;                                       /* завершить подпрограмму */
 }
 
+// TODO 打印错误
+void print_ASSTXT_to_file() {  
+  fprintf(fp_out, "%s = %d\n", "IASSTXT(lines)", IASSTXT);  
+  fprintf(fp_out, "%s\n", "--------- ASS ---------> \n");
+  for (int i = 0; i < IASSTXT; i++) {    
+    fprintf(fp_out, "%d\t%s\n", i, ASSTXT[i]);
+  }
+  fprintf(fp_out, "%s\n", "<------------ASS ------\n");
+  fflush(fp_out);
+}
+
 /*..........................................................................*/
 
               /* п р о г р а м м а      */
@@ -1756,14 +1769,12 @@ int PRO2()                                       /*прогр.формирует
   else                                            /*иначе:                  */
     fwrite(ASSTXT, 80, IASSTXT, fp);            /* формируем тело об.файла*/
   fclose(fp);                                  /*закрываем об'ектный файл*/
-    
-  fprintf(fp_out, "%s = %d\n", "IASSTXT(lines)", IASSTXT);
-  fprintf(fp_out, "%s\n", "ASS -->\n");
-  fwrite(ASSTXT, 80, IASSTXT, fp_out);
-  fflush(fp_out);
-  
+            
+  print_ASSTXT_to_file();    
   return (0);                                   /*завершить полдпрограмму */
 }
+
+
 
 /*..........................................................................*/
 
@@ -1854,7 +1865,7 @@ int gen_COD() /*интерпретации строк сте-*/
   };
   
   // was:
-  //for (I2 = 0; I2 < L; I2++)                    /* организация первого  прохода семантического вычисления */
+  //for (I2 = 0; I2 < L; I2++)                    /* организация первого прохода семантического вычисления */
   //  if ((NOSH = FUN[get_number_of_VXOD(DST[I2].DST1, 3)][0]()) != 0)
   //    return (NOSH); /* выход из программы по ошибке*/      
   //  for (I2 = 0; I2 < L; I2++)                    /* организация второго прохода семантического вычисления */
@@ -1862,18 +1873,33 @@ int gen_COD() /*интерпретации строк сте-*/
   //      return (NOSH);       /* выход из программы по ошибке*/          
 
   // ---------- Li：--------------
+  fprintf(fp_out, ">>>>>>>>>>>>>>>>>>>>> %s <<<<<<<<<<<<<<<<<<<<<\n", "First pass of semantic calculation");
+  fflush(fp_out);
     for (I2 = 0; I2 < L; I2++) {
-      NOSH = FUN[get_number_of_VXOD(DST[I2].DST1, 3)][0]() != 0;
-      if (NOSH) {
-        return NOSH;
-      }      
-    }
-
-    for (I2 = 0; I2 < L; I2++) {
-      NOSH = NOSH = FUN[get_number_of_VXOD(DST[I2].DST1, 3)][1]() != 0;
-      if (NOSH) {
+      int tmp = 0;
+      tmp = get_number_of_VXOD(DST[I2].DST1, 3);
+      NOSH = FUN[tmp][0]();
+      if (NOSH != 0) {
         return NOSH;
       }
+
+      fprintf(fp_out, ">> %d/%d \n", I2, L);      
+      fprintf(fp_out, ">> %s, operation code: %s, get from table: %d\n", "get_number_of_VXOD", DST[I2].DST1, tmp);
+      fflush(fp_out);  
+    }
+    fprintf(fp_out, ">>>>>>>>>>>>>>>>>>>>> %s <<<<<<<<<<<<<<<<<<<<<\n", "Second pass of semantic calculation");
+    fflush(fp_out);
+    for (I2 = 0; I2 < L; I2++) {
+      int tmp = 0;
+      tmp = get_number_of_VXOD(DST[I2].DST1, 3);
+      NOSH = FUN[tmp][1]();
+      if (NOSH != 0) {
+        return NOSH;
+      }
+
+      fprintf(fp_out, ">> %d/%d \n", I2, L);
+      fprintf(fp_out, ">> %s, operation code: %s, get from table: %d\n", "get_number_of_VXOD", DST[I2].DST1, tmp);
+      fflush(fp_out);
     }
  // ---------- Li --------------
     
@@ -2039,13 +2065,13 @@ main1:                                            /* по завершении �
         printf("%s%c\n%s%s%s\n",
           "Undefined operation: ",
           STROKA[DST[I2].DST4 - strlen(FORMT[IFORMT - 1])],
-          " в исх.тексте -> \"...", &STROKA[DST[I2].DST2], "...\"");
+          " ERROR HERE -> \"...", &STROKA[DST[I2].DST2], "...\"");
         break;                                     /* - выйти на обобщающую диагностику */
       case  6:                                    /*если код завершения = 6 */
         STROKA[DST[I2].DST2 + 20] = '\x0';     /* - диагностич.сообщение;*/
         printf("%s%s\n%s%s%s\n",
           "Identifier re-declared: ",
-          &FORMT[1], " в исх.тексте -> \"...",
+          &FORMT[1], " ERROR HERE -> \"...",
           &STROKA[DST[I2].DST2], "...\"");
         break;                                     /* - выйти на обобщающую диагностику */
     }

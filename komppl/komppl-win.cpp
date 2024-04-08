@@ -1981,26 +1981,18 @@ int main(int argc, char** argv)
 
 main1:                                            /* по завершении чтения   */
   /* исх.файла формируем    */  
-  fclose(fp);                                 /* префикс имени выходного*/
-  
+  fclose(fp);                                 /* префикс имени выходного*/  
   NFIL[strlen(NFIL) - 3] = '\x0';            /* Ассемблеровского файла */  
-
   memset(ASS_CARD.BUFCARD, ' ', 80);           /* чистка буфера строки   */  
+  /* выходного ассемблеровского файла */
 
-  /* выходного ассемблеров- */
-  /* ского файла            */
-
-  compress_ISXTXT();                             /* лексический анализ     */
-  /* исходного текста       */  
-  
-  
-  build_TPR();                                   /* построение матрицы     */
-  /* преемников */
+  compress_ISXTXT();                             /* лексический анализ исходного текста*/      
+  build_TPR();                                   /* построение матрицы преемников */  
   int return_code = sint_ANAL();
   if (return_code)                           /* синтаксический анализ  исходного текста */
   {                                             
     STROKA[I4 + 20] = '\x0';
-    printf("<ERROR CODE> %d\n", return_code);    
+    printf("<ERROR CODE> %d\n", return_code);
     printf("%s%s%s%s\n", "<ERROR INFO> Syntax error here-> ", "\"...", &STROKA[I4], "...\"");
     printf("%s\n", "Translate interrupted.");
     return -1;                                      /* завершаем трансляцию   */

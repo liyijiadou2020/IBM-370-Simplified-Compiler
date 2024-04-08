@@ -552,6 +552,9 @@ void compress_ISXTXT()                            /* Программа упло
 /* роль примитивного лек- */
 /* сического анализатора  */
 {
+  fprintf(fp_out, "---> %s\n", "void compress_ISXTXT()");
+  fflush(fp_out);
+
   I3 = 0;
   for (I1 = 0; I1 < NISXTXT; I1++)
   {
@@ -607,6 +610,10 @@ void compress_ISXTXT()                            /* Программа упло
         break;
   }
   STROKA[I3] = '\x0';
+
+  fprintf(fp_out, "Text after compress:\n%s\n\n", STROKA);
+  fflush(fp_out);
+
 }
 
 /*..........................................................................*/
@@ -616,6 +623,9 @@ void build_TPR()                                 /* Построение таб�
 /* смежности по алгоритму */
 /* Варшалла               */
 {
+  fprintf(fp_out, "---> %s\n", "void build_TPR()");
+  fflush(fp_out);
+
   for (I1 = 0; I1 < NNETRM; I1++)
   {
     for (I2 = 0; I2 < NVXOD; I2++)
@@ -682,6 +692,9 @@ int get_number_of_VXOD(const char* T1, int T2)                     /* вычис
                        /*   п р о г р а м м а    */
 int sint_ANAL()        /* построения дерева синтаксического разбора,   */
 {                      /* выполняющая роль синтаксического анализатора */
+  fprintf(fp_out, "---> %s\n", "int sint_ANAL()");
+  fflush(fp_out);
+
   I4 = 0;
 /* 初始化（начальных установок）*/
 L1: 
@@ -879,8 +892,8 @@ FORM1:
 
 /*..........................................................................*/
               /* п р о г р а м м а      */
-void ZKARD()                                     /* записи очередной сгене-*/
-{                                                /* рированной записи вы-  */
+void ZKARD() /* записи очередной сгене-*/
+{            /* рированной записи вы-  */
              /* ходного файла в массив */
              /* ASSTXT                 */
   char i;
@@ -902,6 +915,7 @@ int AVI1()
 {  
   fprintf(fp_out, "%s\n", "AVI1");
   fflush(fp_out);
+
   return 0;
 }
 
@@ -916,6 +930,7 @@ int BUK1()
 {
   fprintf(fp_out, "%s\n", "BUK1");
   fflush(fp_out);
+
   return 0;
 }
 
@@ -930,6 +945,7 @@ int CIF1()
 {
   fprintf(fp_out, "%s\n", "CIF1");
   fflush(fp_out);
+
   return 0;
 }
 
@@ -944,6 +960,7 @@ int IDE1()
 {
   fprintf(fp_out, "%s\n", "IDE1");
   fflush(fp_out);
+
   return 0;
 }
 
@@ -958,6 +975,7 @@ int IPE1()
 {
   fprintf(fp_out, "%s\n", "IPE1");
   fflush(fp_out);
+
   return 0;
 }
 
@@ -972,6 +990,7 @@ int IPR1()
 {
   fprintf(fp_out, "%s\n", "IPR1");
   fflush(fp_out);
+
   return 0;
 }
 
@@ -986,6 +1005,7 @@ int LIT1()
 {
   fprintf(fp_out, "%s\n", "LIT1");
   fflush(fp_out);
+
   return 0;
 }
 
@@ -1000,6 +1020,7 @@ int MAN1()
 {
   fprintf(fp_out, "%s\n", "MAN1");
   fflush(fp_out);
+
   return 0;
 }
 
@@ -1016,8 +1037,7 @@ int ODC1()
   fflush(fp_out);
 
   int i;
-  FORM();                                        /* форматирование ПЛ1-опе-*/
-  /* ратора DCL             */
+  FORM();                                   /* форматирование ПЛ1-оператора DCL*/  
 
   for (i = 0; i < ISYM; i++)                    /* если фиксируем повтор- */
   {                                              /* повторное объявление   */
@@ -1210,6 +1230,8 @@ int ZNK1()
 
 int AVI2()
 {
+  fprintf(fp_out, "%s\n", "AVI2");
+  fflush(fp_out);
   char i;
   FORM();                                        /*форматируем правую часть*/
   /*арифметического ПЛ1-опе-*/
@@ -1355,6 +1377,9 @@ int AVI2()
 
 int BUK2()
 {
+  fprintf(fp_out, "%s\n", "BUK2");
+  fflush(fp_out);
+
   return 0;
 }
 
@@ -1368,6 +1393,9 @@ int BUK2()
 
 int CIF2()
 {
+  fprintf(fp_out, "%s\n", "CIF2");
+  fflush(fp_out);
+
   return 0;
 }
 
@@ -1382,6 +1410,9 @@ int CIF2()
 
 int IDE2()
 {
+  fprintf(fp_out, "%s\n", "IDE2");
+  fflush(fp_out);
+
   return 0;
 }
 
@@ -1396,6 +1427,9 @@ int IDE2()
 
 int IPE2()
 {
+  fprintf(fp_out, "%s\n", "IPE2");
+  fflush(fp_out);
+
   return 0;
 }
 
@@ -1409,6 +1443,9 @@ int IPE2()
 
 int IPR2()
 {
+  fprintf(fp_out, "%s\n", "IPR2");
+  fflush(fp_out);
+
   return 0;
 }
 
@@ -1422,6 +1459,9 @@ int IPR2()
 
 int LIT2()
 {
+  fprintf(fp_out, "%s\n", "LIT2");
+  fflush(fp_out);
+
   return 0;
 }
 
@@ -1435,6 +1475,9 @@ int LIT2()
 
 int MAN2()
 {
+  fprintf(fp_out, "%s\n", "MAN2");
+  fflush(fp_out);
+
   return 0;
 }
 
@@ -1448,6 +1491,9 @@ int MAN2()
 
 int ODC2()
 {
+  fprintf(fp_out, "%s\n", "ODC2");
+  fflush(fp_out);
+
   return 0;
 }
 
@@ -1465,6 +1511,9 @@ int ODC2()
               /* раммы                  */
 int OEN2()
 {
+  fprintf(fp_out, "%s\n", "OEN2");
+  fflush(fp_out);
+
   char RAB[20];
   char i = 0;
   FORM();                                        /* форматируем ПЛ1-опера- */
@@ -1576,6 +1625,9 @@ int OEN2()
 
 int OPA2()
 {
+  fprintf(fp_out, "%s\n", "OPA2");
+  fflush(fp_out);
+
   int i;
 
   FORM();                                        /*форматируем ПЛ1-оператор*/
@@ -1646,6 +1698,9 @@ int OPA2()
               /* ПЛ1-программы          */
 int OPR2()
 {
+  fprintf(fp_out, "%s\n", "OPR2");
+  fflush(fp_out);
+
   char i = 0;
   FORM();                                        /* форматируем оператор   */
   /* ПЛ1 - "начало процедур-*/
@@ -1689,6 +1744,8 @@ int OPR2()
 
 int PRO2()                                       /*прогр.формирует выходной*/
 {                                                /*файл                    */
+  fprintf(fp_out, "%s\n", "PRO2");
+  fflush(fp_out);
 
   FILE* fp;                                       /*набор                   */
   /*рабочих                 */
@@ -1714,6 +1771,9 @@ int PRO2()                                       /*прогр.формирует
 
 int RZR2()
 {
+  fprintf(fp_out, "%s\n", "RZR2");
+  fflush(fp_out);
+
   return 0;
 }
 
@@ -1727,6 +1787,9 @@ int RZR2()
 
 int TEL2()
 {
+  fprintf(fp_out, "%s\n", "TEL2");
+  fflush(fp_out);
+
   return 0;
 }
 
@@ -1740,6 +1803,9 @@ int TEL2()
 
 int ZNK2()
 {
+  fprintf(fp_out, "%s\n", "ZNK2");
+  fflush(fp_out);
+
   return 0;
 }
 
@@ -1760,6 +1826,8 @@ int ZNK2()
 int gen_COD() /*интерпретации строк сте-*/
 {             /*ка достижений  в направ-*/
   int NOSH;    /*лении от дна к вершине. */
+  fprintf(fp_out, "%s\n", "---> int gen_COD()");
+  fflush(fp_out);
 
   int (*FUN[NNETRM][2]) () =                    /*При этом каждая строка  */
   {                                              /*воспринимается как кома-*/
@@ -1780,14 +1848,32 @@ int gen_COD() /*интерпретации строк сте-*/
     {/*   15  */    TEL1, TEL2 },
     {/*   16  */    ZNK1, ZNK2 }
   };
+  
+  // was:
+  //for (I2 = 0; I2 < L; I2++)                    /* организация первого  прохода семантического вычисления */
+  //  if ((NOSH = FUN[get_number_of_VXOD(DST[I2].DST1, 3)][0]()) != 0)
+  //    return (NOSH); /* выход из программы по ошибке*/      
+  //  for (I2 = 0; I2 < L; I2++)                    /* организация второго прохода семантического вычисления */
+  //    if ((NOSH = FUN[get_number_of_VXOD(DST[I2].DST1, 3)][1]()) != 0)
+  //      return (NOSH);       /* выход из программы по ошибке*/          
 
-  for (I2 = 0; I2 < L; I2++)                    /* организация первого  прохода семантического вычисления */
-    if ((NOSH = FUN[get_number_of_VXOD(DST[I2].DST1, 3)][0]()) != 0)
-      return (NOSH); /* выход из программы по ошибке*/      
-    for (I2 = 0; I2 < L; I2++)                    /* организация второго прохода семантического вычисления */
-      if ((NOSH = FUN[get_number_of_VXOD(DST[I2].DST1, 3)][1]()) != 0)
-        return (NOSH);       /* выход из программы по ошибке*/          
-  return 0;    /* успешное завершение программы  */          
+  // ---------- Li：--------------
+    for (I2 = 0; I2 < L; I2++) {
+      NOSH = FUN[get_number_of_VXOD(DST[I2].DST1, 3)][0]() != 0;
+      if (NOSH) {
+        return NOSH;
+      }      
+    }
+
+    for (I2 = 0; I2 < L; I2++) {
+      NOSH = NOSH = FUN[get_number_of_VXOD(DST[I2].DST1, 3)][1]() != 0;
+      if (NOSH) {
+        return NOSH;
+      }
+    }
+ // ---------- Li --------------
+    
+    return 0;    /* успешное завершение программы  */          
 }
 
 
@@ -1819,14 +1905,15 @@ int main(int argc, char** argv)
   char* nowtime = getDateTime();
 
   fp_out = fopen("log.txt", "a+");                                  /* Li: 用于读取debug的结果 */
+  if (NULL == fp_out) {
+    printf("open log.txt failed! \n");
+    return FILE_NOT_OPEN;
+  }
   setbuf(fp_out, NULL);
   fprintf(fp_out, "\n\n --------------------------------------- %s ---------------------------\n", nowtime);
   fflush(fp_out);
 
-  if (NULL == fp_out) {
-    printf("open log.txt failed! \n");   
-    return FILE_NOT_OPEN;
-  }
+
 
   //char* ptr = argv[1];                              /* - указатель на первый  */
   // 在这里我改成了以变量形式传递PL/1程序的源文件
@@ -1902,10 +1989,7 @@ main1:                                            /* по завершении �
   compress_ISXTXT();                             /* лексический анализ     */
   /* исходного текста       */  
   
-  fprintf(fp_out, "Text after compress:\n%s\n\n", STROKA);
-  fflush(fp_out);
-
-
+  
   build_TPR();                                   /* построение матрицы     */
   /* преемников */
   int return_code = sint_ANAL();

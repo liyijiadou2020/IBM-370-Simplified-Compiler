@@ -1,0 +1,1 @@
+EX: PROC OPTIONS (MAIN);   DCL A BIN FIXED (31) INIT ( 111B );       DCL B BIN FIXED (31) INIT ( 100B );              DCL D BIN FIXED (31);       D = A - B;                                                                      END EX;                                                                         

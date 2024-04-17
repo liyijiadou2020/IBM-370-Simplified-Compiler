@@ -1,0 +1,4815 @@
+
+
+ --------------------------------------- 2024-04-08 13:05:59 ---------------------------
+---> void compress_ISXTXT()
+Text after compress:
+EX:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(111B);DCL B BIN FIXED(31)INIT(100B);DCL D BIN FIXED(31);D=A-B;END EX;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>> First pass of semantic calculation 
+>> 0/59 
+BUK1
+>> 1/59 
+IDE1
+>> 2/59 
+BUK1
+>> 3/59 
+IDE1
+>> 4/59 
+IPR1
+>> 5/59 
+OPR1
+>> 6/59 
+BUK1
+>> 7/59 
+IDE1
+>> 8/59 
+CIF1
+>> 9/59 
+RZR1
+>> 10/59 
+CIF1
+>> 11/59 
+RZR1
+>> 12/59 
+MAN1
+>> 13/59 
+MAN1
+>> 14/59 
+MAN1
+>> 15/59 
+LIT1
+>> 16/59 
+ODC1
+>> 17/59 
+TEL1
+>> 18/59 
+BUK1
+>> 19/59 
+IDE1
+>> 20/59 
+CIF1
+>> 21/59 
+RZR1
+>> 22/59 
+CIF1
+>> 23/59 
+RZR1
+>> 24/59 
+MAN1
+>> 25/59 
+MAN1
+>> 26/59 
+MAN1
+>> 27/59 
+LIT1
+>> 28/59 
+ODC1
+>> 29/59 
+TEL1
+>> 30/59 
+BUK1
+>> 31/59 
+IDE1
+>> 32/59 
+CIF1
+>> 33/59 
+RZR1
+>> 34/59 
+CIF1
+>> 35/59 
+RZR1
+>> 36/59 
+ODC1
+>> 37/59 
+TEL1
+>> 38/59 
+BUK1
+>> 39/59 
+IDE1
+>> 40/59 
+IPE1
+>> 41/59 
+BUK1
+>> 42/59 
+IDE1
+>> 43/59 
+IPE1
+>> 44/59 
+AVI1
+>> 45/59 
+>> 46/59 
+BUK1
+>> 47/59 
+IDE1
+>> 48/59 
+IPE1
+>> 49/59 
+AVI1
+>> 50/59 
+OPA1
+>> 51/59 
+TEL1
+>> 52/59 
+BUK1
+>> 53/59 
+IDE1
+>> 54/59 
+BUK1
+>> 55/59 
+IDE1
+>> 56/59 
+IPR1
+>> 57/59 
+OEN1
+>> 58/59 
+PRO1
+>> Second pass of semantic calculation 
+>> 0/59 
+BUK2
+>> 1/59 
+IDE2
+>> 2/59 
+BUK2
+>> 3/59 
+IDE2
+>> 4/59 
+IPR2
+>> 5/59 
+OPR2
+>> 6/59 
+BUK2
+>> 7/59 
+IDE2
+>> 8/59 
+CIF2
+>> 9/59 
+RZR2
+>> 10/59 
+CIF2
+>> 11/59 
+RZR2
+>> 12/59 
+MAN2
+>> 13/59 
+MAN2
+>> 14/59 
+MAN2
+>> 15/59 
+LIT2
+>> 16/59 
+ODC2
+>> 17/59 
+TEL2
+>> 18/59 
+BUK2
+>> 19/59 
+IDE2
+>> 20/59 
+CIF2
+>> 21/59 
+RZR2
+>> 22/59 
+CIF2
+>> 23/59 
+RZR2
+>> 24/59 
+MAN2
+>> 25/59 
+MAN2
+>> 26/59 
+MAN2
+>> 27/59 
+LIT2
+>> 28/59 
+ODC2
+>> 29/59 
+TEL2
+>> 30/59 
+BUK2
+>> 31/59 
+IDE2
+>> 32/59 
+CIF2
+>> 33/59 
+RZR2
+>> 34/59 
+CIF2
+>> 35/59 
+RZR2
+>> 36/59 
+ODC2
+>> 37/59 
+TEL2
+>> 38/59 
+BUK2
+>> 39/59 
+IDE2
+>> 40/59 
+IPE2
+>> 41/59 
+BUK2
+>> 42/59 
+IDE2
+>> 43/59 
+IPE2
+>> 44/59 
+AVI2
+>> 45/59 
+ZNK2
+>> 46/59 
+BUK2
+>> 47/59 
+IDE2
+>> 48/59 
+IPE2
+>> 49/59 
+AVI2
+>> 50/59 
+OPA2
+>> 51/59 
+TEL2
+>> 52/59 
+BUK2
+>> 53/59 
+IDE2
+>> 54/59 
+BUK2
+>> 55/59 
+IDE2
+>> 56/59 
+IPR2
+>> 57/59 
+OEN2
+>> 58/59 
+PRO2
+ASS -->
+
+IASSTXT(lines) = 13
+EX       START 0            Program starts
+         BALR  RBASE,0      Load base register
+         USING *,RBASE      Set base register
+         L     RRAB,A       Load var into register
+         S     RRAB,B       Formation of intermediate value
+         ST    RRAB,D       Generate value of arithmetic express
+         BCR   15,14        Exit from program
+A        DC    F'7.'        Defination of var
+B        DC    F'4.'        Defination of var
+D        DC    F'0.'        Defination of var
+RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX           End of program
+RRAB     EQU   5                                                                         END   EX           End of program
+         END   EX           End of program
+
+
+ --------------------------------------- 2024-04-08 13:07:35 ---------------------------
+---> void compress_ISXTXT()
+Text after compress:
+EX:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(111B);DCL B BIN FIXED(31)INIT(100B);DCL D BIN FIXED(31);D=A-B;END EX;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>> First pass of semantic calculation 
+>> 0/59 
+BUK1
+>> 1/59 
+IDE1
+>> 2/59 
+BUK1
+>> 3/59 
+IDE1
+>> 4/59 
+IPR1
+>> 5/59 
+OPR1
+>> 6/59 
+BUK1
+>> 7/59 
+IDE1
+>> 8/59 
+CIF1
+>> 9/59 
+RZR1
+>> 10/59 
+CIF1
+>> 11/59 
+RZR1
+>> 12/59 
+MAN1
+>> 13/59 
+MAN1
+>> 14/59 
+MAN1
+>> 15/59 
+LIT1
+>> 16/59 
+ODC1
+>> 17/59 
+TEL1
+>> 18/59 
+BUK1
+>> 19/59 
+IDE1
+>> 20/59 
+CIF1
+>> 21/59 
+RZR1
+>> 22/59 
+CIF1
+>> 23/59 
+RZR1
+>> 24/59 
+MAN1
+>> 25/59 
+MAN1
+>> 26/59 
+MAN1
+>> 27/59 
+LIT1
+>> 28/59 
+ODC1
+>> 29/59 
+TEL1
+>> 30/59 
+BUK1
+>> 31/59 
+IDE1
+>> 32/59 
+CIF1
+>> 33/59 
+RZR1
+>> 34/59 
+CIF1
+>> 35/59 
+RZR1
+>> 36/59 
+ODC1
+>> 37/59 
+TEL1
+>> 38/59 
+BUK1
+>> 39/59 
+IDE1
+>> 40/59 
+IPE1
+>> 41/59 
+BUK1
+>> 42/59 
+IDE1
+>> 43/59 
+IPE1
+>> 44/59 
+AVI1
+>> 45/59 
+>> 46/59 
+BUK1
+>> 47/59 
+IDE1
+>> 48/59 
+IPE1
+>> 49/59 
+AVI1
+>> 50/59 
+OPA1
+>> 51/59 
+TEL1
+>> 52/59 
+BUK1
+>> 53/59 
+IDE1
+>> 54/59 
+BUK1
+>> 55/59 
+IDE1
+>> 56/59 
+IPR1
+>> 57/59 
+OEN1
+>> 58/59 
+PRO1
+>> Second pass of semantic calculation 
+>> 0/59 
+BUK2
+>> 1/59 
+IDE2
+>> 2/59 
+BUK2
+>> 3/59 
+IDE2
+>> 4/59 
+IPR2
+>> 5/59 
+OPR2
+>> 6/59 
+BUK2
+>> 7/59 
+IDE2
+>> 8/59 
+CIF2
+>> 9/59 
+RZR2
+>> 10/59 
+CIF2
+>> 11/59 
+RZR2
+>> 12/59 
+MAN2
+>> 13/59 
+MAN2
+>> 14/59 
+MAN2
+>> 15/59 
+LIT2
+>> 16/59 
+ODC2
+>> 17/59 
+TEL2
+>> 18/59 
+BUK2
+>> 19/59 
+IDE2
+>> 20/59 
+CIF2
+>> 21/59 
+RZR2
+>> 22/59 
+CIF2
+>> 23/59 
+RZR2
+>> 24/59 
+MAN2
+>> 25/59 
+MAN2
+>> 26/59 
+MAN2
+>> 27/59 
+LIT2
+>> 28/59 
+ODC2
+>> 29/59 
+TEL2
+>> 30/59 
+BUK2
+>> 31/59 
+IDE2
+>> 32/59 
+CIF2
+>> 33/59 
+RZR2
+>> 34/59 
+CIF2
+>> 35/59 
+RZR2
+>> 36/59 
+ODC2
+>> 37/59 
+TEL2
+>> 38/59 
+BUK2
+>> 39/59 
+IDE2
+>> 40/59 
+IPE2
+>> 41/59 
+BUK2
+>> 42/59 
+IDE2
+>> 43/59 
+IPE2
+>> 44/59 
+AVI2
+>> 45/59 
+ZNK2
+>> 46/59 
+BUK2
+>> 47/59 
+IDE2
+>> 48/59 
+IPE2
+>> 49/59 
+AVI2
+>> 50/59 
+OPA2
+>> 51/59 
+TEL2
+>> 52/59 
+BUK2
+>> 53/59 
+IDE2
+>> 54/59 
+BUK2
+>> 55/59 
+IDE2
+>> 56/59 
+IPR2
+>> 57/59 
+OEN2
+>> 58/59 
+PRO2
+ASS -->
+
+IASSTXT(lines) = 13
+EX       START 0            Program starts
+         BALR  RBASE,0      Load base register
+         USING *,RBASE      Set base register
+         L     RRAB,A       Load var into register
+         S     RRAB,B       Formation of intermediate value
+         ST    RRAB,D       Generate value of arithmetic express
+         BCR   15,14        Exit from program
+A        DC    F'7.'        Defination of var
+B        DC    F'4.'        Defination of var
+D        DC    F'0.'        Defination of var
+RBASE    EQU   15                                                               
+RRAB     EQU   5                                                                         
+END   EX           End of program
+RRAB     EQU   5                                                                         
+END   EX           End of program
+END   EX           End of program
+
+
+ --------------------------------------- 2024-04-08 13:09:06 ---------------------------
+---> void compress_ISXTXT()
+Text after compress:
+EX:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(111B);DCL B BIN FIXED(31)INIT(100B);DCL D BIN FIXED(31);D=A-B;END EX;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>> First pass of semantic calculation 
+>> 0/59 
+BUK1
+>> 1/59 
+IDE1
+>> 2/59 
+BUK1
+>> 3/59 
+IDE1
+>> 4/59 
+IPR1
+>> 5/59 
+OPR1
+>> 6/59 
+BUK1
+>> 7/59 
+IDE1
+>> 8/59 
+CIF1
+>> 9/59 
+RZR1
+>> 10/59 
+CIF1
+>> 11/59 
+RZR1
+>> 12/59 
+MAN1
+>> 13/59 
+MAN1
+>> 14/59 
+MAN1
+>> 15/59 
+LIT1
+>> 16/59 
+ODC1
+>> 17/59 
+TEL1
+>> 18/59 
+BUK1
+>> 19/59 
+IDE1
+>> 20/59 
+CIF1
+>> 21/59 
+RZR1
+>> 22/59 
+CIF1
+>> 23/59 
+RZR1
+>> 24/59 
+MAN1
+>> 25/59 
+MAN1
+>> 26/59 
+MAN1
+>> 27/59 
+LIT1
+>> 28/59 
+ODC1
+>> 29/59 
+TEL1
+>> 30/59 
+BUK1
+>> 31/59 
+IDE1
+>> 32/59 
+CIF1
+>> 33/59 
+RZR1
+>> 34/59 
+CIF1
+>> 35/59 
+RZR1
+>> 36/59 
+ODC1
+>> 37/59 
+TEL1
+>> 38/59 
+BUK1
+>> 39/59 
+IDE1
+>> 40/59 
+IPE1
+>> 41/59 
+BUK1
+>> 42/59 
+IDE1
+>> 43/59 
+IPE1
+>> 44/59 
+AVI1
+>> 45/59 
+>> 46/59 
+BUK1
+>> 47/59 
+IDE1
+>> 48/59 
+IPE1
+>> 49/59 
+AVI1
+>> 50/59 
+OPA1
+>> 51/59 
+TEL1
+>> 52/59 
+BUK1
+>> 53/59 
+IDE1
+>> 54/59 
+BUK1
+>> 55/59 
+IDE1
+>> 56/59 
+IPR1
+>> 57/59 
+OEN1
+>> 58/59 
+PRO1
+>> Second pass of semantic calculation 
+>> 0/59 
+BUK2
+>> 1/59 
+IDE2
+>> 2/59 
+BUK2
+>> 3/59 
+IDE2
+>> 4/59 
+IPR2
+>> 5/59 
+OPR2
+>> 6/59 
+BUK2
+>> 7/59 
+IDE2
+>> 8/59 
+CIF2
+>> 9/59 
+RZR2
+>> 10/59 
+CIF2
+>> 11/59 
+RZR2
+>> 12/59 
+MAN2
+>> 13/59 
+MAN2
+>> 14/59 
+MAN2
+>> 15/59 
+LIT2
+>> 16/59 
+ODC2
+>> 17/59 
+TEL2
+>> 18/59 
+BUK2
+>> 19/59 
+IDE2
+>> 20/59 
+CIF2
+>> 21/59 
+RZR2
+>> 22/59 
+CIF2
+>> 23/59 
+RZR2
+>> 24/59 
+MAN2
+>> 25/59 
+MAN2
+>> 26/59 
+MAN2
+>> 27/59 
+LIT2
+>> 28/59 
+ODC2
+>> 29/59 
+TEL2
+>> 30/59 
+BUK2
+>> 31/59 
+IDE2
+>> 32/59 
+CIF2
+>> 33/59 
+RZR2
+>> 34/59 
+CIF2
+>> 35/59 
+RZR2
+>> 36/59 
+ODC2
+>> 37/59 
+TEL2
+>> 38/59 
+BUK2
+>> 39/59 
+IDE2
+>> 40/59 
+IPE2
+>> 41/59 
+BUK2
+>> 42/59 
+IDE2
+>> 43/59 
+IPE2
+>> 44/59 
+AVI2
+>> 45/59 
+ZNK2
+>> 46/59 
+BUK2
+>> 47/59 
+IDE2
+>> 48/59 
+IPE2
+>> 49/59 
+AVI2
+>> 50/59 
+OPA2
+>> 51/59 
+TEL2
+>> 52/59 
+BUK2
+>> 53/59 
+IDE2
+>> 54/59 
+BUK2
+>> 55/59 
+IDE2
+>> 56/59 
+IPR2
+>> 57/59 
+OEN2
+>> 58/59 
+PRO2
+--------- ASS ---------> 
+
+IASSTXT(lines) = 13
+EX       START 0            Program starts
+         BALR  RBASE,0      Load base register
+         USING *,RBASE      Set base register
+         L     RRAB,A       Load var into register
+         S     RRAB,B       Formation of intermediate value
+         ST    RRAB,D       Generate value of arithmetic express
+         BCR   15,14        Exit from program
+A        DC    F'7.'        Defination of var
+B        DC    F'4.'        Defination of var
+D        DC    F'0.'        Defination of var
+RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX           End of program
+RRAB     EQU   5                                                                         END   EX           End of program
+         END   EX           End of program
+<------------ASS ------
+
+
+
+ --------------------------------------- 2024-04-08 13:10:00 ---------------------------
+---> void compress_ISXTXT()
+Text after compress:
+EX:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(111B);DCL B BIN FIXED(31)INIT(100B);DCL D BIN FIXED(31);D=A-B;END EX;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>> First pass of semantic calculation 
+>> 0/59 
+BUK1
+>> 1/59 
+IDE1
+>> 2/59 
+BUK1
+>> 3/59 
+IDE1
+>> 4/59 
+IPR1
+>> 5/59 
+OPR1
+>> 6/59 
+BUK1
+>> 7/59 
+IDE1
+>> 8/59 
+CIF1
+>> 9/59 
+RZR1
+>> 10/59 
+CIF1
+>> 11/59 
+RZR1
+>> 12/59 
+MAN1
+>> 13/59 
+MAN1
+>> 14/59 
+MAN1
+>> 15/59 
+LIT1
+>> 16/59 
+ODC1
+>> 17/59 
+TEL1
+>> 18/59 
+BUK1
+>> 19/59 
+IDE1
+>> 20/59 
+CIF1
+>> 21/59 
+RZR1
+>> 22/59 
+CIF1
+>> 23/59 
+RZR1
+>> 24/59 
+MAN1
+>> 25/59 
+MAN1
+>> 26/59 
+MAN1
+>> 27/59 
+LIT1
+>> 28/59 
+ODC1
+>> 29/59 
+TEL1
+>> 30/59 
+BUK1
+>> 31/59 
+IDE1
+>> 32/59 
+CIF1
+>> 33/59 
+RZR1
+>> 34/59 
+CIF1
+>> 35/59 
+RZR1
+>> 36/59 
+ODC1
+>> 37/59 
+TEL1
+>> 38/59 
+BUK1
+>> 39/59 
+IDE1
+>> 40/59 
+IPE1
+>> 41/59 
+BUK1
+>> 42/59 
+IDE1
+>> 43/59 
+IPE1
+>> 44/59 
+AVI1
+>> 45/59 
+>> 46/59 
+BUK1
+>> 47/59 
+IDE1
+>> 48/59 
+IPE1
+>> 49/59 
+AVI1
+>> 50/59 
+OPA1
+>> 51/59 
+TEL1
+>> 52/59 
+BUK1
+>> 53/59 
+IDE1
+>> 54/59 
+BUK1
+>> 55/59 
+IDE1
+>> 56/59 
+IPR1
+>> 57/59 
+OEN1
+>> 58/59 
+PRO1
+>> Second pass of semantic calculation 
+>> 0/59 
+BUK2
+>> 1/59 
+IDE2
+>> 2/59 
+BUK2
+>> 3/59 
+IDE2
+>> 4/59 
+IPR2
+>> 5/59 
+OPR2
+>> 6/59 
+BUK2
+>> 7/59 
+IDE2
+>> 8/59 
+CIF2
+>> 9/59 
+RZR2
+>> 10/59 
+CIF2
+>> 11/59 
+RZR2
+>> 12/59 
+MAN2
+>> 13/59 
+MAN2
+>> 14/59 
+MAN2
+>> 15/59 
+LIT2
+>> 16/59 
+ODC2
+>> 17/59 
+TEL2
+>> 18/59 
+BUK2
+>> 19/59 
+IDE2
+>> 20/59 
+CIF2
+>> 21/59 
+RZR2
+>> 22/59 
+CIF2
+>> 23/59 
+RZR2
+>> 24/59 
+MAN2
+>> 25/59 
+MAN2
+>> 26/59 
+MAN2
+>> 27/59 
+LIT2
+>> 28/59 
+ODC2
+>> 29/59 
+TEL2
+>> 30/59 
+BUK2
+>> 31/59 
+IDE2
+>> 32/59 
+CIF2
+>> 33/59 
+RZR2
+>> 34/59 
+CIF2
+>> 35/59 
+RZR2
+>> 36/59 
+ODC2
+>> 37/59 
+TEL2
+>> 38/59 
+BUK2
+>> 39/59 
+IDE2
+>> 40/59 
+IPE2
+>> 41/59 
+BUK2
+>> 42/59 
+IDE2
+>> 43/59 
+IPE2
+>> 44/59 
+AVI2
+>> 45/59 
+ZNK2
+>> 46/59 
+BUK2
+>> 47/59 
+IDE2
+>> 48/59 
+IPE2
+>> 49/59 
+AVI2
+>> 50/59 
+OPA2
+>> 51/59 
+TEL2
+>> 52/59 
+BUK2
+>> 53/59 
+IDE2
+>> 54/59 
+BUK2
+>> 55/59 
+IDE2
+>> 56/59 
+IPR2
+>> 57/59 
+OEN2
+>> 58/59 
+PRO2
+IASSTXT(lines) = 13
+--------- ASS ---------> 
+
+EX       START 0            Program starts
+         BALR  RBASE,0      Load base register
+         USING *,RBASE      Set base register
+         L     RRAB,A       Load var into register
+         S     RRAB,B       Formation of intermediate value
+         ST    RRAB,D       Generate value of arithmetic express
+         BCR   15,14        Exit from program
+A        DC    F'7.'        Defination of var
+B        DC    F'4.'        Defination of var
+D        DC    F'0.'        Defination of var
+<1>
+RBASE    EQU   15                                                               
+RRAB     EQU   5                                                                         
+END   EX           End of program
+
+<2>
+RRAB     EQU   5                                                                         
+END   EX           End of program
+
+<3>         
+END   EX           End of program
+<------------ASS ------
+
+
+
+ --------------------------------------- 2024-04-08 13:15:57 ---------------------------
+---> void compress_ISXTXT()
+Text after compress:
+EX:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(111B);DCL B BIN FIXED(31)INIT(100B);DCL D BIN FIXED(31);D=A-B;END EX;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>> First pass of semantic calculation 
+>> 0/59 
+BUK1
+>> 1/59 
+IDE1
+>> 2/59 
+BUK1
+>> 3/59 
+IDE1
+>> 4/59 
+IPR1
+>> 5/59 
+OPR1
+>> 6/59 
+BUK1
+>> 7/59 
+IDE1
+>> 8/59 
+CIF1
+>> 9/59 
+RZR1
+>> 10/59 
+CIF1
+>> 11/59 
+RZR1
+>> 12/59 
+MAN1
+>> 13/59 
+MAN1
+>> 14/59 
+MAN1
+>> 15/59 
+LIT1
+>> 16/59 
+ODC1
+>> 17/59 
+TEL1
+>> 18/59 
+BUK1
+>> 19/59 
+IDE1
+>> 20/59 
+CIF1
+>> 21/59 
+RZR1
+>> 22/59 
+CIF1
+>> 23/59 
+RZR1
+>> 24/59 
+MAN1
+>> 25/59 
+MAN1
+>> 26/59 
+MAN1
+>> 27/59 
+LIT1
+>> 28/59 
+ODC1
+>> 29/59 
+TEL1
+>> 30/59 
+BUK1
+>> 31/59 
+IDE1
+>> 32/59 
+CIF1
+>> 33/59 
+RZR1
+>> 34/59 
+CIF1
+>> 35/59 
+RZR1
+>> 36/59 
+ODC1
+>> 37/59 
+TEL1
+>> 38/59 
+BUK1
+>> 39/59 
+IDE1
+>> 40/59 
+IPE1
+>> 41/59 
+BUK1
+>> 42/59 
+IDE1
+>> 43/59 
+IPE1
+>> 44/59 
+AVI1
+>> 45/59 
+>> 46/59 
+BUK1
+>> 47/59 
+IDE1
+>> 48/59 
+IPE1
+>> 49/59 
+AVI1
+>> 50/59 
+OPA1
+>> 51/59 
+TEL1
+>> 52/59 
+BUK1
+>> 53/59 
+IDE1
+>> 54/59 
+BUK1
+>> 55/59 
+IDE1
+>> 56/59 
+IPR1
+>> 57/59 
+OEN1
+>> 58/59 
+PRO1
+>> Second pass of semantic calculation 
+>> 0/59 
+BUK2
+>> 1/59 
+IDE2
+>> 2/59 
+BUK2
+>> 3/59 
+IDE2
+>> 4/59 
+IPR2
+>> 5/59 
+OPR2
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX       START 0            Program starts
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register
+>> 6/59 
+BUK2
+>> 7/59 
+IDE2
+>> 8/59 
+CIF2
+>> 9/59 
+RZR2
+>> 10/59 
+CIF2
+>> 11/59 
+RZR2
+>> 12/59 
+MAN2
+>> 13/59 
+MAN2
+>> 14/59 
+MAN2
+>> 15/59 
+LIT2
+>> 16/59 
+ODC2
+>> 17/59 
+TEL2
+>> 18/59 
+BUK2
+>> 19/59 
+IDE2
+>> 20/59 
+CIF2
+>> 21/59 
+RZR2
+>> 22/59 
+CIF2
+>> 23/59 
+RZR2
+>> 24/59 
+MAN2
+>> 25/59 
+MAN2
+>> 26/59 
+MAN2
+>> 27/59 
+LIT2
+>> 28/59 
+ODC2
+>> 29/59 
+TEL2
+>> 30/59 
+BUK2
+>> 31/59 
+IDE2
+>> 32/59 
+CIF2
+>> 33/59 
+RZR2
+>> 34/59 
+CIF2
+>> 35/59 
+RZR2
+>> 36/59 
+ODC2
+>> 37/59 
+TEL2
+>> 38/59 
+BUK2
+>> 39/59 
+IDE2
+>> 40/59 
+IPE2
+>> 41/59 
+BUK2
+>> 42/59 
+IDE2
+>> 43/59 
+IPE2
+>> 44/59 
+AVI2
+---> void ZKARD()
+IASSTXT = 3
+ASS_CARD.BUFCARD =          L     RRAB,A       Load var into register
+>> 45/59 
+ZNK2
+>> 46/59 
+BUK2
+>> 47/59 
+IDE2
+>> 48/59 
+IPE2
+>> 49/59 
+AVI2
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD =          S     RRAB,B       Formation of intermediate value
+>> 50/59 
+OPA2
+---> void ZKARD()
+IASSTXT = 5
+ASS_CARD.BUFCARD =          ST    RRAB,D       Generate value of arithmetic express
+>> 51/59 
+TEL2
+>> 52/59 
+BUK2
+>> 53/59 
+IDE2
+>> 54/59 
+BUK2
+>> 55/59 
+IDE2
+>> 56/59 
+IPR2
+>> 57/59 
+OEN2
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD = A        DC    F'7.'        Defination of var
+---> void ZKARD()
+IASSTXT = 8
+ASS_CARD.BUFCARD = B        DC    F'4.'        Defination of var
+---> void ZKARD()
+IASSTXT = 9
+ASS_CARD.BUFCARD = D        DC    F'0.'        Defination of var
+---> void ZKARD()
+IASSTXT = 10
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK
+---> void ZKARD()
+IASSTXT = 11
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK
+---> void ZKARD()
+IASSTXT = 12
+ASS_CARD.BUFCARD =          END   EX           End of program
+>> 58/59 
+PRO2
+IASSTXT(lines) = 13
+--------- ASS ---------> 
+
+EX       START 0            Program starts
+         BALR  RBASE,0      Load base register
+         USING *,RBASE      Set base register
+         L     RRAB,A       Load var into register
+         S     RRAB,B       Formation of intermediate value
+         ST    RRAB,D       Generate value of arithmetic express
+         BCR   15,14        Exit from program
+A        DC    F'7.'        Defination of var
+B        DC    F'4.'        Defination of var
+D        DC    F'0.'        Defination of var
+RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX           End of program
+RRAB     EQU   5                                                                         END   EX           End of program
+         END   EX           End of program
+<------------ASS ------
+
+
+
+ --------------------------------------- 2024-04-08 13:17:26 ---------------------------
+---> void compress_ISXTXT()
+Text after compress:
+EX:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(111B);DCL B BIN FIXED(31)INIT(100B);DCL D BIN FIXED(31);D=A-B;END EX;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>> First pass of semantic calculation 
+>> 0/59 
+BUK1
+>> 1/59 
+IDE1
+>> 2/59 
+BUK1
+>> 3/59 
+IDE1
+>> 4/59 
+IPR1
+>> 5/59 
+OPR1
+>> 6/59 
+BUK1
+>> 7/59 
+IDE1
+>> 8/59 
+CIF1
+>> 9/59 
+RZR1
+>> 10/59 
+CIF1
+>> 11/59 
+RZR1
+>> 12/59 
+MAN1
+>> 13/59 
+MAN1
+>> 14/59 
+MAN1
+>> 15/59 
+LIT1
+>> 16/59 
+ODC1
+>> 17/59 
+TEL1
+>> 18/59 
+BUK1
+>> 19/59 
+IDE1
+>> 20/59 
+CIF1
+>> 21/59 
+RZR1
+>> 22/59 
+CIF1
+>> 23/59 
+RZR1
+>> 24/59 
+MAN1
+>> 25/59 
+MAN1
+>> 26/59 
+MAN1
+>> 27/59 
+LIT1
+>> 28/59 
+ODC1
+>> 29/59 
+TEL1
+>> 30/59 
+BUK1
+>> 31/59 
+IDE1
+>> 32/59 
+CIF1
+>> 33/59 
+RZR1
+>> 34/59 
+CIF1
+>> 35/59 
+RZR1
+>> 36/59 
+ODC1
+>> 37/59 
+TEL1
+>> 38/59 
+BUK1
+>> 39/59 
+IDE1
+>> 40/59 
+IPE1
+>> 41/59 
+BUK1
+>> 42/59 
+IDE1
+>> 43/59 
+IPE1
+>> 44/59 
+AVI1
+>> 45/59 
+>> 46/59 
+BUK1
+>> 47/59 
+IDE1
+>> 48/59 
+IPE1
+>> 49/59 
+AVI1
+>> 50/59 
+OPA1
+>> 51/59 
+TEL1
+>> 52/59 
+BUK1
+>> 53/59 
+IDE1
+>> 54/59 
+BUK1
+>> 55/59 
+IDE1
+>> 56/59 
+IPR1
+>> 57/59 
+OEN1
+>> 58/59 
+PRO1
+>> Second pass of semantic calculation 
+>> 0/59 
+BUK2
+>> 1/59 
+IDE2
+>> 2/59 
+BUK2
+>> 3/59 
+IDE2
+>> 4/59 
+IPR2
+>> 5/59 
+OPR2
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX       START 0            Program starts
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register
+>> 6/59 
+BUK2
+>> 7/59 
+IDE2
+>> 8/59 
+CIF2
+>> 9/59 
+RZR2
+>> 10/59 
+CIF2
+>> 11/59 
+RZR2
+>> 12/59 
+MAN2
+>> 13/59 
+MAN2
+>> 14/59 
+MAN2
+>> 15/59 
+LIT2
+>> 16/59 
+ODC2
+>> 17/59 
+TEL2
+>> 18/59 
+BUK2
+>> 19/59 
+IDE2
+>> 20/59 
+CIF2
+>> 21/59 
+RZR2
+>> 22/59 
+CIF2
+>> 23/59 
+RZR2
+>> 24/59 
+MAN2
+>> 25/59 
+MAN2
+>> 26/59 
+MAN2
+>> 27/59 
+LIT2
+>> 28/59 
+ODC2
+>> 29/59 
+TEL2
+>> 30/59 
+BUK2
+>> 31/59 
+IDE2
+>> 32/59 
+CIF2
+>> 33/59 
+RZR2
+>> 34/59 
+CIF2
+>> 35/59 
+RZR2
+>> 36/59 
+ODC2
+>> 37/59 
+TEL2
+>> 38/59 
+BUK2
+>> 39/59 
+IDE2
+>> 40/59 
+IPE2
+>> 41/59 
+BUK2
+>> 42/59 
+IDE2
+>> 43/59 
+IPE2
+>> 44/59 
+AVI2
+---> void ZKARD()
+IASSTXT = 3
+ASS_CARD.BUFCARD =          L     RRAB,A       Load var into register
+>> 45/59 
+ZNK2
+>> 46/59 
+BUK2
+>> 47/59 
+IDE2
+>> 48/59 
+IPE2
+>> 49/59 
+AVI2
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD =          S     RRAB,B       Formation of intermediate value
+>> 50/59 
+OPA2
+---> void ZKARD()
+IASSTXT = 5
+ASS_CARD.BUFCARD =          ST    RRAB,D       Generate value of arithmetic express
+>> 51/59 
+TEL2
+>> 52/59 
+BUK2
+>> 53/59 
+IDE2
+>> 54/59 
+BUK2
+>> 55/59 
+IDE2
+>> 56/59 
+IPR2
+>> 57/59 
+OEN2
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD = A        DC    F'7.'        Defination of var
+---> void ZKARD()
+IASSTXT = 8
+ASS_CARD.BUFCARD = B        DC    F'4.'        Defination of var
+---> void ZKARD()
+IASSTXT = 9
+ASS_CARD.BUFCARD = D        DC    F'0.'        Defination of var
+---> void ZKARD()
+IASSTXT = 10
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK
+---> void ZKARD()
+IASSTXT = 11
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK
+---> void ZKARD()
+IASSTXT = 12
+ASS_CARD.BUFCARD =          END   EX           End of program
+>> 58/59 
+PRO2
+IASSTXT(lines) = 13
+--------- ASS ---------> 
+
+0 EX       START 0            Program starts
+1          BALR  RBASE,0      Load base register
+2          USING *,RBASE      Set base register
+3          L     RRAB,A       Load var into register
+4          S     RRAB,B       Formation of intermediate value
+5          ST    RRAB,D       Generate value of arithmetic express
+6          BCR   15,14        Exit from program
+7 A        DC    F'7.'        Defination of var
+8 B        DC    F'4.'        Defination of var
+9 D        DC    F'0.'        Defination of var
+10 RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX           End of program
+11 RRAB     EQU   5                                                                         END   EX           End of program
+12          END   EX           End of program
+<------------ASS ------
+
+
+
+ --------------------------------------- 2024-04-08 13:19:23 ---------------------------
+---> void compress_ISXTXT()
+Text after compress:
+EX:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(111B);DCL B BIN FIXED(31)INIT(100B);DCL D BIN FIXED(31);D=A-B;END EX;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>> First pass of semantic calculation 
+>> 0/59 
+BUK1
+>> 1/59 
+IDE1
+>> 2/59 
+BUK1
+>> 3/59 
+IDE1
+>> 4/59 
+IPR1
+>> 5/59 
+OPR1
+>> 6/59 
+BUK1
+>> 7/59 
+IDE1
+>> 8/59 
+CIF1
+>> 9/59 
+RZR1
+>> 10/59 
+CIF1
+>> 11/59 
+RZR1
+>> 12/59 
+MAN1
+>> 13/59 
+MAN1
+>> 14/59 
+MAN1
+>> 15/59 
+LIT1
+>> 16/59 
+ODC1
+>> 17/59 
+TEL1
+>> 18/59 
+BUK1
+>> 19/59 
+IDE1
+>> 20/59 
+CIF1
+>> 21/59 
+RZR1
+>> 22/59 
+CIF1
+>> 23/59 
+RZR1
+>> 24/59 
+MAN1
+>> 25/59 
+MAN1
+>> 26/59 
+MAN1
+>> 27/59 
+LIT1
+>> 28/59 
+ODC1
+>> 29/59 
+TEL1
+>> 30/59 
+BUK1
+>> 31/59 
+IDE1
+>> 32/59 
+CIF1
+>> 33/59 
+RZR1
+>> 34/59 
+CIF1
+>> 35/59 
+RZR1
+>> 36/59 
+ODC1
+>> 37/59 
+TEL1
+>> 38/59 
+BUK1
+>> 39/59 
+IDE1
+>> 40/59 
+IPE1
+>> 41/59 
+BUK1
+>> 42/59 
+IDE1
+>> 43/59 
+IPE1
+>> 44/59 
+AVI1
+>> 45/59 
+>> 46/59 
+BUK1
+>> 47/59 
+IDE1
+>> 48/59 
+IPE1
+>> 49/59 
+AVI1
+>> 50/59 
+OPA1
+>> 51/59 
+TEL1
+>> 52/59 
+BUK1
+>> 53/59 
+IDE1
+>> 54/59 
+BUK1
+>> 55/59 
+IDE1
+>> 56/59 
+IPR1
+>> 57/59 
+OEN1
+>> 58/59 
+PRO1
+>> Second pass of semantic calculation 
+>> 0/59 
+BUK2
+>> 1/59 
+IDE2
+>> 2/59 
+BUK2
+>> 3/59 
+IDE2
+>> 4/59 
+IPR2
+>> 5/59 
+OPR2
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX       START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+>> 6/59 
+BUK2
+>> 7/59 
+IDE2
+>> 8/59 
+CIF2
+>> 9/59 
+RZR2
+>> 10/59 
+CIF2
+>> 11/59 
+RZR2
+>> 12/59 
+MAN2
+>> 13/59 
+MAN2
+>> 14/59 
+MAN2
+>> 15/59 
+LIT2
+>> 16/59 
+ODC2
+>> 17/59 
+TEL2
+>> 18/59 
+BUK2
+>> 19/59 
+IDE2
+>> 20/59 
+CIF2
+>> 21/59 
+RZR2
+>> 22/59 
+CIF2
+>> 23/59 
+RZR2
+>> 24/59 
+MAN2
+>> 25/59 
+MAN2
+>> 26/59 
+MAN2
+>> 27/59 
+LIT2
+>> 28/59 
+ODC2
+>> 29/59 
+TEL2
+>> 30/59 
+BUK2
+>> 31/59 
+IDE2
+>> 32/59 
+CIF2
+>> 33/59 
+RZR2
+>> 34/59 
+CIF2
+>> 35/59 
+RZR2
+>> 36/59 
+ODC2
+>> 37/59 
+TEL2
+>> 38/59 
+BUK2
+>> 39/59 
+IDE2
+>> 40/59 
+IPE2
+>> 41/59 
+BUK2
+>> 42/59 
+IDE2
+>> 43/59 
+IPE2
+>> 44/59 
+AVI2
+---> void ZKARD()
+IASSTXT = 3
+ASS_CARD.BUFCARD =          L     RRAB,A       Load var into register <--- 
+>> 45/59 
+ZNK2
+>> 46/59 
+BUK2
+>> 47/59 
+IDE2
+>> 48/59 
+IPE2
+>> 49/59 
+AVI2
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD =          S     RRAB,B       Formation of intermediate value <--- 
+>> 50/59 
+OPA2
+---> void ZKARD()
+IASSTXT = 5
+ASS_CARD.BUFCARD =          ST    RRAB,D       Generate value of arithmetic express <--- 
+>> 51/59 
+TEL2
+>> 52/59 
+BUK2
+>> 53/59 
+IDE2
+>> 54/59 
+BUK2
+>> 55/59 
+IDE2
+>> 56/59 
+IPR2
+>> 57/59 
+OEN2
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD = A        DC    F'7.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 8
+ASS_CARD.BUFCARD = B        DC    F'4.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 9
+ASS_CARD.BUFCARD = D        DC    F'0.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 10
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 11
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 12
+ASS_CARD.BUFCARD =          END   EX           End of program <--- 
+>> 58/59 
+PRO2
+IASSTXT(lines) = 13
+--------- ASS ---------> 
+
+0	EX       START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	         L     RRAB,A       Load var into register
+4	         S     RRAB,B       Formation of intermediate value
+5	         ST    RRAB,D       Generate value of arithmetic express
+6	         BCR   15,14        Exit from program
+7	A        DC    F'7.'        Defination of var
+8	B        DC    F'4.'        Defination of var
+9	D        DC    F'0.'        Defination of var
+10	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX           End of program
+11	RRAB     EQU   5                                                                         END   EX           End of program
+12	         END   EX           End of program
+<------------ASS ------
+
+
+
+ --------------------------------------- 2024-04-08 13:27:42 ---------------------------
+---> void compress_ISXTXT()
+Text after compress:
+EX:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(111B);DCL B BIN FIXED(31)INIT(100B);DCL D BIN FIXED(31);D=A-B;END EX;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>> First pass of semantic calculation 
+>> 0/59 
+>> get_number_of_VXOD, operation code: BUK
+BUK1
+>> 1/59 
+>> get_number_of_VXOD, operation code: IDE
+IDE1
+>> 2/59 
+>> get_number_of_VXOD, operation code: BUK
+BUK1
+>> 3/59 
+>> get_number_of_VXOD, operation code: IDE
+IDE1
+>> 4/59 
+>> get_number_of_VXOD, operation code: IPR
+IPR1
+>> 5/59 
+>> get_number_of_VXOD, operation code: OPR
+OPR1
+>> 6/59 
+>> get_number_of_VXOD, operation code: BUK
+BUK1
+>> 7/59 
+>> get_number_of_VXOD, operation code: IDE
+IDE1
+>> 8/59 
+>> get_number_of_VXOD, operation code: CIF
+CIF1
+>> 9/59 
+>> get_number_of_VXOD, operation code: RZR
+RZR1
+>> 10/59 
+>> get_number_of_VXOD, operation code: CIF
+CIF1
+>> 11/59 
+>> get_number_of_VXOD, operation code: RZR
+RZR1
+>> 12/59 
+>> get_number_of_VXOD, operation code: MAN
+MAN1
+>> 13/59 
+>> get_number_of_VXOD, operation code: MAN
+MAN1
+>> 14/59 
+>> get_number_of_VXOD, operation code: MAN
+MAN1
+>> 15/59 
+>> get_number_of_VXOD, operation code: LIT
+LIT1
+>> 16/59 
+>> get_number_of_VXOD, operation code: ODC
+ODC1
+>> 17/59 
+>> get_number_of_VXOD, operation code: TEL
+TEL1
+>> 18/59 
+>> get_number_of_VXOD, operation code: BUK
+BUK1
+>> 19/59 
+>> get_number_of_VXOD, operation code: IDE
+IDE1
+>> 20/59 
+>> get_number_of_VXOD, operation code: CIF
+CIF1
+>> 21/59 
+>> get_number_of_VXOD, operation code: RZR
+RZR1
+>> 22/59 
+>> get_number_of_VXOD, operation code: CIF
+CIF1
+>> 23/59 
+>> get_number_of_VXOD, operation code: RZR
+RZR1
+>> 24/59 
+>> get_number_of_VXOD, operation code: MAN
+MAN1
+>> 25/59 
+>> get_number_of_VXOD, operation code: MAN
+MAN1
+>> 26/59 
+>> get_number_of_VXOD, operation code: MAN
+MAN1
+>> 27/59 
+>> get_number_of_VXOD, operation code: LIT
+LIT1
+>> 28/59 
+>> get_number_of_VXOD, operation code: ODC
+ODC1
+>> 29/59 
+>> get_number_of_VXOD, operation code: TEL
+TEL1
+>> 30/59 
+>> get_number_of_VXOD, operation code: BUK
+BUK1
+>> 31/59 
+>> get_number_of_VXOD, operation code: IDE
+IDE1
+>> 32/59 
+>> get_number_of_VXOD, operation code: CIF
+CIF1
+>> 33/59 
+>> get_number_of_VXOD, operation code: RZR
+RZR1
+>> 34/59 
+>> get_number_of_VXOD, operation code: CIF
+CIF1
+>> 35/59 
+>> get_number_of_VXOD, operation code: RZR
+RZR1
+>> 36/59 
+>> get_number_of_VXOD, operation code: ODC
+ODC1
+>> 37/59 
+>> get_number_of_VXOD, operation code: TEL
+TEL1
+>> 38/59 
+>> get_number_of_VXOD, operation code: BUK
+BUK1
+>> 39/59 
+>> get_number_of_VXOD, operation code: IDE
+IDE1
+>> 40/59 
+>> get_number_of_VXOD, operation code: IPE
+IPE1
+>> 41/59 
+>> get_number_of_VXOD, operation code: BUK
+BUK1
+>> 42/59 
+>> get_number_of_VXOD, operation code: IDE
+IDE1
+>> 43/59 
+>> get_number_of_VXOD, operation code: IPE
+IPE1
+>> 44/59 
+>> get_number_of_VXOD, operation code: AVI
+AVI1
+>> 45/59 
+>> get_number_of_VXOD, operation code: ZNK
+>> 46/59 
+>> get_number_of_VXOD, operation code: BUK
+BUK1
+>> 47/59 
+>> get_number_of_VXOD, operation code: IDE
+IDE1
+>> 48/59 
+>> get_number_of_VXOD, operation code: IPE
+IPE1
+>> 49/59 
+>> get_number_of_VXOD, operation code: AVI
+AVI1
+>> 50/59 
+>> get_number_of_VXOD, operation code: OPA
+OPA1
+>> 51/59 
+>> get_number_of_VXOD, operation code: TEL
+TEL1
+>> 52/59 
+>> get_number_of_VXOD, operation code: BUK
+BUK1
+>> 53/59 
+>> get_number_of_VXOD, operation code: IDE
+IDE1
+>> 54/59 
+>> get_number_of_VXOD, operation code: BUK
+BUK1
+>> 55/59 
+>> get_number_of_VXOD, operation code: IDE
+IDE1
+>> 56/59 
+>> get_number_of_VXOD, operation code: IPR
+IPR1
+>> 57/59 
+>> get_number_of_VXOD, operation code: OEN
+OEN1
+>> 58/59 
+>> get_number_of_VXOD, operation code: PRO
+PRO1
+>> Second pass of semantic calculation 
+>> 0/59 
+BUK2
+>> 1/59 
+IDE2
+>> 2/59 
+BUK2
+>> 3/59 
+IDE2
+>> 4/59 
+IPR2
+>> 5/59 
+OPR2
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX       START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+>> 6/59 
+BUK2
+>> 7/59 
+IDE2
+>> 8/59 
+CIF2
+>> 9/59 
+RZR2
+>> 10/59 
+CIF2
+>> 11/59 
+RZR2
+>> 12/59 
+MAN2
+>> 13/59 
+MAN2
+>> 14/59 
+MAN2
+>> 15/59 
+LIT2
+>> 16/59 
+ODC2
+>> 17/59 
+TEL2
+>> 18/59 
+BUK2
+>> 19/59 
+IDE2
+>> 20/59 
+CIF2
+>> 21/59 
+RZR2
+>> 22/59 
+CIF2
+>> 23/59 
+RZR2
+>> 24/59 
+MAN2
+>> 25/59 
+MAN2
+>> 26/59 
+MAN2
+>> 27/59 
+LIT2
+>> 28/59 
+ODC2
+>> 29/59 
+TEL2
+>> 30/59 
+BUK2
+>> 31/59 
+IDE2
+>> 32/59 
+CIF2
+>> 33/59 
+RZR2
+>> 34/59 
+CIF2
+>> 35/59 
+RZR2
+>> 36/59 
+ODC2
+>> 37/59 
+TEL2
+>> 38/59 
+BUK2
+>> 39/59 
+IDE2
+>> 40/59 
+IPE2
+>> 41/59 
+BUK2
+>> 42/59 
+IDE2
+>> 43/59 
+IPE2
+>> 44/59 
+AVI2
+---> void ZKARD()
+IASSTXT = 3
+ASS_CARD.BUFCARD =          L     RRAB,A       Load var into register <--- 
+>> 45/59 
+ZNK2
+>> 46/59 
+BUK2
+>> 47/59 
+IDE2
+>> 48/59 
+IPE2
+>> 49/59 
+AVI2
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD =          S     RRAB,B       Formation of intermediate value <--- 
+>> 50/59 
+OPA2
+---> void ZKARD()
+IASSTXT = 5
+ASS_CARD.BUFCARD =          ST    RRAB,D       Generate value of arithmetic express <--- 
+>> 51/59 
+TEL2
+>> 52/59 
+BUK2
+>> 53/59 
+IDE2
+>> 54/59 
+BUK2
+>> 55/59 
+IDE2
+>> 56/59 
+IPR2
+>> 57/59 
+OEN2
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD = A        DC    F'7.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 8
+ASS_CARD.BUFCARD = B        DC    F'4.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 9
+ASS_CARD.BUFCARD = D        DC    F'0.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 10
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 11
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 12
+ASS_CARD.BUFCARD =          END   EX           End of program <--- 
+>> 58/59 
+PRO2
+IASSTXT(lines) = 13
+--------- ASS ---------> 
+
+0	EX       START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	         L     RRAB,A       Load var into register
+4	         S     RRAB,B       Formation of intermediate value
+5	         ST    RRAB,D       Generate value of arithmetic express
+6	         BCR   15,14        Exit from program
+7	A        DC    F'7.'        Defination of var
+8	B        DC    F'4.'        Defination of var
+9	D        DC    F'0.'        Defination of var
+10	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX           End of program
+11	RRAB     EQU   5                                                                         END   EX           End of program
+12	         END   EX           End of program
+<------------ASS ------
+
+
+
+ --------------------------------------- 2024-04-08 13:28:41 ---------------------------
+---> void compress_ISXTXT()
+Text after compress:
+EX:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(111B);DCL B BIN FIXED(31)INIT(100B);DCL D BIN FIXED(31);D=A-B;END EX;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>> First pass of semantic calculation 
+>> 0/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+BUK1
+>> 1/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IDE1
+>> 2/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+BUK1
+>> 3/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IDE1
+>> 4/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+IPR1
+>> 5/59 
+>> get_number_of_VXOD, operation code: OPR, get from table: 11
+OPR1
+>> 6/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+BUK1
+>> 7/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IDE1
+>> 8/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+CIF1
+>> 9/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+RZR1
+>> 10/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+CIF1
+>> 11/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+RZR1
+>> 12/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 13/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 14/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 15/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+LIT1
+>> 16/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+ODC1
+>> 17/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+TEL1
+>> 18/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+BUK1
+>> 19/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IDE1
+>> 20/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+CIF1
+>> 21/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+RZR1
+>> 22/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+CIF1
+>> 23/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+RZR1
+>> 24/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 25/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 26/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 27/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+LIT1
+>> 28/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+ODC1
+>> 29/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+TEL1
+>> 30/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+BUK1
+>> 31/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IDE1
+>> 32/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+CIF1
+>> 33/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+RZR1
+>> 34/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+CIF1
+>> 35/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+RZR1
+>> 36/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+ODC1
+>> 37/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+TEL1
+>> 38/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+BUK1
+>> 39/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IDE1
+>> 40/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+IPE1
+>> 41/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+BUK1
+>> 42/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IDE1
+>> 43/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+IPE1
+>> 44/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+AVI1
+>> 45/59 
+>> get_number_of_VXOD, operation code: ZNK, get from table: 15
+>> 46/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+BUK1
+>> 47/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IDE1
+>> 48/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+IPE1
+>> 49/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+AVI1
+>> 50/59 
+>> get_number_of_VXOD, operation code: OPA, get from table: 10
+OPA1
+>> 51/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+TEL1
+>> 52/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+BUK1
+>> 53/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IDE1
+>> 54/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+BUK1
+>> 55/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IDE1
+>> 56/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+IPR1
+>> 57/59 
+>> get_number_of_VXOD, operation code: OEN, get from table: 9
+OEN1
+>> 58/59 
+>> get_number_of_VXOD, operation code: PRO, get from table: 12
+PRO1
+>> Second pass of semantic calculation 
+>> 0/59 
+BUK2
+>> 1/59 
+IDE2
+>> 2/59 
+BUK2
+>> 3/59 
+IDE2
+>> 4/59 
+IPR2
+>> 5/59 
+OPR2
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX       START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+>> 6/59 
+BUK2
+>> 7/59 
+IDE2
+>> 8/59 
+CIF2
+>> 9/59 
+RZR2
+>> 10/59 
+CIF2
+>> 11/59 
+RZR2
+>> 12/59 
+MAN2
+>> 13/59 
+MAN2
+>> 14/59 
+MAN2
+>> 15/59 
+LIT2
+>> 16/59 
+ODC2
+>> 17/59 
+TEL2
+>> 18/59 
+BUK2
+>> 19/59 
+IDE2
+>> 20/59 
+CIF2
+>> 21/59 
+RZR2
+>> 22/59 
+CIF2
+>> 23/59 
+RZR2
+>> 24/59 
+MAN2
+>> 25/59 
+MAN2
+>> 26/59 
+MAN2
+>> 27/59 
+LIT2
+>> 28/59 
+ODC2
+>> 29/59 
+TEL2
+>> 30/59 
+BUK2
+>> 31/59 
+IDE2
+>> 32/59 
+CIF2
+>> 33/59 
+RZR2
+>> 34/59 
+CIF2
+>> 35/59 
+RZR2
+>> 36/59 
+ODC2
+>> 37/59 
+TEL2
+>> 38/59 
+BUK2
+>> 39/59 
+IDE2
+>> 40/59 
+IPE2
+>> 41/59 
+BUK2
+>> 42/59 
+IDE2
+>> 43/59 
+IPE2
+>> 44/59 
+AVI2
+---> void ZKARD()
+IASSTXT = 3
+ASS_CARD.BUFCARD =          L     RRAB,A       Load var into register <--- 
+>> 45/59 
+ZNK2
+>> 46/59 
+BUK2
+>> 47/59 
+IDE2
+>> 48/59 
+IPE2
+>> 49/59 
+AVI2
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD =          S     RRAB,B       Formation of intermediate value <--- 
+>> 50/59 
+OPA2
+---> void ZKARD()
+IASSTXT = 5
+ASS_CARD.BUFCARD =          ST    RRAB,D       Generate value of arithmetic express <--- 
+>> 51/59 
+TEL2
+>> 52/59 
+BUK2
+>> 53/59 
+IDE2
+>> 54/59 
+BUK2
+>> 55/59 
+IDE2
+>> 56/59 
+IPR2
+>> 57/59 
+OEN2
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD = A        DC    F'7.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 8
+ASS_CARD.BUFCARD = B        DC    F'4.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 9
+ASS_CARD.BUFCARD = D        DC    F'0.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 10
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 11
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 12
+ASS_CARD.BUFCARD =          END   EX           End of program <--- 
+>> 58/59 
+PRO2
+IASSTXT(lines) = 13
+--------- ASS ---------> 
+
+0	EX       START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	         L     RRAB,A       Load var into register
+4	         S     RRAB,B       Formation of intermediate value
+5	         ST    RRAB,D       Generate value of arithmetic express
+6	         BCR   15,14        Exit from program
+7	A        DC    F'7.'        Defination of var
+8	B        DC    F'4.'        Defination of var
+9	D        DC    F'0.'        Defination of var
+10	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX           End of program
+11	RRAB     EQU   5                                                                         END   EX           End of program
+12	         END   EX           End of program
+<------------ASS ------
+
+
+
+ --------------------------------------- 2024-04-08 13:32:29 ---------------------------
+---> void compress_ISXTXT()
+Text after compress:
+EX:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(111B);DCL B BIN FIXED(31)INIT(100B);DCL D BIN FIXED(31);D=A-B;END EX;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>> First pass of semantic calculation 
+BUK1
+>> 0/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 1/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK1
+>> 2/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 3/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR1
+>> 4/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OPR1
+>> 5/59 
+>> get_number_of_VXOD, operation code: OPR, get from table: 11
+BUK1
+>> 6/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 7/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF1
+>> 8/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 9/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF1
+>> 10/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 11/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN1
+>> 12/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 13/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 14/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT1
+>> 15/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC1
+>> 16/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL1
+>> 17/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 18/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 19/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF1
+>> 20/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 21/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF1
+>> 22/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 23/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN1
+>> 24/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 25/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 26/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT1
+>> 27/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC1
+>> 28/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL1
+>> 29/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 30/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 31/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF1
+>> 32/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 33/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF1
+>> 34/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 35/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+ODC1
+>> 36/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL1
+>> 37/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 38/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 39/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE1
+>> 40/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+BUK1
+>> 41/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 42/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE1
+>> 43/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI1
+>> 44/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+>> 45/59 
+>> get_number_of_VXOD, operation code: ZNK, get from table: 15
+BUK1
+>> 46/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 47/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE1
+>> 48/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI1
+>> 49/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+OPA1
+>> 50/59 
+>> get_number_of_VXOD, operation code: OPA, get from table: 10
+TEL1
+>> 51/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 52/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 53/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK1
+>> 54/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 55/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR1
+>> 56/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OEN1
+>> 57/59 
+>> get_number_of_VXOD, operation code: OEN, get from table: 9
+PRO1
+>> 58/59 
+>> get_number_of_VXOD, operation code: PRO, get from table: 12
+>> Second pass of semantic calculation 
+BUK2
+>> 0/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 1/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK2
+>> 2/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 3/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR2
+>> 4/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OPR2
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX       START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+>> 5/59 
+>> get_number_of_VXOD, operation code: OPR, get from table: 11
+BUK2
+>> 6/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 7/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF2
+>> 8/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 9/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF2
+>> 10/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 11/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN2
+>> 12/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 13/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 14/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT2
+>> 15/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC2
+>> 16/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL2
+>> 17/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 18/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 19/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF2
+>> 20/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 21/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF2
+>> 22/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 23/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN2
+>> 24/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 25/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 26/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT2
+>> 27/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC2
+>> 28/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL2
+>> 29/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 30/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 31/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF2
+>> 32/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 33/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF2
+>> 34/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 35/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+ODC2
+>> 36/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL2
+>> 37/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 38/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 39/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE2
+>> 40/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+BUK2
+>> 41/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 42/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE2
+>> 43/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI2
+---> void ZKARD()
+IASSTXT = 3
+ASS_CARD.BUFCARD =          L     RRAB,A       Load var into register <--- 
+>> 44/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+ZNK2
+>> 45/59 
+>> get_number_of_VXOD, operation code: ZNK, get from table: 15
+BUK2
+>> 46/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 47/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE2
+>> 48/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI2
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD =          S     RRAB,B       Formation of intermediate value <--- 
+>> 49/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+OPA2
+---> void ZKARD()
+IASSTXT = 5
+ASS_CARD.BUFCARD =          ST    RRAB,D       Generate value of arithmetic express <--- 
+>> 50/59 
+>> get_number_of_VXOD, operation code: OPA, get from table: 10
+TEL2
+>> 51/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 52/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 53/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK2
+>> 54/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 55/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR2
+>> 56/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OEN2
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD = A        DC    F'7.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 8
+ASS_CARD.BUFCARD = B        DC    F'4.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 9
+ASS_CARD.BUFCARD = D        DC    F'0.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 10
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 11
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 12
+ASS_CARD.BUFCARD =          END   EX           End of program <--- 
+>> 57/59 
+>> get_number_of_VXOD, operation code: OEN, get from table: 9
+PRO2
+IASSTXT(lines) = 13
+--------- ASS ---------> 
+
+0	EX       START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	         L     RRAB,A       Load var into register
+4	         S     RRAB,B       Formation of intermediate value
+5	         ST    RRAB,D       Generate value of arithmetic express
+6	         BCR   15,14        Exit from program
+7	A        DC    F'7.'        Defination of var
+8	B        DC    F'4.'        Defination of var
+9	D        DC    F'0.'        Defination of var
+10	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX           End of program
+11	RRAB     EQU   5                                                                         END   EX           End of program
+12	         END   EX           End of program
+<------------ASS ------
+
+>> 58/59 
+>> get_number_of_VXOD, operation code: PRO, get from table: 12
+
+
+ --------------------------------------- 2024-04-08 13:35:33 ---------------------------
+---> void compress_ISXTXT()
+Text after compress:
+EX:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(111B);DCL B BIN FIXED(31)INIT(100B);DCL D BIN FIXED(31);D=A-B;END EX;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>> First pass of semantic calculation 
+BUK1
+>> 0/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 1/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK1
+>> 2/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 3/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR1
+>> 4/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OPR1
+>> 5/59 
+>> get_number_of_VXOD, operation code: OPR, get from table: 11
+BUK1
+>> 6/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 7/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF1
+>> 8/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 9/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF1
+>> 10/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 11/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN1
+>> 12/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 13/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 14/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT1
+>> 15/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC1
+>> 16/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL1
+>> 17/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 18/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 19/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF1
+>> 20/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 21/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF1
+>> 22/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 23/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN1
+>> 24/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 25/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 26/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT1
+>> 27/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC1
+>> 28/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL1
+>> 29/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 30/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 31/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF1
+>> 32/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 33/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF1
+>> 34/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 35/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+ODC1
+>> 36/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL1
+>> 37/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 38/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 39/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE1
+>> 40/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+BUK1
+>> 41/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 42/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE1
+>> 43/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI1
+>> 44/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+>> 45/59 
+>> get_number_of_VXOD, operation code: ZNK, get from table: 15
+BUK1
+>> 46/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 47/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE1
+>> 48/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI1
+>> 49/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+OPA1
+>> 50/59 
+>> get_number_of_VXOD, operation code: OPA, get from table: 10
+TEL1
+>> 51/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 52/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 53/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK1
+>> 54/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 55/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR1
+>> 56/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OEN1
+>> 57/59 
+>> get_number_of_VXOD, operation code: OEN, get from table: 9
+PRO1
+>> 58/59 
+>> get_number_of_VXOD, operation code: PRO, get from table: 12
+>> Second pass of semantic calculation 
+BUK2
+>> 0/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 1/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK2
+>> 2/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 3/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR2
+>> 4/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OPR2
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX       START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+>> 5/59 
+>> get_number_of_VXOD, operation code: OPR, get from table: 11
+BUK2
+>> 6/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 7/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF2
+>> 8/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 9/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF2
+>> 10/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 11/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN2
+>> 12/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 13/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 14/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT2
+>> 15/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC2
+>> 16/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL2
+>> 17/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 18/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 19/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF2
+>> 20/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 21/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF2
+>> 22/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 23/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN2
+>> 24/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 25/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 26/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT2
+>> 27/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC2
+>> 28/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL2
+>> 29/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 30/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 31/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF2
+>> 32/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 33/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF2
+>> 34/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 35/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+ODC2
+>> 36/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL2
+>> 37/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 38/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 39/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE2
+>> 40/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+BUK2
+>> 41/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 42/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE2
+>> 43/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI2
+---> void ZKARD()
+IASSTXT = 3
+ASS_CARD.BUFCARD =          L     RRAB,A       Load var into register <--- 
+>> 44/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+ZNK2
+>> 45/59 
+>> get_number_of_VXOD, operation code: ZNK, get from table: 15
+BUK2
+>> 46/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 47/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE2
+>> 48/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI2
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD =          S     RRAB,B       Formation of intermediate value <--- 
+>> 49/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+OPA2
+---> void ZKARD()
+IASSTXT = 5
+ASS_CARD.BUFCARD =          ST    RRAB,D       Generate value of arithmetic express <--- 
+>> 50/59 
+>> get_number_of_VXOD, operation code: OPA, get from table: 10
+TEL2
+>> 51/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 52/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 53/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK2
+>> 54/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 55/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR2
+>> 56/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OEN2
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD = A        DC    F'7.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 8
+ASS_CARD.BUFCARD = B        DC    F'4.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 9
+ASS_CARD.BUFCARD = D        DC    F'0.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 10
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 11
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 12
+ASS_CARD.BUFCARD =          END   EX           End of program <--- 
+>> 57/59 
+>> get_number_of_VXOD, operation code: OEN, get from table: 9
+PRO2
+IASSTXT(lines) = 13
+--------- ASS ---------> 
+
+0	EX       START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	         L     RRAB,A       Load var into register
+4	         S     RRAB,B       Formation of intermediate value
+5	         ST    RRAB,D       Generate value of arithmetic express
+6	         BCR   15,14        Exit from program
+7	A        DC    F'7.'        Defination of var
+8	B        DC    F'4.'        Defination of var
+9	D        DC    F'0.'        Defination of var
+10	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX           End of program
+11	RRAB     EQU   5                                                                         END   EX           End of program
+12	         END   EX           End of program
+<------------ASS ------
+
+>> 58/59 
+>> get_number_of_VXOD, operation code: PRO, get from table: 12
+
+
+ --------------------------------------- 2024-04-08 13:37:51 ---------------------------
+---> void compress_ISXTXT()
+Text after compress:
+EX:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(111B);DCL B BIN FIXED(31)INIT(100B);DCL D BIN FIXED(31);D=A-B;END EX;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>>>>>>>>>>>>>>>>>>>>> First pass of semantic calculation <<<<<<<<<<<<<<<<<<<<<
+BUK1
+>> 0/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 1/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK1
+>> 2/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 3/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR1
+>> 4/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OPR1
+>> 5/59 
+>> get_number_of_VXOD, operation code: OPR, get from table: 11
+BUK1
+>> 6/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 7/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF1
+>> 8/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 9/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF1
+>> 10/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 11/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN1
+>> 12/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 13/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 14/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT1
+>> 15/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC1
+>> 16/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL1
+>> 17/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 18/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 19/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF1
+>> 20/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 21/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF1
+>> 22/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 23/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN1
+>> 24/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 25/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 26/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT1
+>> 27/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC1
+>> 28/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL1
+>> 29/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 30/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 31/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF1
+>> 32/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 33/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF1
+>> 34/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 35/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+ODC1
+>> 36/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL1
+>> 37/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 38/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 39/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE1
+>> 40/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+BUK1
+>> 41/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 42/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE1
+>> 43/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI1
+>> 44/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+>> 45/59 
+>> get_number_of_VXOD, operation code: ZNK, get from table: 15
+BUK1
+>> 46/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 47/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE1
+>> 48/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI1
+>> 49/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+OPA1
+>> 50/59 
+>> get_number_of_VXOD, operation code: OPA, get from table: 10
+TEL1
+>> 51/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 52/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 53/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK1
+>> 54/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 55/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR1
+>> 56/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OEN1
+>> 57/59 
+>> get_number_of_VXOD, operation code: OEN, get from table: 9
+PRO1
+>> 58/59 
+>> get_number_of_VXOD, operation code: PRO, get from table: 12
+>>>>>>>>>>>>>>>>>>>>> Second pass of semantic calculation <<<<<<<<<<<<<<<<<<<<<
+BUK2
+>> 0/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 1/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK2
+>> 2/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 3/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR2
+>> 4/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OPR2
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX       START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+>> 5/59 
+>> get_number_of_VXOD, operation code: OPR, get from table: 11
+BUK2
+>> 6/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 7/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF2
+>> 8/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 9/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF2
+>> 10/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 11/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN2
+>> 12/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 13/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 14/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT2
+>> 15/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC2
+>> 16/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL2
+>> 17/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 18/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 19/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF2
+>> 20/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 21/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF2
+>> 22/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 23/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN2
+>> 24/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 25/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 26/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT2
+>> 27/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC2
+>> 28/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL2
+>> 29/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 30/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 31/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF2
+>> 32/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 33/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF2
+>> 34/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 35/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+ODC2
+>> 36/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL2
+>> 37/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 38/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 39/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE2
+>> 40/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+BUK2
+>> 41/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 42/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE2
+>> 43/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI2
+---> void ZKARD()
+IASSTXT = 3
+ASS_CARD.BUFCARD =          L     RRAB,A       Load var into register <--- 
+>> 44/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+ZNK2
+>> 45/59 
+>> get_number_of_VXOD, operation code: ZNK, get from table: 15
+BUK2
+>> 46/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 47/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE2
+>> 48/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI2
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD =          S     RRAB,B       Formation of intermediate value <--- 
+>> 49/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+OPA2
+---> void ZKARD()
+IASSTXT = 5
+ASS_CARD.BUFCARD =          ST    RRAB,D       Generate value of arithmetic express <--- 
+>> 50/59 
+>> get_number_of_VXOD, operation code: OPA, get from table: 10
+TEL2
+>> 51/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 52/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 53/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK2
+>> 54/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 55/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR2
+>> 56/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OEN2
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD = A        DC    F'7.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 8
+ASS_CARD.BUFCARD = B        DC    F'4.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 9
+ASS_CARD.BUFCARD = D        DC    F'0.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 10
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 11
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 12
+ASS_CARD.BUFCARD =          END   EX           End of program <--- 
+>> 57/59 
+>> get_number_of_VXOD, operation code: OEN, get from table: 9
+PRO2
+IASSTXT(lines) = 13
+--------- ASS ---------> 
+
+0	EX       START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	         L     RRAB,A       Load var into register
+4	         S     RRAB,B       Formation of intermediate value
+5	         ST    RRAB,D       Generate value of arithmetic express
+6	         BCR   15,14        Exit from program
+7	A        DC    F'7.'        Defination of var
+8	B        DC    F'4.'        Defination of var
+9	D        DC    F'0.'        Defination of var
+10	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX           End of program
+11	RRAB     EQU   5                                                                         END   EX           End of program
+12	         END   EX           End of program
+<------------ASS ------
+
+>> 58/59 
+>> get_number_of_VXOD, operation code: PRO, get from table: 12
+
+
+ --------------------------------------- 2024-04-08 13:40:51 ---------------------------
+---> void compress_ISXTXT()
+Text after compress:
+EX:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(111B);DCL B BIN FIXED(31)INIT(100B);DCL D BIN FIXED(31);D=A-B;END EX;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>>>>>>>>>>>>>>>>>>>>> First pass of semantic calculation <<<<<<<<<<<<<<<<<<<<<
+BUK1
+>> 0/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 1/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK1
+>> 2/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 3/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR1
+>> 4/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OPR1
+>> 5/59 
+>> get_number_of_VXOD, operation code: OPR, get from table: 11
+BUK1
+>> 6/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 7/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF1
+>> 8/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 9/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF1
+>> 10/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 11/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN1
+>> 12/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 13/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 14/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT1
+>> 15/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC1
+>> 16/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL1
+>> 17/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 18/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 19/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF1
+>> 20/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 21/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF1
+>> 22/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 23/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN1
+>> 24/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 25/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 26/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT1
+>> 27/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC1
+>> 28/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL1
+>> 29/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 30/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 31/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF1
+>> 32/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 33/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF1
+>> 34/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 35/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+ODC1
+>> 36/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL1
+>> 37/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 38/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 39/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE1
+>> 40/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+BUK1
+>> 41/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 42/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE1
+>> 43/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI1
+>> 44/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+>> 45/59 
+>> get_number_of_VXOD, operation code: ZNK, get from table: 15
+BUK1
+>> 46/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 47/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE1
+>> 48/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI1
+>> 49/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+OPA1
+>> 50/59 
+>> get_number_of_VXOD, operation code: OPA, get from table: 10
+TEL1
+>> 51/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 52/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 53/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK1
+>> 54/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 55/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR1
+>> 56/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OEN1
+>> 57/59 
+>> get_number_of_VXOD, operation code: OEN, get from table: 9
+PRO1
+>> 58/59 
+>> get_number_of_VXOD, operation code: PRO, get from table: 12
+>>>>>>>>>>>>>>>>>>>>> Second pass of semantic calculation <<<<<<<<<<<<<<<<<<<<<
+BUK2
+>> 0/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 1/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK2
+>> 2/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 3/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR2
+>> 4/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OPR2
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX       START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+>> 5/59 
+>> get_number_of_VXOD, operation code: OPR, get from table: 11
+BUK2
+>> 6/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 7/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF2
+>> 8/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 9/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF2
+>> 10/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 11/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN2
+>> 12/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 13/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 14/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT2
+>> 15/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC2
+>> 16/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL2
+>> 17/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 18/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 19/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF2
+>> 20/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 21/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF2
+>> 22/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 23/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN2
+>> 24/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 25/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 26/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT2
+>> 27/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC2
+>> 28/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL2
+>> 29/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 30/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 31/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF2
+>> 32/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 33/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF2
+>> 34/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 35/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+ODC2
+>> 36/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL2
+>> 37/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 38/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 39/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE2
+>> 40/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+BUK2
+>> 41/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 42/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE2
+>> 43/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI2
+---> void ZKARD()
+IASSTXT = 3
+ASS_CARD.BUFCARD =          L     RRAB,A       Load var into register <--- 
+>> 44/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+ZNK2
+>> 45/59 
+>> get_number_of_VXOD, operation code: ZNK, get from table: 15
+BUK2
+>> 46/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 47/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE2
+>> 48/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI2
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD =          S     RRAB,B       Formation of intermediate value <--- 
+>> 49/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+OPA2
+---> void ZKARD()
+IASSTXT = 5
+ASS_CARD.BUFCARD =          ST    RRAB,D       Generate value of arithmetic express <--- 
+>> 50/59 
+>> get_number_of_VXOD, operation code: OPA, get from table: 10
+TEL2
+>> 51/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 52/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 53/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK2
+>> 54/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 55/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR2
+>> 56/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OEN2
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD = A        DC    F'7.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 8
+ASS_CARD.BUFCARD = B        DC    F'4.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 9
+ASS_CARD.BUFCARD = D        DC    F'0.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 10
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 11
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 12
+ASS_CARD.BUFCARD =          END   EX           End of program <--- 
+>> 57/59 
+>> get_number_of_VXOD, operation code: OEN, get from table: 9
+PRO2
+IASSTXT(lines) = 13
+--------- ASS ---------> 
+
+0	EX       START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	         L     RRAB,A       Load var into register
+4	         S     RRAB,B       Formation of intermediate value
+5	         ST    RRAB,D       Generate value of arithmetic express
+6	         BCR   15,14        Exit from program
+7	A        DC    F'7.'        Defination of var
+8	B        DC    F'4.'        Defination of var
+9	D        DC    F'0.'        Defination of var
+10	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX           End of program
+11	RRAB     EQU   5                                                                         END   EX           End of program
+12	         END   EX           End of program
+<------------ASS ------
+
+>> 58/59 
+>> get_number_of_VXOD, operation code: PRO, get from table: 12
+
+
+ --------------------------------------- 2024-04-17 10:19:32 ---------------------------
+---> void compress_ISXTXT()
+Text after compress:
+EX:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(111B);DCL B BIN FIXED(31)INIT(100B);DCL D BIN FIXED(31);D=A-B;END EX;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>>>>>>>>>>>>>>>>>>>>> First pass of semantic calculation <<<<<<<<<<<<<<<<<<<<<
+BUK1
+>> 0/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 1/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK1
+>> 2/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 3/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR1
+>> 4/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OPR1
+>> 5/59 
+>> get_number_of_VXOD, operation code: OPR, get from table: 11
+BUK1
+>> 6/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 7/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF1
+>> 8/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 9/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF1
+>> 10/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 11/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN1
+>> 12/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 13/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 14/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT1
+>> 15/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC1
+>> 16/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL1
+>> 17/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 18/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 19/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF1
+>> 20/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 21/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF1
+>> 22/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 23/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN1
+>> 24/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 25/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>> 26/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT1
+>> 27/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC1
+>> 28/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL1
+>> 29/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 30/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 31/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF1
+>> 32/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 33/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF1
+>> 34/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR1
+>> 35/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+ODC1
+>> 36/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL1
+>> 37/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 38/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 39/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE1
+>> 40/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+BUK1
+>> 41/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 42/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE1
+>> 43/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI1
+>> 44/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+>> 45/59 
+>> get_number_of_VXOD, operation code: ZNK, get from table: 15
+BUK1
+>> 46/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 47/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE1
+>> 48/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI1
+>> 49/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+OPA1
+>> 50/59 
+>> get_number_of_VXOD, operation code: OPA, get from table: 10
+TEL1
+>> 51/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK1
+>> 52/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 53/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK1
+>> 54/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE1
+>> 55/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR1
+>> 56/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OEN1
+>> 57/59 
+>> get_number_of_VXOD, operation code: OEN, get from table: 9
+PRO1
+>> 58/59 
+>> get_number_of_VXOD, operation code: PRO, get from table: 12
+>>>>>>>>>>>>>>>>>>>>> Second pass of semantic calculation <<<<<<<<<<<<<<<<<<<<<
+BUK2
+>> 0/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 1/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK2
+>> 2/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 3/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR2
+>> 4/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OPR2
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX       START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+>> 5/59 
+>> get_number_of_VXOD, operation code: OPR, get from table: 11
+BUK2
+>> 6/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 7/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF2
+>> 8/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 9/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF2
+>> 10/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 11/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN2
+>> 12/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 13/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 14/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT2
+>> 15/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC2
+>> 16/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL2
+>> 17/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 18/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 19/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF2
+>> 20/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 21/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF2
+>> 22/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 23/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+MAN2
+>> 24/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 25/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+MAN2
+>> 26/59 
+>> get_number_of_VXOD, operation code: MAN, get from table: 7
+LIT2
+>> 27/59 
+>> get_number_of_VXOD, operation code: LIT, get from table: 6
+ODC2
+>> 28/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL2
+>> 29/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 30/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 31/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+CIF2
+>> 32/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 33/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+CIF2
+>> 34/59 
+>> get_number_of_VXOD, operation code: CIF, get from table: 2
+RZR2
+>> 35/59 
+>> get_number_of_VXOD, operation code: RZR, get from table: 13
+ODC2
+>> 36/59 
+>> get_number_of_VXOD, operation code: ODC, get from table: 8
+TEL2
+>> 37/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 38/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 39/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE2
+>> 40/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+BUK2
+>> 41/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 42/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE2
+>> 43/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI2
+---> void ZKARD()
+IASSTXT = 3
+ASS_CARD.BUFCARD =          L     RRAB,A       Load var into register <--- 
+>> 44/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+ZNK2
+>> 45/59 
+>> get_number_of_VXOD, operation code: ZNK, get from table: 15
+BUK2
+>> 46/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 47/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPE2
+>> 48/59 
+>> get_number_of_VXOD, operation code: IPE, get from table: 4
+AVI2
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD =          S     RRAB,B       Formation of intermediate value <--- 
+>> 49/59 
+>> get_number_of_VXOD, operation code: AVI, get from table: 0
+OPA2
+---> void ZKARD()
+IASSTXT = 5
+ASS_CARD.BUFCARD =          ST    RRAB,D       Generate value of arithmetic express <--- 
+>> 50/59 
+>> get_number_of_VXOD, operation code: OPA, get from table: 10
+TEL2
+>> 51/59 
+>> get_number_of_VXOD, operation code: TEL, get from table: 14
+BUK2
+>> 52/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 53/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+BUK2
+>> 54/59 
+>> get_number_of_VXOD, operation code: BUK, get from table: 1
+IDE2
+>> 55/59 
+>> get_number_of_VXOD, operation code: IDE, get from table: 3
+IPR2
+>> 56/59 
+>> get_number_of_VXOD, operation code: IPR, get from table: 5
+OEN2
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD = A        DC    F'7.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 8
+ASS_CARD.BUFCARD = B        DC    F'4.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 9
+ASS_CARD.BUFCARD = D        DC    F'0.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 10
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 11
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 12
+ASS_CARD.BUFCARD =          END   EX           End of program <--- 
+>> 57/59 
+>> get_number_of_VXOD, operation code: OEN, get from table: 9
+PRO2
+IASSTXT(lines) = 13
+--------- ASS ---------> 
+
+0	EX       START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	         L     RRAB,A       Load var into register
+4	         S     RRAB,B       Formation of intermediate value
+5	         ST    RRAB,D       Generate value of arithmetic express
+6	         BCR   15,14        Exit from program
+7	A        DC    F'7.'        Defination of var
+8	B        DC    F'4.'        Defination of var
+9	D        DC    F'0.'        Defination of var
+10	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX           End of program
+11	RRAB     EQU   5                                                                         END   EX           End of program
+12	         END   EX           End of program
+<------------ASS ------
+
+>> 58/59 
+>> get_number_of_VXOD, operation code: PRO, get from table: 12

@@ -114,9 +114,9 @@ struct
 
 struct
 {
-  char CEL1[4];
-  int  CEL2;
-  int  CEL3;
+  char CEL1[4]; /* 非终结符 */
+  int  CEL2;    /* 在原文本中的开头坐标 */
+  int  CEL3;    /* 在入口表中的索引 */
 } CEL[NCEL];
 
 /*
@@ -664,10 +664,11 @@ void mdst(char* T1, int T2, int T3, int T4, int T5)
 
 /*..........................................................................*/
               /* п р о г р а м м а      */
-int get_number_of_VXOD(const char* T1, int T2)                     /* вычисления порядкового */
+int idx_of_VXOD(const char* T1, int T2)                     /* вычисления порядкового */
 /* номера строки в табл.  */
 /* VXOD, соответствующей  */
 /* строке-параметру функц.*/
+/* 主要作用是在一个名为 VXOD 的表格中查找与给定字符串 T1 完全匹配的条目，并返回该条目的索引 */
 {
   int k;
 
@@ -703,12 +704,12 @@ L1:
   J = 1;
   mcel("PRO", I, 999);
 
-  if (!TPR[get_number_of_VXOD(&STROKA[I], 1)][get_number_of_VXOD("PRO", 3)])
+  if (!TPR[idx_of_VXOD(&STROKA[I], 1)][idx_of_VXOD("PRO", 3)])
     return 1;
 /*根据所选假设对非终结符进行投影(проецирования нетерминала по выбранной гипотезе )*/
 L2: /*Вход в граф */
 
-  J = VXOD[get_number_of_VXOD(&STROKA[I], 1)].VX;
+  J = VXOD[idx_of_VXOD(&STROKA[I], 1)].VX;
 
 L3: /* Проверка терм. 1 */
 
@@ -721,7 +722,7 @@ L31:
   if (I > I4)
     I4 = I;
 
-  if (VXOD[get_number_of_VXOD(SINT[J].DER, 3)].TYP == 'T')
+  if (VXOD[idx_of_VXOD(SINT[J].DER, 3)].TYP == 'T')
   {
     if (STROKA[I] == SINT[J].DER[0])
       goto L3;
@@ -740,8 +741,8 @@ L4:
       if (!strcmp(CEL[K - 1].CEL1, "PRO"))
         return 0; // 成功返回
     L5:
-      if (TPR[get_number_of_VXOD(CEL[K - 1].CEL1, 3)][get_number_of_VXOD(CEL[K - 1].CEL1, 3)]) {
-        J = VXOD[get_number_of_VXOD(CEL[K - 1].CEL1, 3)].VX;
+      if (TPR[idx_of_VXOD(CEL[K - 1].CEL1, 3)][idx_of_VXOD(CEL[K - 1].CEL1, 3)]) {
+        J = VXOD[idx_of_VXOD(CEL[K - 1].CEL1, 3)].VX;
         goto L3;
       }
 
@@ -751,15 +752,15 @@ L4:
       goto L3;
     }
 
-    if (!TPR[get_number_of_VXOD(SINT[J].DER, 3)][get_number_of_VXOD(CEL[K - 1].CEL1, 3)])
+    if (!TPR[idx_of_VXOD(SINT[J].DER, 3)][idx_of_VXOD(CEL[K - 1].CEL1, 3)])
       goto L9; // Обратный поиск 2
 
     mdst(SINT[J].DER, CEL[K - 1].CEL2, 0, I, J);
-    J = VXOD[get_number_of_VXOD(SINT[J].DER, 3)].VX;
+    J = VXOD[idx_of_VXOD(SINT[J].DER, 3)].VX;
     goto L3;
   }
 
-  if (!TPR[get_number_of_VXOD(&STROKA[I], 1)][get_number_of_VXOD(SINT[J].DER, 3)])
+  if (!TPR[idx_of_VXOD(&STROKA[I], 1)][idx_of_VXOD(SINT[J].DER, 3)])
     goto L8;
 
   mcel(SINT[J].DER, I, J);
@@ -779,9 +780,9 @@ L9: /* Обратный поиск 2 */
 
   J = SINT[J].PRED;
 
-  if( (VXOD[get_number_of_VXOD(SINT[J].DER, 3)].TYP == 'N')
-      &&
-      (SINT[J].PRED > 0) ) {
+  if( (VXOD[idx_of_VXOD(SINT[J].DER, 3)].TYP == 'N')
+      && (SINT[J].PRED > 0) ) 
+  {
     mcel(DST[L - 1].DST1, DST[L - 1].DST2, DST[L - 1].DST3);
 
   L10: /* Блок перебора гипотез (продолжение 1) */
@@ -791,9 +792,9 @@ L9: /* Обратный поиск 2 */
     goto L9;
   }
 
-  if( (VXOD[get_number_of_VXOD(SINT[J].DER, 3)].TYP == 'N')
-      &&
-      (SINT[J].PRED == 0) ) {
+  if( (VXOD[idx_of_VXOD(SINT[J].DER, 3)].TYP == 'N')
+      && (SINT[J].PRED == 0) ) 
+  {
     if (!strcmp(CEL[K - 1].CEL1, DST[L - 1].DST1))
       goto L6;
     else
@@ -895,8 +896,8 @@ void ZKARD() /* записи очередной сгене-*/
 {            /* рированной записи вы-  */
              /* ходного файла в массив */
              /* ASSTXT                 */
-  fprintf(fp_out, "%s\n", "---> void ZKARD()");
-  fprintf(fp_out, "%s = %d\n", "IASSTXT", IASSTXT);
+  fprintf(fp_out, "%s\n", "---> void ZKARD()");  
+  fprintf(fp_out, "%s = %d\n", "IASSTXT", IASSTXT);  
   fprintf(fp_out, "%s = %s <--- \n", "ASS_CARD.BUFCARD", ASS_CARD.BUFCARD);
   fflush(fp_out);
 
@@ -1589,7 +1590,7 @@ int OEN2()
   /* назначения             */
 
   memcpy(ASS_CARD._BUFCARD.METKA, "RBASE", 5); /* формирование EQU-псев- */
-  memcpy(ASS_CARD._BUFCARD.OPERAC, "EQU", 3);   /* дооперации определения */
+  memcpy(ASS_CARD._BUFCARD.OPERAC, "EQU", 3);   /* дооперации определения */ /* 这里似乎被执行了两次？*/
   memcpy(ASS_CARD._BUFCARD.OPERAND, "15", 2);  /* номера базового регистра общего назначения*/  
   /*           и            */
   ZKARD();                                       /* запоминание ее         */
@@ -1738,12 +1739,13 @@ int OPR2()
 
 // TODO 打印错误
 void print_ASSTXT_to_file() {  
+  fprintf(fp_out, "\n%s \n", "SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT... ");
   fprintf(fp_out, "%s = %d\n", "IASSTXT(lines)", IASSTXT);  
   fprintf(fp_out, "%s\n", "--------- ASS ---------> \n");
   for (int i = 0; i < IASSTXT; i++) {    
     fprintf(fp_out, "%d\t%s\n", i, ASSTXT[i]);
   }
-  fprintf(fp_out, "%s\n", "<------------ASS ------\n");
+  fprintf(fp_out, "\n%s\n", "<------------ASS ------\n");
   fflush(fp_out);
 }
 
@@ -1825,7 +1827,7 @@ int ZNK2()
 }
 
 /*..........................................................................*/
-/* 将分析后的源代码结构转换为机器代码或中间表示代码 */
+/* 将分析后的源代码结构转换为机器代码或中间表示代码。分两趟进行，只在第二趟写出中间代码。 */
               /*  п р о г р а м м а     */
               /* управления абстрактной */
               /* ЭВМ  -  семантического */
@@ -1866,39 +1868,42 @@ int gen_COD() /*интерпретации строк сте-*/
   
   // was:
   //for (I2 = 0; I2 < L; I2++)                    /* организация первого прохода семантического вычисления */
-  //  if ((NOSH = FUN[get_number_of_VXOD(DST[I2].DST1, 3)][0]()) != 0)
+  //  if ((NOSH = FUN[idx_of_VXOD(DST[I2].DST1, 3)][0]()) != 0)
   //    return (NOSH); /* выход из программы по ошибке*/      
   //  for (I2 = 0; I2 < L; I2++)                    /* организация второго прохода семантического вычисления */
-  //    if ((NOSH = FUN[get_number_of_VXOD(DST[I2].DST1, 3)][1]()) != 0)
+  //    if ((NOSH = FUN[idx_of_VXOD(DST[I2].DST1, 3)][1]()) != 0)
   //      return (NOSH);       /* выход из программы по ошибке*/          
 
-  // ---------- Li：--------------
-  fprintf(fp_out, ">>>>>>>>>>>>>>>>>>>>> %s <<<<<<<<<<<<<<<<<<<<<\n", "First pass of semantic calculation");
-  fflush(fp_out);
+    // ---------- Li：--------------
+    // 第一趟
+    fprintf(fp_out, ">>>>>>>>>>>>>>>>>>>>> %s <<<<<<<<<<<<<<<<<<<<<\n", "First pass of semantic calculation");
+    fflush(fp_out);
     for (I2 = 0; I2 < L; I2++) {
       int tmp = 0;
-      tmp = get_number_of_VXOD(DST[I2].DST1, 3);
+      tmp = idx_of_VXOD(DST[I2].DST1, 3);
       NOSH = FUN[tmp][0]();
       if (NOSH != 0) {
         return NOSH;
       }
 
       fprintf(fp_out, ">> %d/%d \n", I2, L);      
-      fprintf(fp_out, ">> %s, operation code: %s, get from table: %d\n", "get_number_of_VXOD", DST[I2].DST1, tmp);
+      fprintf(fp_out, ">> %s, operation code: %s, get from table: %d\n", "idx_of_VXOD", DST[I2].DST1, tmp);
       fflush(fp_out);  
     }
+    
+    // 第二趟
     fprintf(fp_out, ">>>>>>>>>>>>>>>>>>>>> %s <<<<<<<<<<<<<<<<<<<<<\n", "Second pass of semantic calculation");
     fflush(fp_out);
     for (I2 = 0; I2 < L; I2++) {
       int tmp = 0;
-      tmp = get_number_of_VXOD(DST[I2].DST1, 3);
+      tmp = idx_of_VXOD(DST[I2].DST1, 3);
       NOSH = FUN[tmp][1]();
       if (NOSH != 0) {
         return NOSH;
       }
 
       fprintf(fp_out, ">> %d/%d \n", I2, L);
-      fprintf(fp_out, ">> %s, operation code: %s, get from table: %d\n", "get_number_of_VXOD", DST[I2].DST1, tmp);
+      fprintf(fp_out, ">> %s, operation code: %s, get from table: %d\n", "idx_of_VXOD", DST[I2].DST1, tmp);
       fflush(fp_out);
     }
  // ---------- Li --------------
@@ -2025,12 +2030,14 @@ main1:                                            /* по завершении �
   }
   else                                            /* иначе делаем           */
   {
-    switch (gen_COD())                         /* семантическое вычислен.*/
+    int result_gen_COD = gen_COD();
+    if (result_gen_COD == 0) {
+      printf("%s\n", "Translation succeed!");
+      return 0;                                    /* завершить трансляцию */
+    }
+
+    switch (result_gen_COD)                         /* семантическое вычислен.*/
     {
-      case  0:                                    /*если код завершения = 0,*/
-        printf("%s\n", "Translation succeed!");
-        return 0;                                    /* - завершить трансляцию */
-      
       // ===================== ERROR MESSAGES ====================================
       case  1:                                    /*если код завершения = 1,*/      
         printf("%s\n",                           /* - диагностич.сообщение;*/

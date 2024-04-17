@@ -1,0 +1,95 @@
+
+
+ --------------------------------------- 2024-04-17 18:47:59 ---------------------------
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(11B);DCL B CHAR(31);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>>>>>>>>>>>>>>>>>>>>> Pass1 of semantic calculation <<<<<<<<<<<<<<<<<<<<<
+>>>> 0/40 
+>> idx_of_VXOD, operation code: BUK, get from table: 1
+BUK1
+>>>> 1/40 
+>> idx_of_VXOD, operation code: IDE, get from table: 3
+IDE1
+>>>> 2/40 
+>> idx_of_VXOD, operation code: BUK, get from table: 1
+BUK1
+>>>> 3/40 
+>> idx_of_VXOD, operation code: IDE, get from table: 3
+IDE1
+>>>> 4/40 
+>> idx_of_VXOD, operation code: CIF, get from table: 2
+CIF1
+>>>> 5/40 
+>> idx_of_VXOD, operation code: IDE, get from table: 3
+IDE1
+>>>> 6/40 
+>> idx_of_VXOD, operation code: CIF, get from table: 2
+CIF1
+>>>> 7/40 
+>> idx_of_VXOD, operation code: IDE, get from table: 3
+IDE1
+>>>> 8/40 
+>> idx_of_VXOD, operation code: IPR, get from table: 5
+IPR1
+>>>> 9/40 
+>> idx_of_VXOD, operation code: OPR, get from table: 11
+OPR1
+>>>> 10/40 
+>> idx_of_VXOD, operation code: BUK, get from table: 1
+BUK1
+>>>> 11/40 
+>> idx_of_VXOD, operation code: IDE, get from table: 3
+IDE1
+>>>> 12/40 
+>> idx_of_VXOD, operation code: CIF, get from table: 2
+CIF1
+>>>> 13/40 
+>> idx_of_VXOD, operation code: RZR, get from table: 13
+RZR1
+>>>> 14/40 
+>> idx_of_VXOD, operation code: CIF, get from table: 2
+CIF1
+>>>> 15/40 
+>> idx_of_VXOD, operation code: RZR, get from table: 13
+RZR1
+>>>> 16/40 
+>> idx_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>>>> 17/40 
+>> idx_of_VXOD, operation code: MAN, get from table: 7
+MAN1
+>>>> 18/40 
+>> idx_of_VXOD, operation code: LIT, get from table: 6
+LIT1
+>>>> 19/40 
+>> idx_of_VXOD, operation code: ODC, get from table: 8
+ODC1
+>>>> 20/40 
+>> idx_of_VXOD, operation code: TEL, get from table: 14
+TEL1
+>>>> 21/40 
+>> idx_of_VXOD, operation code: BUK, get from table: 1
+BUK1
+>>>> 22/40 
+>> idx_of_VXOD, operation code: IDE, get from table: 3
+IDE1
+>>>> 23/40 
+>> idx_of_VXOD, operation code: CIF, get from table: 2
+CIF1
+>>>> 24/40 
+>> idx_of_VXOD, operation code: RZR, get from table: 13
+RZR1
+>>>> 25/40 
+>> idx_of_VXOD, operation code: CIF, get from table: 2
+CIF1
+>>>> 26/40 
+>> idx_of_VXOD, operation code: RZR, get from table: 13
+RZR1
+>>>> 27/40 
+>> idx_of_VXOD, operation code: ODC, get from table: 8
+ODC1

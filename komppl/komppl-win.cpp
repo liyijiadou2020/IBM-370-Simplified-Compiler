@@ -6,7 +6,6 @@
 #include <time.h>
 #include "komppl.h"
 
-char* getDateTime(); // 打印时间
 
 /*..........................................................................*/
 /*****************************************
@@ -1199,6 +1198,27 @@ void print_ASSTXT_to_file() {
   fflush(fp_out);
 }
 
+void print_DST() {
+  fprintf(fp_out, "%s\n", "---> print DST stack:");
+  for (int i = 0; i < L; i++) {
+
+    int tmp = 0;
+    tmp = idx_of_VXOD(DST[i].DST1, 3);
+    fprintf(fp_out,
+      ">>(%d/%d)\t\t%s\t\t%d\t\t%d\t\t%d\t\t%d\n",
+      i, L,
+      DST[i].DST1,
+      DST[i].DST2,
+      DST[i].DST3,
+      DST[i].DST4,
+      DST[i].DST5);
+  }
+  fprintf(fp_out, "%s\n\n", "<----");
+  fflush(fp_out);
+}
+
+
+
 /*..........................................................................*/
 
               /* п р о г р а м м а      */
@@ -1276,6 +1296,8 @@ int ZNK2()
   return 0;
 }
 
+
+
 /*..........................................................................*/
 /* 将分析后的源代码结构转换为机器代码或中间表示代码。分两趟进行，只在第二趟写出中间代码。 */
               /*  п р о г р а м м а     */
@@ -1325,15 +1347,16 @@ int gen_COD() /*интерпретации строк сте-*/
   //      return (NOSH);       /* выход из программы по ошибке*/          
 
     // ---------- Li：--------------
-    // 第一趟
-    fprintf(fp_out, ">>>>>>>>>>>>>>>>>>>>> %s <<<<<<<<<<<<<<<<<<<<<\n", "Pass1 of semantic calculation");
-    fflush(fp_out);
+    // 第一趟遍历成就栈
+    fprintf(fp_out, ">>>>>>>>>>>>>>>>>>>>> %s <<<<<<<<<<<<<<<<<<<<<\n", "Pass1 of semantic calculation");    
     for (I2 = 0; I2 < L; I2++) {
-      fprintf(fp_out, ">>>> %d/%d \n", I2, L);
-
+      fprintf(fp_out, ">>>> %d/%d Operation code: %s\n", I2, L, DST[I2].DST1);
+      print_DST(); // Li
       int tmp = 0;
       tmp = idx_of_VXOD(DST[I2].DST1, 3);
-      fprintf(fp_out, ">> %s, operation code: %s, get from table: %d\n", "idx_of_VXOD", DST[I2].DST1, tmp);
+      //fprintf(fp_out, 
+        //">> %s, operation code: %s, get from table: %d\n", "idx_of_VXOD", 
+        //DST[I2].DST1, tmp);
       fflush(fp_out);
 
       NOSH = FUN[tmp][0]();
@@ -1343,15 +1366,16 @@ int gen_COD() /*интерпретации строк сте-*/
 
     }
     
-    // 第二趟
+    // 第二趟遍历成就栈
     fprintf(fp_out, ">>>>>>>>>>>>>>>>>>>>> %s <<<<<<<<<<<<<<<<<<<<<\n", "Pass2 of semantic calculation");
     fflush(fp_out);
     for (I2 = 0; I2 < L; I2++) {
-      fprintf(fp_out, ">>>> %d/%d \n", I2, L);
+      fprintf(fp_out, ">>>> %d/%d Operation code: %s\n", I2, L, DST[I2].DST1);
 
       int tmp = 0;
       tmp = idx_of_VXOD(DST[I2].DST1, 3);
-      fprintf(fp_out, ">> %s, operation code: %s, get from table: %d\n", "idx_of_VXOD", DST[I2].DST1, tmp);
+      print_DST(); // Li
+      //fprintf(fp_out, ">> %s, operation code: %s, get from table: %d\n", "idx_of_VXOD", DST[I2].DST1, tmp);
       fflush(fp_out);
 
       NOSH = FUN[tmp][1]();
@@ -1428,6 +1452,16 @@ void print_error_message_of_COD(int result_gen_COD) {
   }
 }
 
+void print_title_log() {
+
+  char* nowtime = getDateTime();
+  fprintf(fp_out, "\n\n\n\n\n\n//////////////////////////////////////////////////////////////////////\n");
+  fprintf(fp_out, "////////////////////////////////////////// %s ///////\n", nowtime);
+  fprintf(fp_out, "//////////////////////////////////////////////////////////////////////\n\n");  
+  fflush(fp_out);
+}
+
+
 /*..........................................................................*/
 
               /*  п р о г р а м м а,    */
@@ -1439,63 +1473,62 @@ void print_error_message_of_COD(int result_gen_COD) {
               /* - семантич.вычислителем*/
 int main(int argc, char** argv)
 {                                                /* рабочие переменные:    */
-  FILE* fp;                                       /* - указатель на файл;   */    
-  
-  char* nowtime = getDateTime();
-
+  FILE* fp;                                       /* - указатель на файл;   */
   fp_out = fopen("log.txt", "a+");                                  /* Li: 用于读取debug的结果 */
   if (NULL == fp_out) {
     printf("open log.txt failed! \n");
     return FILE_NOT_OPEN;
   }
   setbuf(fp_out, NULL);
-  fprintf(fp_out, "\n\n --------------------------------------- %s ---------------------------\n", nowtime);
-  fflush(fp_out);
+
+  print_title_log();
 
   const char* ptr = "examppl.pli";
   strcpy(NFIL, ptr);
 
   /* проверка типа исх.файла*/
-  if(strcmp(&NFIL[strlen(NFIL) - 3], "pli")) {
+  if (strcmp(&NFIL[strlen(NFIL) - 3], "pli")) {
     printf("%s\n",                              /* выдать диагностику и   */
       "Invalid source file type");
     return -1;                                       /* завершить трансляцию   */
-  } else {                                              /*пытаемся открыть файл и */
-      if ((fp = fopen(NFIL, "rb")) == NULL) {
-        printf("%s\n", "File not found");
-        return -1;                                     /* завершение трансляции  */
-      } 
-      else {
-        for (NISXTXT = 0; NISXTXT <= MAXNISXTXT; NISXTXT++) {
-          if (!fread(ISXTXT[NISXTXT], 80, 1, fp)) {
-            if (feof(fp))                      /* в конце файла идем на  */
-            {
-              goto main1;                            /* метку  main1           */                        
-            } else {                                
-              printf("%s\n",
-                "Error reading source file");
-              return -1;                     
-            }
+  }
+  else {                                              /*пытаемся открыть файл и */
+    if ((fp = fopen(NFIL, "rb")) == NULL) {
+      printf("%s\n", "File not found");
+      return -1;                                     /* завершение трансляции  */
+    }
+    else {
+      for (NISXTXT = 0; NISXTXT <= MAXNISXTXT; NISXTXT++) {
+        if (!fread(ISXTXT[NISXTXT], 80, 1, fp)) {
+          if (feof(fp))                      /* в конце файла идем на  */
+          {
+            goto main1;                            /* метку  main1           */
+          }
+          else {
+            printf("%s\n",
+              "Error reading source file");
+            return -1;
           }
         }
-
-        printf("%s\n", "Text read buffer overflow");
-        return -1;
       }
+
+      printf("%s\n", "Text read buffer overflow");
+      return -1;
+    }
   }
 
 main1:                                            /* по завершении чтения   */
-  /* исх.файла формируем    */  
-  fclose(fp);                                 /* префикс имени выходного*/  
-  NFIL[strlen(NFIL) - 3] = '\x0';            /* Ассемблеровского файла */  
-  memset(ASS_CARD.BUFCARD, ' ', 80);           /* чистка буфера строки   */  
+  /* исх.файла формируем    */
+  fclose(fp);                                 /* префикс имени выходного*/
+  NFIL[strlen(NFIL) - 3] = '\x0';            /* Ассемблеровского файла */
+  memset(ASS_CARD.BUFCARD, ' ', 80);           /* чистка буфера строки   */
   /* выходного ассемблеровского файла */
 
-  compress_ISXTXT();                             /* лексический анализ исходного текста*/      
-  build_TPR();                                   /* построение матрицы преемников */  
+  compress_ISXTXT();                             /* лексический анализ исходного текста*/
+  build_TPR();                                   /* построение матрицы преемников */
   int return_code = sint_ANAL();
   if (return_code)                           /* синтаксический анализ  исходного текста */
-  {                                             
+  {
     STROKA[I4 + 20] = '\x0';
     printf("<ERROR CODE> %d\n", return_code);
     printf("%s%s%s%s\n", "<ERROR INFO> Syntax error here-> ", "\"...", &STROKA[I4], "...\"");

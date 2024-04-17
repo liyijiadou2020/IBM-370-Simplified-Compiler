@@ -1,0 +1,1 @@
+EX10: PROC OPTIONS (MAIN);                                                     DCL A BIN FIXED (31) INIT ( 11B );                                              DCL B CHAR (31);                                                                END EX10;                                                                           

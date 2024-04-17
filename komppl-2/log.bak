@@ -18268,3 +18268,3270 @@ IASSTXT(lines) = 9
 
 <------------ASS ------
 
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-17 22:25:58 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(11B);DCL B BIN FIXED(31);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+---> void ZKARD()
+IASSTXT = 3
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD = A        DC    F'3.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 5
+ASS_CARD.BUFCARD = B        DC    F'0.'        Defination of var <--- 
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 8
+ASS_CARD.BUFCARD =          END   EX10         End of program <--- 
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+IASSTXT(lines) = 9
+--------- ASS ---------> 
+
+0	EX10     START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	         BCR   15,14        Exit from program
+4	A        DC    F'3.'        Defination of var
+5	B        DC    F'0.'        Defination of var
+6	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX10         End of program
+7	RRAB     EQU   5                                                                         END   EX10         End of program
+8	         END   EX10         End of program
+
+<------------ASS ------
+
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-17 22:27:34 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(11B);DCL C DEC FIXED(31)INIT(11B);DCL B BIN FIXED(31);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-17 22:51:13 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(11B);DCL C DEC FIXED(31)INIT(11B);DCL B BIN FIXED(31);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-17 22:54:33 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A BIN FIXED(31)INIT(11B);DCL C DEC FIXED(31)INIT(11B);DCL B BIN FIXED(31);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-17 22:55:20 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A BIN FIXED INIT(11B);DCL C DEC FIXED(31)INIT(11B);DCL B BIN FIXED(31);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-17 22:56:24 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A BIN FIXED INIT(5);DCL C DEC FIXED(31)INIT(11B);DCL B BIN FIXED(31);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-17 22:56:59 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(5);DCL C DEC FIXED(31)INIT(11B);DCL B BIN FIXED(31);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-17 22:58:21 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(5);DCL B BIT(16);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+---> void ZKARD()
+IASSTXT = 3
+ASS_CARD.BUFCARD = A <--- 
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-17 23:00:01 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(5);DCL B BIT(16);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+---> void ZKARD()
+IASSTXT = 3
+ASS_CARD.BUFCARD = A <--- 
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-17 23:05:19 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(5);DCL B BIT(16);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-17 23:06:06 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(5);DCL B BIT(16);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-17 23:07:12 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(5);DCL B BIT(16);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+---> void ZKARD()
+IASSTXT = 3
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 5
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD =          END   EX10         End of program <--- 
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+IASSTXT(lines) = 7
+--------- ASS ---------> 
+
+0	EX10     START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	         BCR   15,14        Exit from program
+4	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX10         End of program
+5	RRAB     EQU   5                                                                         END   EX10         End of program
+6	         END   EX10         End of program
+
+<------------ASS ------
+
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-17 23:10:53 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(5);DCL B BIT(16);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 5
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD =          END   EX10         End of program <--- 
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+IASSTXT(lines) = 8
+--------- ASS ---------> 
+
+0	EX10     START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	A DC PL6'0B' ; ���ߧڧ�ڧѧݧڧ٧ѧ�ڧ� ��֧�֧ާ֧ߧߧ�� ��
+4	         BCR   15,14        Exit from program
+5	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX10         End of program
+6	RRAB     EQU   5                                                                         END   EX10         End of program
+7	         END   EX10         End of program
+
+<------------ASS ------
+
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-17 23:12:35 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(5);DCL B BIT(16);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 5
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD =          END   EX10         End of program <--- 
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+IASSTXT(lines) = 8
+--------- ASS ---------> 
+
+0	EX10     START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	A DC PL6'0B'  Initialization decimal
+4	         BCR   15,14        Exit from program
+5	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX10         End of program
+6	RRAB     EQU   5                                                                         END   EX10         End of program
+7	         END   EX10         End of program
+
+<------------ASS ------
+
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-17 23:13:31 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(5);DCL B BIT(16);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 5
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD =          END   EX10         End of program <--- 
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+IASSTXT(lines) = 8
+--------- ASS ---------> 
+
+0	EX10     START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	         A DC PL6'0B'  Initialization decimal
+4	         BCR   15,14        Exit from program
+5	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX10         End of program
+6	RRAB     EQU   5                                                                         END   EX10         End of program
+7	         END   EX10         End of program
+
+<------------ASS ------
+
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-17 23:14:23 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(5);DCL B BIT(16);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 5
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD =          END   EX10         End of program <--- 
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+IASSTXT(lines) = 8
+--------- ASS ---------> 
+
+0	EX10     START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	A        DC    PL6'0B'  Initialization decimal
+4	         BCR   15,14        Exit from program
+5	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX10         End of program
+6	RRAB     EQU   5                                                                         END   EX10         End of program
+7	         END   EX10         End of program
+
+<------------ASS ------
+
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-17 23:18:09 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(5);DCL B BIT(16);END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 5
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD =          END   EX10         End of program <--- 
+---> print DST stack:
+>>(0/35)		BUK		0		0		0		82
+>>(1/35)		IDE		0		0		0		94
+>>(2/35)		BUK		1		97		1		91
+>>(3/35)		IDE		0		0		1		98
+>>(4/35)		CIF		2		100		2		5
+>>(5/35)		IDE		0		0		2		101
+>>(6/35)		CIF		3		100		3		2
+>>(7/35)		IDE		0		0		3		101
+>>(8/35)		IPR		0		0		3		105
+>>(9/35)		OPR		0		0		23		134
+>>(10/35)		BUK		28		0		28		34
+>>(11/35)		IDE		28		48		28		94
+>>(12/35)		CIF		45		0		45		19
+>>(13/35)		DCF		45		216		45		234
+>>(14/35)		ODC		24		0		47		219
+>>(15/35)		TEL		24		172		47		177
+>>(16/35)		BUK		52		0		52		37
+>>(17/35)		IDE		52		48		52		94
+>>(18/35)		CIF		58		0		58		5
+>>(19/35)		RZR		58		225		58		137
+>>(20/35)		CIF		59		140		59		22
+>>(21/35)		RZR		58		225		59		141
+>>(22/35)		ODC		48		180		61		228
+>>(23/35)		TEL		24		172		61		181
+>>(24/35)		BUK		66		0		66		82
+>>(25/35)		IDE		66		0		66		94
+>>(26/35)		BUK		67		97		67		91
+>>(27/35)		IDE		66		0		67		98
+>>(28/35)		CIF		68		100		68		5
+>>(29/35)		IDE		66		0		68		101
+>>(30/35)		CIF		69		100		69		2
+>>(31/35)		IDE		66		0		69		101
+>>(32/35)		IPR		66		78		69		105
+>>(33/35)		OEN		62		173		70		80
+>>(34/35)		PRO		0		999		70		174
+<----
+
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+IASSTXT(lines) = 8
+--------- ASS ---------> 
+
+0	EX10     START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	A        DC    PL6'0B'  Initialization decimal
+4	         BCR   15,14        Exit from program
+5	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX10         End of program
+6	RRAB     EQU   5                                                                         END   EX10         End of program
+7	         END   EX10         End of program
+
+<------------ASS ------
+

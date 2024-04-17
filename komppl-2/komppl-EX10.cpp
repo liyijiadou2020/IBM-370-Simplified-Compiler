@@ -13,7 +13,6 @@
 /*..........................................................................*/
 
 
-
 /* ///////////////////////////////////////////////////////////////// */
 
               /* п р о г р а м м а      */
@@ -25,8 +24,8 @@
 
 int AVI2()
 {
-  fprintf(fp_out, "%s\n", "AVI2");
-  fflush(fp_out);
+  //fprintf(fp_out, "%s\n", "AVI2");
+  //fflush(fp_out);
   char i;
   FORM();                                        /*форматируем правую часть*/
   /*арифметического ПЛ1-опе-*/
@@ -172,8 +171,8 @@ int AVI2()
 
 int BUK2()
 {
-  fprintf(fp_out, "%s\n", "BUK2");
-  fflush(fp_out);
+  //fprintf(fp_out, "%s\n", "BUK2");
+  //fflush(fp_out);
 
   return 0;
 }
@@ -188,8 +187,8 @@ int BUK2()
 
 int CIF2()
 {
-  fprintf(fp_out, "%s\n", "CIF2");
-  fflush(fp_out);
+  //fprintf(fp_out, "%s\n", "CIF2");
+  //fflush(fp_out);
 
   return 0;
 }
@@ -205,8 +204,8 @@ int CIF2()
 
 int IDE2()
 {
-  fprintf(fp_out, "%s\n", "IDE2");
-  fflush(fp_out);
+  //fprintf(fp_out, "%s\n", "IDE2");
+  //fflush(fp_out);
 
   return 0;
 }
@@ -222,8 +221,8 @@ int IDE2()
 
 int IPE2()
 {
-  fprintf(fp_out, "%s\n", "IPE2");
-  fflush(fp_out);
+  //fprintf(fp_out, "%s\n", "IPE2");
+  //fflush(fp_out);
 
   return 0;
 }
@@ -238,8 +237,8 @@ int IPE2()
 
 int IPR2()
 {
-  fprintf(fp_out, "%s\n", "IPR2");
-  fflush(fp_out);
+  //fprintf(fp_out, "%s\n", "IPR2");
+  //fflush(fp_out);
 
   return 0;
 }
@@ -254,8 +253,8 @@ int IPR2()
 
 int LIT2()
 {
-  fprintf(fp_out, "%s\n", "LIT2");
-  fflush(fp_out);
+  //fprintf(fp_out, "%s\n", "LIT2");
+  //fflush(fp_out);
 
   return 0;
 }
@@ -270,8 +269,8 @@ int LIT2()
 
 int MAN2()
 {
-  fprintf(fp_out, "%s\n", "MAN2");
-  fflush(fp_out);
+  //fprintf(fp_out, "%s\n", "MAN2");
+  //fflush(fp_out);
 
   return 0;
 }
@@ -286,8 +285,8 @@ int MAN2()
 
 int ODC2()
 {
-  fprintf(fp_out, "%s\n", "ODC2");
-  fflush(fp_out);
+  //fprintf(fp_out, "%s\n", "ODC2");
+  //fflush(fp_out);
 
   return 0;
 }
@@ -306,8 +305,8 @@ int ODC2()
               /* раммы                  */
 int OEN2()
 {
-  fprintf(fp_out, "%s\n", "OEN2");
-  fflush(fp_out);
+  //fprintf(fp_out, "%s\n", "OEN2");
+  //fflush(fp_out);
 
   char RAB[20];
   char i = 0;
@@ -416,8 +415,8 @@ int OEN2()
 
 int OPA2()
 {
-  fprintf(fp_out, "%s\n", "OPA2");
-  fflush(fp_out);
+  //fprintf(fp_out, "%s\n", "OPA2");
+  //fflush(fp_out);
 
   int i;
 
@@ -489,8 +488,8 @@ int OPA2()
               /* ПЛ1-программы          */
 int OPR2()
 {
-  fprintf(fp_out, "%s\n", "OPR2");
-  fflush(fp_out);
+  //fprintf(fp_out, "%s\n", "OPR2");
+  //fflush(fp_out);
 
   char i = 0;
   FORM();                                        /* форматируем оператор   */
@@ -525,39 +524,6 @@ int OPR2()
   return 0;                                       /* завершить подпрограмму */
 }
 
-// TODO 打印错误
-void print_ASSTXT_to_file() {  
-  fprintf(fp_out, "\n%s \n", "SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT... ");
-  fprintf(fp_out, "%s = %d\n", "IASSTXT(lines)", IASSTXT);  
-  fprintf(fp_out, "%s\n", "--------- ASS ---------> \n");
-  for (int i = 0; i < IASSTXT; i++) {    
-    fprintf(fp_out, "%d\t%s\n", i, ASSTXT[i]);
-  }
-  fprintf(fp_out, "\n%s\n", "<------------ASS ------\n");
-  fflush(fp_out);
-}
-
-void print_DST() {
-  fprintf(fp_out, "%s\n", "---> print DST stack:");
-  for (int i = 0; i < L; i++) {
-
-    int tmp = 0;
-    tmp = idx_of_VXOD(DST[i].DST1, 3);
-    fprintf(fp_out,
-      ">>(%d/%d)\t\t%s\t\t%d\t\t%d\t\t%d\t\t%d\n",
-      i, L,
-      DST[i].DST1,
-      DST[i].DST2,
-      DST[i].DST3,
-      DST[i].DST4,
-      DST[i].DST5);
-  }
-  fprintf(fp_out, "%s\n\n", "<----");
-  fflush(fp_out);
-}
-
-
-
 /*..........................................................................*/
 
               /* п р о г р а м м а      */
@@ -568,8 +534,8 @@ void print_DST() {
 
 int PRO2()                                       /*прогр.формирует выходной*/
 {                                                /*файл                    */
-  fprintf(fp_out, "%s\n", "PRO2");
-  fflush(fp_out);
+  //fprintf(fp_out, "%s\n", "PRO2");
+  //fflush(fp_out);
 
   FILE* fp;                                       /*набор рабочих переменных*/
 
@@ -597,8 +563,8 @@ int PRO2()                                       /*прогр.формирует
 
 int RZR2()
 {
-  fprintf(fp_out, "%s\n", "RZR2");
-  fflush(fp_out);
+  //fprintf(fp_out, "%s\n", "RZR2");
+  //fflush(fp_out);
 
   return 0;
 }
@@ -613,8 +579,8 @@ int RZR2()
 
 int TEL2()
 {
-  fprintf(fp_out, "%s\n", "TEL2");
-  fflush(fp_out);
+  //fprintf(fp_out, "%s\n", "TEL2");
+  //fflush(fp_out);
 
   return 0;
 }
@@ -629,8 +595,8 @@ int TEL2()
 
 int ZNK2()
 {
-  fprintf(fp_out, "%s\n", "ZNK2");
-  fflush(fp_out);
+  //fprintf(fp_out, "%s\n", "ZNK2");
+  //fflush(fp_out);
 
   return 0;
 }
@@ -688,10 +654,10 @@ int gen_COD() /*интерпретации строк сте-*/
 
     // ---------- Li：--------------
     // 第一趟遍历成就栈
-    fprintf(fp_out, ">>>>>>>>>>>>>>>>>>>>> %s <<<<<<<<<<<<<<<<<<<<<\n", "Pass1 of semantic calculation");    
+    //fprintf(fp_out, ">>>>>>>>>>>>>>>>>>>>> %s <<<<<<<<<<<<<<<<<<<<<\n", "Pass1 of semantic calculation");    
     for (I2 = 0; I2 < L; I2++) {
-      fprintf(fp_out, ">>>> %d/%d Operation code: %s\n", I2, L, DST[I2].DST1);
-      print_DST(); // Li
+      //fprintf(fp_out, ">>>> %d/%d Operation code: %s\n", I2, L, DST[I2].DST1);
+      //print_DST(); // Li
       int tmp = 0;
       tmp = idx_of_VXOD(DST[I2].DST1, 3);
       //fprintf(fp_out, 
@@ -707,14 +673,14 @@ int gen_COD() /*интерпретации строк сте-*/
     }
     
     // 第二趟遍历成就栈
-    fprintf(fp_out, ">>>>>>>>>>>>>>>>>>>>> %s <<<<<<<<<<<<<<<<<<<<<\n", "Pass2 of semantic calculation");
+    //fprintf(fp_out, ">>>>>>>>>>>>>>>>>>>>> %s <<<<<<<<<<<<<<<<<<<<<\n", "Pass2 of semantic calculation");
     fflush(fp_out);
     for (I2 = 0; I2 < L; I2++) {
-      fprintf(fp_out, ">>>> %d/%d Operation code: %s\n", I2, L, DST[I2].DST1);
+      //fprintf(fp_out, ">>>> %d/%d Operation code: %s\n", I2, L, DST[I2].DST1);
 
       int tmp = 0;
       tmp = idx_of_VXOD(DST[I2].DST1, 3);
-      print_DST(); // Li
+      //print_DST(); // Li
       //fprintf(fp_out, ">> %s, operation code: %s, get from table: %d\n", "idx_of_VXOD", DST[I2].DST1, tmp);
       fflush(fp_out);
 
@@ -729,77 +695,6 @@ int gen_COD() /*интерпретации строк сте-*/
     return 0;    /* успешное завершение программы  */          
 }
 
-
-
-char* getDateTime()
-{
-  static char nowtime[20];
-  time_t rawtime;
-  struct tm* ltime;
-  time(&rawtime);
-  ltime = localtime(&rawtime);
-  strftime(nowtime, 20, "%Y-%m-%d %H:%M:%S", ltime);
-  return nowtime;
-}
-
-void print_error_message_of_COD(int result_gen_COD) {
-
-  switch (result_gen_COD)                         /* семантическое вычислен.*/
-  {
-    // ===================== ERROR MESSAGES ====================================
-  case  1:                                    /*если код завершения = 1,*/
-    printf("%s\n",                           /* - диагностич.сообщение;*/
-      "Name of product doesn't fix.");
-    break;                                     /* - выйти на обобщающую  *//* - диагностич.сообщение; диагностику             */
-  case  2:                                    /*если код завершения = 2,*/
-    /* то:                    */
-    STROKA[DST[I2].DST2 + 20] = '\x0';      /* - диагностич.сообщение;*/
-    printf("%s%s\n%s%s%s\n",
-      "Type of identifier not allow: ",
-      &FORMT[1], " в исх.тексте -> \"...",
-      &STROKA[DST[I2].DST2], "...\"");
-    break;                                     /* - выйти на обобщающую диагностику             */
-  case  3:                                    /*если код завершения = 3,*/
-    /* то:                    */
-    STROKA[DST[I2].DST2 + 20] = '\x0';     /* - диагностич.сообщение;*/
-    printf("%s%s\n%s%s%s\n",
-      "Type of identifier not allow_2",
-      &FORMT[IFORMT - 1], " в исх.тексте -> \"...",
-      &STROKA[DST[I2].DST2], "...\"");
-    break;                                     /* -выйти на обобщающую  диагностику */
-  case  4:                                    /*если код завершения = 4,*/
-    /* то:                    */
-    STROKA[DST[I2].DST2 + 20] = '\x0';     /* - диагностич.сообщение;*/
-    printf("%s%s\n%s%s%s\n",
-      "Undefined identifier: ",
-      &FORMT[IFORMT - 1], " в исх.тексте -> \"...",
-      &STROKA[DST[I2].DST2], "...\"");
-    break;                                     /* - выйти на обобщающую диагностику */
-  case  5:                                    /*если код завершения = 5,*/
-    STROKA[DST[I2].DST2 + 20] = '\x0';     /* - диагностич.сообщение;*/
-    printf("%s%c\n%s%s%s\n",
-      "Undefined operation: ",
-      STROKA[DST[I2].DST4 - strlen(FORMT[IFORMT - 1])],
-      " ERROR HERE -> \"...", &STROKA[DST[I2].DST2], "...\"");
-    break;                                     /* - выйти на обобщающую диагностику */
-  case  6:                                    /*если код завершения = 6 */
-    STROKA[DST[I2].DST2 + 20] = '\x0';     /* - диагностич.сообщение;*/
-    printf("%s%s\n%s%s%s\n",
-      "Identifier re-declared: ",
-      &FORMT[1], " ERROR HERE -> \"...",
-      &STROKA[DST[I2].DST2], "...\"");
-    break;                                     /* - выйти на обобщающую диагностику */
-  }
-}
-
-void print_title_log() {
-
-  char* nowtime = getDateTime();
-  fprintf(fp_out, "\n\n\n\n\n\n//////////////////////////////////////////////////////////////////////\n");
-  fprintf(fp_out, "////////////////////////////////////////// %s ///////\n", nowtime);
-  fprintf(fp_out, "//////////////////////////////////////////////////////////////////////\n\n");  
-  fflush(fp_out);
-}
 
 
 /*..........................................................................*/

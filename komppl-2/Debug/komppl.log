@@ -1,0 +1,5 @@
+﻿  komppl-EX10.cpp
+D:\source\labs\Lab-Compiler\komppl-2\komppl-EX10.cpp(167,1): warning C4102: “L1”: 未引用的标签
+D:\source\labs\Lab-Compiler\komppl-2\komppl-EX10.cpp(201,1): warning C4102: “L4”: 未引用的标签
+D:\source\labs\Lab-Compiler\komppl-2\komppl-EX10.cpp(211,5): warning C4102: “L5”: 未引用的标签
+  komppl.vcxproj -> D:\source\labs\Lab-Compiler\komppl-2\Debug\komppl.exe

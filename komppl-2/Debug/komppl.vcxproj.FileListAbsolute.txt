@@ -1,0 +1,2 @@
+D:\source\labs\Lab-Compiler\komppl\Debug\komppl.exe
+D:\source\labs\Lab-Compiler\komppl-2\Debug\komppl.exe

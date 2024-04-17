@@ -1,4 +1,6 @@
 #pragma once
+#include <stdio.h>
+#include <string.h>
 
 #define MAXNISXTXT 50
 // #define NSINT     201
@@ -591,8 +593,26 @@ char NFIL[30] = "\x0";   /* §ç§â§Ñ§ß§Ú§Ý§Ú§ë§Ö §Ú§Þ§Ö§ß§Ú §ä§â§Ñ§ß§ã§Ý§Ú§â§å§Ö§Þ
 
 /*..........................................................................*/
 
+char* getDateTime()
+{
+  static char nowtime[20];
+  time_t rawtime;
+  struct tm* ltime;
+  time(&rawtime);
+  ltime = localtime(&rawtime);
+  strftime(nowtime, 20, "%Y-%m-%d %H:%M:%S", ltime);
+  return nowtime;
+}
 
-// TODO ´òÓ¡´íÎó
+void print_title_log() {
+  char* nowtime = getDateTime();
+  fprintf(fp_out, "\n\n\n\n\n\n PROGRAM START...\n//////////////////////////////////////////////////////////////////////\n");
+  fprintf(fp_out, "////////////////////////////////////////// %s ///////\n", nowtime);
+  fprintf(fp_out, "//////////////////////////////////////////////////////////////////////\n\n");
+  fflush(fp_out);
+}
+
+
 void print_ASSTXT_to_file() {
   fprintf(fp_out, "\n%s \n", "SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT... ");
   fprintf(fp_out, "%s = %d\n", "IASSTXT(lines)", IASSTXT);
@@ -623,23 +643,10 @@ void print_DST() {
   fflush(fp_out);
 }
 
-
-char* getDateTime()
-{
-  static char nowtime[20];
-  time_t rawtime;
-  struct tm* ltime;
-  time(&rawtime);
-  ltime = localtime(&rawtime);
-  strftime(nowtime, 20, "%Y-%m-%d %H:%M:%S", ltime);
-  return nowtime;
-}
-
 void print_error_message_of_COD(int result_gen_COD) {
 
   switch (result_gen_COD)                         /* §ã§Ö§Þ§Ñ§ß§ä§Ú§é§Ö§ã§Ü§à§Ö §Ó§í§é§Ú§ã§Ý§Ö§ß.*/
-  {
-    // ===================== ERROR MESSAGES ====================================
+  {  
   case  1:                                    /*§Ö§ã§Ý§Ú §Ü§à§Õ §Ù§Ñ§Ó§Ö§â§ê§Ö§ß§Ú§ñ = 1,*/
     printf("%s\n",                           /* - §Õ§Ú§Ñ§Ô§ß§à§ã§ä§Ú§é.§ã§à§à§Ò§ë§Ö§ß§Ú§Ö;*/
       "Name of product doesn't fix.");
@@ -685,23 +692,10 @@ void print_error_message_of_COD(int result_gen_COD) {
   }
 }
 
-void print_title_log() {
-  char* nowtime = getDateTime();
-  fprintf(fp_out, "\n\n\n\n\n\n PROGRAM START...\n//////////////////////////////////////////////////////////////////////\n");
-  fprintf(fp_out, "////////////////////////////////////////// %s ///////\n", nowtime);
-  fprintf(fp_out, "//////////////////////////////////////////////////////////////////////\n\n");
-  fflush(fp_out);
-}
-
 
 /*..........................................................................*/
 
-void compress_ISXTXT()                            /* §±§â§à§Ô§â§Ñ§Þ§Þ§Ñ §å§á§Ý§à§ä§ß§Ö§ß§Ú§ñ   */
-/* §Ú§ã§ç§à§Õ§ß§à§Ô§à §ä§Ö§Ü§ã§ä§Ñ §á§å§ä§Ö§Þ */
-/* §å§Õ§Ñ§Ý§Ö§ß§Ú§ñ "§Ý§Ú§ê§ß§Ú§ç"      */
-/* §á§â§à§Ò§Ö§Ý§à§Ó, §Ó§í§á§à§Ý§ß§ñ§ð§ë§Ñ§ñ  */
-/* §â§à§Ý§î §á§â§Ú§Þ§Ú§ä§Ú§Ó§ß§à§Ô§à §Ý§Ö§Ü- */
-/* §ã§Ú§é§Ö§ã§Ü§à§Ô§à §Ñ§ß§Ñ§Ý§Ú§Ù§Ñ§ä§à§â§Ñ  */
+void compress_ISXTXT()
 {
   fprintf(fp_out, "---> %s\n", "void compress_ISXTXT()");
   fflush(fp_out);
@@ -770,10 +764,7 @@ void compress_ISXTXT()                            /* §±§â§à§Ô§â§Ñ§Þ§Þ§Ñ §å§á§Ý§à
 /*..........................................................................*/
 
 
-void build_TPR()                                 /* §±§à§ã§ä§â§à§Ö§ß§Ú§Ö §ä§Ñ§Ò§Ý§Ú§è§í     */
-/* §á§â§Ö§Ö§Þ§ß§Ú§Ü§à§Ó §Ú§Ù §Þ§Ñ§ä§â§Ú§è§í  */
-/* §ã§Þ§Ö§Ø§ß§à§ã§ä§Ú §á§à §Ñ§Ý§Ô§à§â§Ú§ä§Þ§å */
-/* §£§Ñ§â§ê§Ñ§Ý§Ý§Ñ               */
+void build_TPR()
 {
   fprintf(fp_out, "---> %s\n", "void build_TPR()");
   fflush(fp_out);
@@ -793,7 +784,7 @@ void build_TPR()                                 /* §±§à§ã§ä§â§à§Ö§ß§Ú§Ö §ä§Ñ§Ò§
 
 /*..........................................................................*/
 
-void mcel(const char* T1, int T2, int T3)            /* §á§â§à§Ô§â§Ñ§Þ§Þ§Ñ §Ù§Ñ§á§à§Ý§ß§Ö§ß§Ú§ñ §ñ§é§Ö§Û§Ü§Ú §ã§ä§Ö§Ü§Ñ §á§à§ã§ä§Ñ§Ó§Ý§Ö§ß§ß§í§ç §è§Ö§Ý§Ö§Û */
+void mcel(const char* T1, int T2, int T3)
 {
   strcpy(CEL[K].CEL1, T1);
   CEL[K].CEL2 = T2;
@@ -804,7 +795,7 @@ void mcel(const char* T1, int T2, int T3)            /* §á§â§à§Ô§â§Ñ§Þ§Þ§Ñ §Ù§Ñ§
 /*..........................................................................*/
 
 void mdst(char* T1, int T2, int T3, int T4, int T5)
-{                                                /* §á§â§à§Ô§â§Ñ§Þ§Þ§Ñ §Ù§Ñ§á§à§Ý§ß§Ö§ß§Ú§ñ  §ñ§é§Ö§Û§Ü§Ú §ã§ä§Ö§Ü§Ñ §Õ§à§ã§ä§Ú§Ô§ß§å§ä§í§ç §è§Ö§Ý§Ö§Û */
+{
   strcpy(DST[L].DST1, T1);
   DST[L].DST2 = T2;
   DST[L].DST3 = T3;
@@ -817,10 +808,7 @@ void mdst(char* T1, int T2, int T3, int T4, int T5)
 
 /*..........................................................................*/
               /* §á §â §à §Ô §â §Ñ §Þ §Þ §Ñ      */
-int idx_of_VXOD(const char* T1, int T2)                     /* §Ó§í§é§Ú§ã§Ý§Ö§ß§Ú§ñ §á§à§â§ñ§Õ§Ü§à§Ó§à§Ô§à */
-/* §ß§à§Þ§Ö§â§Ñ §ã§ä§â§à§Ü§Ú §Ó §ä§Ñ§Ò§Ý.  */
-/* VXOD, §ã§à§à§ä§Ó§Ö§ä§ã§ä§Ó§å§ð§ë§Ö§Û  */
-/* §ã§ä§â§à§Ü§Ö-§á§Ñ§â§Ñ§Þ§Ö§ä§â§å §æ§å§ß§Ü§è.*/
+int idx_of_VXOD(const char* T1, int T2)
 /* Ö÷Òª×÷ÓÃÊÇÔÚÒ»¸öÃûÎª VXOD µÄ±í¸ñÖÐ²éÕÒÓë¸ø¶¨×Ö·û´® T1 ÍêÈ«Æ¥ÅäµÄÌõÄ¿£¬²¢·µ»Ø¸ÃÌõÄ¿µÄË÷Òý */
 {
   int k;
@@ -841,9 +829,9 @@ int idx_of_VXOD(const char* T1, int T2)                     /* §Ó§í§é§Ú§ã§Ý§Ö§ß§
 }
 
 /*..........................................................................*/
-                       /*   §á §â §à §Ô §â §Ñ §Þ §Þ §Ñ    */
-int sint_ANAL()        /* §á§à§ã§ä§â§à§Ö§ß§Ú§ñ §Õ§Ö§â§Ö§Ó§Ñ §ã§Ú§ß§ä§Ñ§Ü§ã§Ú§é§Ö§ã§Ü§à§Ô§à §â§Ñ§Ù§Ò§à§â§Ñ,   */
-{                      /* §Ó§í§á§à§Ý§ß§ñ§ð§ë§Ñ§ñ §â§à§Ý§î §ã§Ú§ß§ä§Ñ§Ü§ã§Ú§é§Ö§ã§Ü§à§Ô§à §Ñ§ß§Ñ§Ý§Ú§Ù§Ñ§ä§à§â§Ñ */
+
+int sint_ANAL() 
+{               
   fprintf(fp_out, "---> %s\n", "int sint_ANAL()");
   fflush(fp_out);
 
@@ -1048,8 +1036,6 @@ void ZKARD() /* §Ù§Ñ§á§Ú§ã§Ú §à§é§Ö§â§Ö§Õ§ß§à§Û §ã§Ô§Ö§ß§Ö-*/
   return;
 }
 
-#include <stdio.h>
-#include <string.h>
 
 
 /* Li      */
@@ -1240,11 +1226,16 @@ int ODC1()
     goto ODC11;                                   /* §Ú§Õ§Ö§Þ §ß§Ñ §á§â§à§Õ§à§Ý§Ø§Ö§ß§Ú§Ö §à§Ò-*/
     /* §â§Ñ§Ò§à§ä§Ü§Ú, §Ñ             */
   }
-  /* DCL A DEC FIXED(31) INIT(5); */
+  /* DCL A DEC FIXED INIT (5); */
   else if (!strcmp(FORMT[2], "DEC") && !strcmp(FORMT[3], "FIXED")) // Li
   {
-    SYM[ISYM].TYPE = 'D';    
+    SYM[ISYM].TYPE = 'D';   
+    if (!strcmp(FORMT[4], "INIT")) // Li
+    {
+      strcpy(SYM[ISYM++].INIT, FORMT[5]);
+    }
   }
+  /* DCL B BIT(16); */
   else if (!strcmp(FORMT[2], "BIT"))
   {
     SYM[ISYM].TYPE = 'b';
@@ -1407,31 +1398,29 @@ int ZNK1()
 
 // Li
 
-int DCF1() // #TODO?
+int DCF1()
 {
   return 0;
 }
 
-int DCF2() // #TODO
+int DCF2()
 {
-  char RAB[20];
-  //char i = 0;
-  FORM();
-  //printf("DCF_2%i\n", COUNTER++);
-  for (int i = 0; i < ISYM; i++) 
-  {
-    if (isalpha(SYM[i].NAME[0]))
-    {
-      if (SYM[i].TYPE == 'D')
-      {
-        char op[20] = "PL6\'";               // §¯§Ñ§é§Ñ§Ý§î§ß§Ñ§ñ §Ú§ß§Ú§è§Ú§Ñ§Ý§Ú§Ù§Ñ§è§Ú§ñ §à§á§Ö§â§Ñ§ß§Õ§Ñ
-        strcat(op, SYM[i].INIT);            // §¥§à§Ò§Ñ§Ó§Ý§ñ§Ö§Þ §Ú§ß§Ú§è§Ú§Ñ§Ý§Ú§Ù§Ñ§è§Ú§à§ß§ß§à§Ö §Ù§ß§Ñ§é§Ö§ß§Ú§Ö
-        strcat(op, "\'");                   // §©§Ñ§Ü§â§í§Ó§Ñ§Ö§Þ §Ü§Ñ§Ó§í§é§Ü§à§Û
+  //char RAB[20];
+  //FORM();
+  //for (int i = 0; i < ISYM; i++) 
+  //{
+  //  if (isalpha(SYM[i].NAME[0]))
+  //  {
+  //    if (SYM[i].TYPE == 'D')
+  //    {
+  //      char op[20] = "PL6\'";  
+  //      strcat(op, SYM[i].INIT);
+  //      strcat(op, "\'");       
 
-        // §£§í§Ù§à§Ó §ß§à§Ó§à§Û §æ§å§ß§Ü§è§Ú§Ú ZKARD2 §Õ§Ý§ñ §Ù§Ñ§á§Ú§ã§Ú §Ó ASSTXT
-        ZKARD2(SYM[i].NAME, "DC", op, "Initialization decimal");
-      }
-    }
-  }
+  //      // §£§í§Ù§à§Ó §ß§à§Ó§à§Û §æ§å§ß§Ü§è§Ú§Ú ZKARD2 §Õ§Ý§ñ §Ù§Ñ§á§Ú§ã§Ú §Ó ASSTXT
+  //      ZKARD2(SYM[i].NAME, "DC", op, "Initialization decimal");
+  //    }
+  //  }
+  //}
   return 0;
 }

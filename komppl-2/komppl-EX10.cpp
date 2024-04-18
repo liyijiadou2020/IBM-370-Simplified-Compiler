@@ -647,9 +647,10 @@ int gen_COD() /*интерпретации строк сте-*/
               /* - семантич.вычислителем*/
 int main(int argc, char** argv)
 {                                                /* рабочие переменные:    */
-  FILE* fp;                                       /* - указатель на файл;   */
-  fp_out = fopen("log.txt", "a+");                                  /* Li: 用于读取debug的结果 */
-  if (NULL == fp_out) {
+  FILE* fp;                                      /* - указатель на файл;   */
+  fp_out = fopen("log.txt", "a+");               /* Li: 用于读取debug的结果 */
+  if (NULL == fp_out) 
+  {
     printf("open log.txt failed! \n");
     return FILE_NOT_OPEN;
   }
@@ -661,26 +662,30 @@ int main(int argc, char** argv)
   strcpy(NFIL, ptr);
 
   /* проверка типа исх.файла*/
-  if (strcmp(&NFIL[strlen(NFIL) - 3], "pli")) {
+  if (strcmp(&NFIL[strlen(NFIL) - 3], "pli")) 
+  {
     printf("%s\n",                              /* выдать диагностику и   */
       "Invalid source file type");
     return -1;                                       /* завершить трансляцию   */
   }
-  else {                                              /*пытаемся открыть файл и */
-    if ((fp = fopen(NFIL, "rb")) == NULL) {
+  else 
+  {                                              /*пытаемся открыть файл и */
+    if ((fp = fopen(NFIL, "rb")) == NULL) 
+    {
       printf("%s\n", "File not found");
       return -1;                                     /* завершение трансляции  */
     }
-    else {
+    else 
+    {
       for (NISXTXT = 0; NISXTXT <= MAXNISXTXT; NISXTXT++) {
         if (!fread(ISXTXT[NISXTXT], 80, 1, fp)) {
           if (feof(fp))                      /* в конце файла идем на  */
           {
             goto main1;                            /* метку  main1           */
           }
-          else {
-            printf("%s\n",
-              "Error reading source file");
+          else 
+          {
+            printf("%s\n","Error reading source file");
             return -1;
           }
         }
@@ -703,24 +708,21 @@ main1:                                            /* по завершении �
   int return_code = sint_ANAL();
   if (return_code)                           /* синтаксический анализ  исходного текста */
   {
-    STROKA[I4 + 20] = '\x0';
-    printf("<ERROR CODE> %d\n", return_code);
-    printf("%s%s%s%s\n", "<ERROR INFO> Syntax error here-> ", "\"...", &STROKA[I4], "...\"");
-    printf("%s\n", "Translate interrupted.");
+    print_error_code();
     return -1;                                      /* завершаем трансляцию   */
   }
   else                                            /* иначе делаем           */
   {
     int result_gen_COD = gen_COD();
     if (result_gen_COD == 0) {
-      printf("%s\n", "Translation succeed!");
+      printf("%s\n", "OK!");
       return 0;                                    /* завершить трансляцию */
     }
     print_error_message_of_COD(result_gen_COD);
     fclose(fp_out);
   }
 
-  printf("%s\n", "Translation interrupted.");       /* обобщающая диагностика */
+  printf("%s\n", "ERROR.");       /* обобщающая диагностика */
   return -1;
 }
 /*..........................................................................*/

@@ -644,6 +644,10 @@ void print_DST() {
 }
 
 void print_error_message_of_COD(int result_gen_COD) {
+  if (result_gen_COD == 0) {
+    printf("%s\n", "OK!");
+    return 0;                                    /* §Ù§Ñ§Ó§Ö§â§ê§Ú§ä§î §ä§â§Ñ§ß§ã§Ý§ñ§è§Ú§ð */
+  }
 
   switch (result_gen_COD)                         /* §ã§Ö§Þ§Ñ§ß§ä§Ú§é§Ö§ã§Ü§à§Ö §Ó§í§é§Ú§ã§Ý§Ö§ß.*/
   {  
@@ -690,6 +694,13 @@ void print_error_message_of_COD(int result_gen_COD) {
       &STROKA[DST[I2].DST2], "...\"");
     break;                                     /* - §Ó§í§Û§ä§Ú §ß§Ñ §à§Ò§à§Ò§ë§Ñ§ð§ë§å§ð §Õ§Ú§Ñ§Ô§ß§à§ã§ä§Ú§Ü§å */
   }
+}
+
+void print_error_code() {
+  STROKA[I4 + 20] = '\x0';
+  fprintf(fp_out, "[ERROR] CODE: %d\n", return_code);
+  fprintf(fp_out, "%s%s%s%s\n", "[ERROR INFO] Syntax error here-> ", "\"...", &STROKA[I4], "...\"");
+  printf("%s\n", "ERROR.");
 }
 
 

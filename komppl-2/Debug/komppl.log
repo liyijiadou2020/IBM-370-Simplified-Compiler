@@ -1,6 +1,6 @@
 ﻿  komppl-EX10.cpp
-D:\source\labs\Lab-Compiler\komppl-2\komppl.h(840,1): warning C4102: “L1”: 未引用的标签
-D:\source\labs\Lab-Compiler\komppl-2\komppl.h(874,1): warning C4102: “L4”: 未引用的标签
-D:\source\labs\Lab-Compiler\komppl-2\komppl.h(884,5): warning C4102: “L5”: 未引用的标签
+D:\source\labs\Lab-Compiler\komppl-2\komppl.h(846,1): warning C4102: “L1”: 未引用的标签
+D:\source\labs\Lab-Compiler\komppl-2\komppl.h(880,1): warning C4102: “L4”: 未引用的标签
+D:\source\labs\Lab-Compiler\komppl-2\komppl.h(890,5): warning C4102: “L5”: 未引用的标签
 D:\source\labs\Lab-Compiler\komppl-2\komppl-EX10.cpp(315,14): warning C4101: “RAB”: 未引用的局部变量
   komppl.vcxproj -> D:\source\labs\Lab-Compiler\komppl-2\Debug\komppl.exe

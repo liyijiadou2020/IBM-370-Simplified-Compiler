@@ -595,21 +595,9 @@ char NFIL[30] = "\x0";   /* §ç§â§Ñ§ß§Ú§Ý§Ú§ë§Ö §Ú§Þ§Ö§ß§Ú §ä§â§Ñ§ß§ã§Ý§Ú§â§å§Ö§Þ
 
 /*..........................................................................*/
 
-char* getDateTime()
-{
-  static char nowtime[20];
-  time_t rawtime;
-  struct tm* ltime;
-  time(&rawtime);
-  ltime = localtime(&rawtime);
-  strftime(nowtime, 20, "%Y-%m-%d %H:%M:%S", ltime);
-  return nowtime;
-}
-
-void print_title_log() {
-  char* nowtime = getDateTime();
+void print_title_log() {  
   fprintf(fp_out, "\n\n\n\n\n\n PROGRAM START...\n//////////////////////////////////////////////////////////////////////\n");
-  fprintf(fp_out, "////////////////////////////////////////// %s ///////\n", nowtime);
+  fprintf(fp_out, "/////////////////////////////////////////////////\n");
   fprintf(fp_out, "//////////////////////////////////////////////////////////////////////\n\n");
   fflush(fp_out);
 }
@@ -619,7 +607,9 @@ void print_ASSTXT_to_file() {
   fprintf(fp_out, "\n%s \n", "SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT... ");
 
   fprintf(fp_out, "%s\n", "--------- ASS ---------> \n");
-  for (int i = 0; i < IASSTXT; i++) {
+  int i = 0;
+  for (i = 0; i < IASSTXT; i++) {
+
     fprintf(fp_out, "%d\t%s\n", i + 1, ASSTXT[i]);
   }
   fprintf(fp_out, "\n%s\n", "<------------ASS ------\n");
@@ -628,8 +618,8 @@ void print_ASSTXT_to_file() {
 
 void print_DST() {
   fprintf(fp_out, "%s\n", "---> print DST stack:");
-  for (int i = 0; i < L; i++) {
-
+  int i = 0;
+  for (i = 0; i < L; i++) {
     int tmp = 0;
     tmp = idx_of_VXOD(DST[i].DST1, 3);
     fprintf(fp_out,
@@ -1033,11 +1023,14 @@ void ZKARD() /* §Ù§Ñ§á§Ú§ã§Ú §à§é§Ö§â§Ö§Õ§ß§à§Û §ã§Ô§Ö§ß§Ö-*/
              /* §ç§à§Õ§ß§à§Ô§à §æ§Ñ§Û§Ý§Ñ §Ó §Þ§Ñ§ã§ã§Ú§Ó */
              /* ASSTXT                 */
 
-  char i;
-  memcpy(ASSTXT[IASSTXT++], ASS_CARD.BUFCARD, 80);
-
-  for (i = 0; i < 79; i++)
-    ASS_CARD.BUFCARD[i] = ' ';
+  
+  memcpy(ASSTXT[IASSTXT++], ASS_CARD.BUFCARD, sizeof(ASS_CARD.BUFCARD));
+  
+  memset(ASS_CARD.BUFCARD, ' ', sizeof(ASS_CARD.BUFCARD)); // Çå¿Õ»º³åÇø
+  
+  //char i;
+  //for (i = 0; i < 79; i++)
+  //  ASS_CARD.BUFCARD[i] = ' ';
   return;
 }
 
@@ -1674,7 +1667,7 @@ int OEN2()
 
   if (is_cvb) { // Li: if the CVB command is used
     ZKARD2("", " DS", "0F", "Memory allocation for CVB.");
-    ZKARD2("@BUF", "DC", "PL8\'0\'", "Buffer for CVB.");
+    ZKARD2("@BUF", "DC", "PL8\'0\'", "Buffer for CVB.");    
   }
 
   /* §Õ§Ñ§Ý§Ö§Ö §Ú§Õ§Ö§ä §Ò§Ý§à§Ü §Õ§Ö§Ü§Ý§Ñ- */
@@ -1684,20 +1677,23 @@ int OEN2()
   /* §â§Ñ§Ò§à§é§Ú§Û §â§Ö§Ô§Ú§ã§ä§â§í §à§Ò§ë§Ö§Ô§à*/
   /* §ß§Ñ§Ù§ß§Ñ§é§Ö§ß§Ú§ñ             */
 
-  memcpy(ASS_CARD._BUFCARD.METKA, "@RVIX", 5);  /* Li */
+  memcpy(ASS_CARD._BUFCARD.METKA, "@RVIX", 5);  /* Li: todo, print problem */
   memcpy(ASS_CARD._BUFCARD.OPERAC, "EQU", 3);
   memcpy(ASS_CARD._BUFCARD.OPERAND, "14", 2);
+  memcpy(ASS_CARD._BUFCARD.COMM, "@RVIX assign 14", 20);
   ZKARD();
 
   memcpy(ASS_CARD._BUFCARD.METKA, "@RBASE", 6); /* §æ§à§â§Þ§Ú§â§à§Ó§Ñ§ß§Ú§Ö EQU-§á§ã§Ö§Ó- */
   memcpy(ASS_CARD._BUFCARD.OPERAC, "EQU", 3);   /* §Õ§à§à§á§Ö§â§Ñ§è§Ú§Ú §à§á§â§Ö§Õ§Ö§Ý§Ö§ß§Ú§ñ */ /* ÕâÀïËÆºõ±»Ö´ÐÐÁËÁ½´Î£¿*/
   memcpy(ASS_CARD._BUFCARD.OPERAND, "15", 2);  /* §ß§à§Þ§Ö§â§Ñ §Ò§Ñ§Ù§à§Ó§à§Ô§à §â§Ö§Ô§Ú§ã§ä§â§Ñ §à§Ò§ë§Ö§Ô§à §ß§Ñ§Ù§ß§Ñ§é§Ö§ß§Ú§ñ*/
+  memcpy(ASS_CARD._BUFCARD.COMM, "@RBASE assign 15", 20);
   /*           §Ú            */
   ZKARD();                                       /* §Ù§Ñ§á§à§Þ§Ú§ß§Ñ§ß§Ú§Ö §Ö§Ö         */
 
   memcpy(ASS_CARD._BUFCARD.METKA, "@RRAB", 5);  /* §æ§à§â§Þ§Ú§â§à§Ó§Ñ§ß§Ú§Ö EQU-§á§ã§Ö§Ó- */
   memcpy(ASS_CARD._BUFCARD.OPERAC, "EQU", 3);   /* §Õ§à§à§á§Ö§â§Ñ§è§Ú§Ú §à§á§â§Ö§Õ§Ö§Ý§Ö§ß§Ú§ñ */
   memcpy(ASS_CARD._BUFCARD.OPERAND, "5", 1);   /* §ß§à§Þ§Ö§â§Ñ §Ò§Ñ§Ù§à§Ó§à§Ô§à §â§Ö§Ô§Ú§ã§ä-*/
+  memcpy(ASS_CARD._BUFCARD.COMM, "@RRAB assign 5", 20);
   /* §â§Ñ §à§Ò§ë§Ö§Ô§à §ß§Ñ§Ù§ß§Ñ§é§Ö§ß§Ú§ñ   */
   /*            §Ú           */
   ZKARD();                                       /* §Ù§Ñ§á§à§Þ§Ú§ß§Ñ§ß§Ú§Ö §Ö§Ö         */
@@ -1765,8 +1761,9 @@ int OPA2() /* OPA - "§à§á§Ö§â§Ñ§ä.§á§â§Ú§ã§Ó§Ñ§Ú§Ó§Ñ§ß§Ú§ñ §Ñ§â§Ú§æ§Þ§Ö§ä§Ú§é§Ö§
       }
       else if (SYM[i].TYPE == 'b') //Li: todo DEC FIXED 
       {
-        ZKARD2("", " CVB", "@RRAB, @BUF", "Convert to binary.");
+        ZKARD2("", " CVB", "@RRAB,@BUF", "Convert to binary.");
         ZKARD2("", " STH", "@RRAB, B", "Store Halfword.");
+
         is_cvb = true;
         return 0;
       }
@@ -1858,19 +1855,6 @@ int write_to_ASSTXT() {
 
 int PRO2()                                       /*§á§â§à§Ô§â.§æ§à§â§Þ§Ú§â§å§Ö§ä §Ó§í§ç§à§Õ§ß§à§Û*/
 {                                                /*§æ§Ñ§Û§Ý                    */
-
-  //FILE* fp;                                       /*§ß§Ñ§Ò§à§â §â§Ñ§Ò§à§é§Ú§ç §á§Ö§â§Ö§Þ§Ö§ß§ß§í§ç*/
-
-  //strcat(NFIL, "ass");                        /*§ã§æ§à§â§Þ§Ú§â§à§Ó§Ñ§ä§î §Ú§Þ§ñ §Ó§í§ç§à§Õ§ß§à§Ô§à §æ§Ñ§Û§Ý§Ñ*/  
-
-  //if ((fp = fopen(NFIL, "wb")) == NULL)     /*§á§â§Ú §ß§Ö§å§Õ§Ñ§é§ß.§à§ä§Ü§â§í§ä.§æ-§Ý§Ñ */
-  //  return (7);                                    /* §ã§à§à§Ò§ë§Ö§ß§Ú§Ö §à§Ò §à§ê§Ú§Ò§Ü§Ö    */
-  //else                                            /*§Ú§ß§Ñ§é§Ö:                  */
-  //  fwrite(ASSTXT, 80, IASSTXT, fp);            /* §æ§à§â§Þ§Ú§â§å§Ö§Þ §ä§Ö§Ý§à §à§Ò.§æ§Ñ§Û§Ý§Ñ*/
-  //fclose(fp);                                  /*§Ù§Ñ§Ü§â§í§Ó§Ñ§Ö§Þ §à§Ò'§Ö§Ü§ä§ß§í§Û §æ§Ñ§Û§Ý*/              
-
-  //return (0);                                   /*§Ù§Ñ§Ó§Ö§â§ê§Ú§ä§î §á§à§Ý§Õ§á§â§à§Ô§â§Ñ§Þ§Þ§å */
-
   return write_to_ASSTXT();
 }
 

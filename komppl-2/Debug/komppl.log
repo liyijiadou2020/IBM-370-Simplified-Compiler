@@ -1,14 +1,10 @@
 ﻿  komppl.c
-D:\source\labs\Lab-Compiler\komppl-2\komppl.c(603,3): warning C4013: “time”未定义；假设外部返回 int
-D:\source\labs\Lab-Compiler\komppl-2\komppl.c(604,11): warning C4013: “localtime”未定义；假设外部返回 int
-D:\source\labs\Lab-Compiler\komppl-2\komppl.c(604,30): warning C4047: “=”:“tm *”与“int”的间接级别不同
-D:\source\labs\Lab-Compiler\komppl-2\komppl.c(605,3): warning C4013: “strftime”未定义；假设外部返回 int
-D:\source\labs\Lab-Compiler\komppl-2\komppl.c(846,1): warning C4102: “L1”: 未引用的标签
-D:\source\labs\Lab-Compiler\komppl-2\komppl.c(880,1): warning C4102: “L4”: 未引用的标签
-D:\source\labs\Lab-Compiler\komppl-2\komppl.c(890,5): warning C4102: “L5”: 未引用的标签
-D:\source\labs\Lab-Compiler\komppl-2\komppl.c(1624,9): warning C4013: “isalpha”未定义；假设外部返回 int
-D:\source\labs\Lab-Compiler\komppl-2\komppl.c(1647,43): warning C4013: “gcvt”未定义；假设外部返回 int
-D:\source\labs\Lab-Compiler\komppl-2\komppl.c(1647,80): warning C4047: “函数”:“const char *”与“int”的间接级别不同
-D:\source\labs\Lab-Compiler\komppl-2\komppl.c(1647,43): warning C4024: “strcat”: 形参和实参 2 的类型不同
-D:\source\labs\Lab-Compiler\komppl-2\komppl.c(1663,14): warning C4101: “RAB”: 未引用的局部变量
+D:\source\labs\Lab-Compiler\komppl-2\komppl.c(836,1): warning C4102: “L1”: 未引用的标签
+D:\source\labs\Lab-Compiler\komppl-2\komppl.c(870,1): warning C4102: “L4”: 未引用的标签
+D:\source\labs\Lab-Compiler\komppl-2\komppl.c(880,5): warning C4102: “L5”: 未引用的标签
+D:\source\labs\Lab-Compiler\komppl-2\komppl.c(1617,9): warning C4013: “isalpha”未定义；假设外部返回 int
+D:\source\labs\Lab-Compiler\komppl-2\komppl.c(1640,43): warning C4013: “gcvt”未定义；假设外部返回 int
+D:\source\labs\Lab-Compiler\komppl-2\komppl.c(1640,80): warning C4047: “函数”:“const char *”与“int”的间接级别不同
+D:\source\labs\Lab-Compiler\komppl-2\komppl.c(1640,43): warning C4024: “strcat”: 形参和实参 2 的类型不同
+D:\source\labs\Lab-Compiler\komppl-2\komppl.c(1656,14): warning C4101: “RAB”: 未引用的局部变量
   komppl.vcxproj -> D:\source\labs\Lab-Compiler\komppl-2\Debug\komppl.exe

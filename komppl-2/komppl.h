@@ -618,7 +618,7 @@ void print_ASSTXT_to_file() {
   fprintf(fp_out, "%s = %d\n", "IASSTXT(lines)", IASSTXT);
   fprintf(fp_out, "%s\n", "--------- ASS ---------> \n");
   for (int i = 0; i < IASSTXT; i++) {
-    fprintf(fp_out, "%d\t%s\n", i, ASSTXT[i]);
+    fprintf(fp_out, "%d\t%s\n", i+1, ASSTXT[i]);
   }
   fprintf(fp_out, "\n%s\n", "<------------ASS ------\n");
   fflush(fp_out);
@@ -955,7 +955,11 @@ L9: /* §°§Ò§â§Ñ§ä§ß§í§Û §á§à§Ú§ã§Ü 2 */
   K--;
 
   if (J == 999)
+  {
+    fprintf(fp_out, " [ERROR] %s %s\n", VXOD[idx_of_VXOD(SINT[J].DER, 3)].SYM, "Undefined symbol!");
+    fflush(fp_out);
     return 2; // ´íÎó
+  }
   else
     goto L8; // §¢§Ý§à§Ü §á§Ö§â§Ö§Ò§à§â§Ñ §Ô§Ú§á§à§ä§Ö§Ù §á§â§à§Õ§à§Ý§Ø§Ö§ß§Ú§Ö 2)
 }
@@ -1250,6 +1254,8 @@ int ODC1()
   {
     SYM[ISYM].TYPE = 'U';                        /* §å§ã§ä§Ñ§ß§Ñ§Ó§Ý§Ú§Ó§Ñ§Ö§Þ §ä§Ú§á §Ú§Õ§Ö§ß-*/
     /* §ä§Ú§æ§Ú§Ü§Ñ§ä§à§â§Ñ = 'U'  §Ú    */
+    fprintf(fp_out, "--->[Error]UNDIFINED SYMBOL: %s %s %s\n", FORMT[1], FORMT[2], FORMT[3]); // Li
+    fflush(fp_out);
     return 2;                                     /* §Ù§Ñ§Ó§Ö§â§ê§Ñ§Ö§Þ §á§â§à§Ô§â§Ñ§Þ§Þ§å    */
     /* §á§à §à§ê§Ú§Ò§Ü§Ö              */
   }
@@ -1430,3 +1436,7 @@ int DCF2()
   //}
   return 0;
 }
+
+
+bool is_cvb = false;
+char is_fv;

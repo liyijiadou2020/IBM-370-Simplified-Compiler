@@ -1,0 +1,854 @@
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-22 09:51:07 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(10);DCL B BIT(16);B=A;END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>>>>>>>>>>>>>>>>>>>>> Pass2 of semantic calculation <<<<<<<<<<<<<<<<<<<<<
+>>>> 0/45 Operation code: BUK
+>>>> 1/45 Operation code: IDE
+>>>> 2/45 Operation code: BUK
+>>>> 3/45 Operation code: IDE
+>>>> 4/45 Operation code: CIF
+>>>> 5/45 Operation code: IDE
+>>>> 6/45 Operation code: CIF
+>>>> 7/45 Operation code: IDE
+>>>> 8/45 Operation code: IPR
+>>>> 9/45 Operation code: OPR
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+>>>> 10/45 Operation code: BUK
+>>>> 11/45 Operation code: IDE
+>>>> 12/45 Operation code: CIF
+>>>> 13/45 Operation code: CIF
+>>>> 14/45 Operation code: DCF
+>>>> 15/45 Operation code: ODC
+>>>> 16/45 Operation code: TEL
+>>>> 17/45 Operation code: BUK
+>>>> 18/45 Operation code: IDE
+>>>> 19/45 Operation code: CIF
+>>>> 20/45 Operation code: RZR
+>>>> 21/45 Operation code: CIF
+>>>> 22/45 Operation code: RZR
+>>>> 23/45 Operation code: ODC
+>>>> 24/45 Operation code: TEL
+>>>> 25/45 Operation code: BUK
+>>>> 26/45 Operation code: IDE
+>>>> 27/45 Operation code: IPE
+>>>> 28/45 Operation code: BUK
+>>>> 29/45 Operation code: IDE
+>>>> 30/45 Operation code: IPE
+>>>> 31/45 Operation code: AVI
+>>>> 32/45 Operation code: OPA
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-22 10:23:22 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(10);DCL B BIT(16);B=A;END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>>>>>>>>>>>>>>>>>>>>> Pass2 of semantic calculation <<<<<<<<<<<<<<<<<<<<<
+>>>> 0/45 Operation code: BUK
+>>>> 1/45 Operation code: IDE
+>>>> 2/45 Operation code: BUK
+>>>> 3/45 Operation code: IDE
+>>>> 4/45 Operation code: CIF
+>>>> 5/45 Operation code: IDE
+>>>> 6/45 Operation code: CIF
+>>>> 7/45 Operation code: IDE
+>>>> 8/45 Operation code: IPR
+>>>> 9/45 Operation code: OPR
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+>>>> 10/45 Operation code: BUK
+>>>> 11/45 Operation code: IDE
+>>>> 12/45 Operation code: CIF
+>>>> 13/45 Operation code: CIF
+>>>> 14/45 Operation code: DCF
+>>>> 15/45 Operation code: ODC
+>>>> 16/45 Operation code: TEL
+>>>> 17/45 Operation code: BUK
+>>>> 18/45 Operation code: IDE
+>>>> 19/45 Operation code: CIF
+>>>> 20/45 Operation code: RZR
+>>>> 21/45 Operation code: CIF
+>>>> 22/45 Operation code: RZR
+>>>> 23/45 Operation code: ODC
+>>>> 24/45 Operation code: TEL
+>>>> 25/45 Operation code: BUK
+>>>> 26/45 Operation code: IDE
+>>>> 27/45 Operation code: IPE
+>>>> 28/45 Operation code: BUK
+>>>> 29/45 Operation code: IDE
+>>>> 30/45 Operation code: IPE
+>>>> 31/45 Operation code: AVI
+>>>> 32/45 Operation code: OPA
+>>>> 33/45 Operation code: TEL
+>>>> 34/45 Operation code: BUK
+>>>> 35/45 Operation code: IDE
+>>>> 36/45 Operation code: BUK
+>>>> 37/45 Operation code: IDE
+>>>> 38/45 Operation code: CIF
+>>>> 39/45 Operation code: IDE
+>>>> 40/45 Operation code: CIF
+>>>> 41/45 Operation code: IDE
+>>>> 42/45 Operation code: IPR
+>>>> 43/45 Operation code: OEN
+---> void ZKARD()
+IASSTXT = 4
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 8
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 9
+ASS_CARD.BUFCARD =          END   EX10         End of program <--- 
+>>>> 44/45 Operation code: PRO
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+IASSTXT(lines) = 10
+--------- ASS ---------> 
+
+0	EX10     START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	        MVC    @BUF+2(6),  Move from cache A to @BUF
+4	         BCR   15,14        Exit from program
+5	A        DC    PL6'10'  Initialization DECIMAL
+6	B        DS    0F  Initialization BIT
+7	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX10         End of program
+8	RRAB     EQU   5                                                                         END   EX10         End of program
+9	         END   EX10         End of program
+
+<------------ASS ------
+
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-22 11:04:26 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(10);DCL B BIT(16);B=A;END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>>>>>>>>>>>>>>>>>>>>> Pass2 of semantic calculation <<<<<<<<<<<<<<<<<<<<<
+>>>> 0/45 Operation code: BUK
+>>>> 1/45 Operation code: IDE
+>>>> 2/45 Operation code: BUK
+>>>> 3/45 Operation code: IDE
+>>>> 4/45 Operation code: CIF
+>>>> 5/45 Operation code: IDE
+>>>> 6/45 Operation code: CIF
+>>>> 7/45 Operation code: IDE
+>>>> 8/45 Operation code: IPR
+>>>> 9/45 Operation code: OPR
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+>>>> 10/45 Operation code: BUK
+>>>> 11/45 Operation code: IDE
+>>>> 12/45 Operation code: CIF
+>>>> 13/45 Operation code: CIF
+>>>> 14/45 Operation code: DCF
+>>>> 15/45 Operation code: ODC
+>>>> 16/45 Operation code: TEL
+>>>> 17/45 Operation code: BUK
+>>>> 18/45 Operation code: IDE
+>>>> 19/45 Operation code: CIF
+>>>> 20/45 Operation code: RZR
+>>>> 21/45 Operation code: CIF
+>>>> 22/45 Operation code: RZR
+>>>> 23/45 Operation code: ODC
+>>>> 24/45 Operation code: TEL
+>>>> 25/45 Operation code: BUK
+>>>> 26/45 Operation code: IDE
+>>>> 27/45 Operation code: IPE
+>>>> 28/45 Operation code: BUK
+>>>> 29/45 Operation code: IDE
+>>>> 30/45 Operation code: IPE
+>>>> 31/45 Operation code: AVI
+>>>> 32/45 Operation code: OPA
+>>>> 33/45 Operation code: TEL
+>>>> 34/45 Operation code: BUK
+>>>> 35/45 Operation code: IDE
+>>>> 36/45 Operation code: BUK
+>>>> 37/45 Operation code: IDE
+>>>> 38/45 Operation code: CIF
+>>>> 39/45 Operation code: IDE
+>>>> 40/45 Operation code: CIF
+>>>> 41/45 Operation code: IDE
+>>>> 42/45 Operation code: IPR
+>>>> 43/45 Operation code: OEN
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 9
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 10
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 11
+ASS_CARD.BUFCARD =          END   EX10         End of program <--- 
+>>>> 44/45 Operation code: PRO
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+IASSTXT(lines) = 12
+--------- ASS ---------> 
+
+0	EX10     START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	         MVC    @BUF+2(6),  Move from cache A to @BUF
+4	         CVB    @RRAB, @BUF  Convert to binary
+5	         STH    @RRAB, B  Store Halfword.
+6	         BCR   15,14        Exit from program
+7	A        DC    PL6'10'  Initialization DECIMAL
+8	B        DS    0F  Initialization BIT
+9	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX10         End of program
+10	RRAB     EQU   5                                                                         END   EX10         End of program
+11	         END   EX10         End of program
+
+<------------ASS ------
+
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-22 11:09:15 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(10);DCL B BIT(16);B=A;END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>>>>>>>>>>>>>>>>>>>>> Pass2 of semantic calculation <<<<<<<<<<<<<<<<<<<<<
+>>>> 0/45 Operation code: BUK
+>>>> 1/45 Operation code: IDE
+>>>> 2/45 Operation code: BUK
+>>>> 3/45 Operation code: IDE
+>>>> 4/45 Operation code: CIF
+>>>> 5/45 Operation code: IDE
+>>>> 6/45 Operation code: CIF
+>>>> 7/45 Operation code: IDE
+>>>> 8/45 Operation code: IPR
+>>>> 9/45 Operation code: OPR
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+>>>> 10/45 Operation code: BUK
+>>>> 11/45 Operation code: IDE
+>>>> 12/45 Operation code: CIF
+>>>> 13/45 Operation code: CIF
+>>>> 14/45 Operation code: DCF
+>>>> 15/45 Operation code: ODC
+>>>> 16/45 Operation code: TEL
+>>>> 17/45 Operation code: BUK
+>>>> 18/45 Operation code: IDE
+>>>> 19/45 Operation code: CIF
+>>>> 20/45 Operation code: RZR
+>>>> 21/45 Operation code: CIF
+>>>> 22/45 Operation code: RZR
+>>>> 23/45 Operation code: ODC
+>>>> 24/45 Operation code: TEL
+>>>> 25/45 Operation code: BUK
+>>>> 26/45 Operation code: IDE
+>>>> 27/45 Operation code: IPE
+>>>> 28/45 Operation code: BUK
+>>>> 29/45 Operation code: IDE
+>>>> 30/45 Operation code: IPE
+>>>> 31/45 Operation code: AVI
+>>>> 32/45 Operation code: OPA
+>>>> 33/45 Operation code: TEL
+>>>> 34/45 Operation code: BUK
+>>>> 35/45 Operation code: IDE
+>>>> 36/45 Operation code: BUK
+>>>> 37/45 Operation code: IDE
+>>>> 38/45 Operation code: CIF
+>>>> 39/45 Operation code: IDE
+>>>> 40/45 Operation code: CIF
+>>>> 41/45 Operation code: IDE
+>>>> 42/45 Operation code: IPR
+>>>> 43/45 Operation code: OEN
+---> void ZKARD()
+IASSTXT = 8
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 11
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 12
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 13
+ASS_CARD.BUFCARD =          END   EX10         End of program <--- 
+>>>> 44/45 Operation code: PRO
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+IASSTXT(lines) = 14
+--------- ASS ---------> 
+
+0	EX10     START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	B        DS    BL  圾抑忱快抖快扶我快 扭忘技攸找我
+4	B        DS    BL  圾抑忱快抖快扶我快 扭忘技攸找我
+5	         MVC    @BUF+2(6)  Move from cache A to @BUF
+6	         CVB    @RRAB, @BUF  Convert to binary.
+7	         STH    @RRAB, B  Store Halfword.
+8	         BCR   15,14        Exit from program
+9	A        DC    PL6'10'  Initialization DECIMAL
+10	B        DS    0F  Initialization BIT
+11	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX10         End of program
+12	RRAB     EQU   5                                                                         END   EX10         End of program
+13	         END   EX10         End of program
+
+<------------ASS ------
+
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-22 11:10:53 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(10);DCL B BIT(16);B=A;END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>>>>>>>>>>>>>>>>>>>>> Pass2 of semantic calculation <<<<<<<<<<<<<<<<<<<<<
+>>>> 0/45 Operation code: BUK
+>>>> 1/45 Operation code: IDE
+>>>> 2/45 Operation code: BUK
+>>>> 3/45 Operation code: IDE
+>>>> 4/45 Operation code: CIF
+>>>> 5/45 Operation code: IDE
+>>>> 6/45 Operation code: CIF
+>>>> 7/45 Operation code: IDE
+>>>> 8/45 Operation code: IPR
+>>>> 9/45 Operation code: OPR
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+>>>> 10/45 Operation code: BUK
+>>>> 11/45 Operation code: IDE
+>>>> 12/45 Operation code: CIF
+>>>> 13/45 Operation code: CIF
+>>>> 14/45 Operation code: DCF
+>>>> 15/45 Operation code: ODC
+>>>> 16/45 Operation code: TEL
+>>>> 17/45 Operation code: BUK
+>>>> 18/45 Operation code: IDE
+>>>> 19/45 Operation code: CIF
+>>>> 20/45 Operation code: RZR
+>>>> 21/45 Operation code: CIF
+>>>> 22/45 Operation code: RZR
+>>>> 23/45 Operation code: ODC
+>>>> 24/45 Operation code: TEL
+>>>> 25/45 Operation code: BUK
+>>>> 26/45 Operation code: IDE
+>>>> 27/45 Operation code: IPE
+>>>> 28/45 Operation code: BUK
+>>>> 29/45 Operation code: IDE
+>>>> 30/45 Operation code: IPE
+>>>> 31/45 Operation code: AVI
+>>>> 32/45 Operation code: OPA
+>>>> 33/45 Operation code: TEL
+>>>> 34/45 Operation code: BUK
+>>>> 35/45 Operation code: IDE
+>>>> 36/45 Operation code: BUK
+>>>> 37/45 Operation code: IDE
+>>>> 38/45 Operation code: CIF
+>>>> 39/45 Operation code: IDE
+>>>> 40/45 Operation code: CIF
+>>>> 41/45 Operation code: IDE
+>>>> 42/45 Operation code: IPR
+>>>> 43/45 Operation code: OEN
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD =          BCR   15,14        Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 10
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 11
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 12
+ASS_CARD.BUFCARD =          END   EX10         End of program <--- 
+>>>> 44/45 Operation code: PRO
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+IASSTXT(lines) = 13
+--------- ASS ---------> 
+
+0	EX10     START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	B        DS    BL  Memory allocation
+4	         MVC    @BUF+2(6)  Move from cache A to @BUF
+5	         CVB    @RRAB, @BUF  Convert to binary.
+6	         STH    @RRAB, B  Store Halfword.
+7	         BCR   15,14        Exit from program
+8	A        DC    PL6'10'  Initialization DECIMAL
+9	B        DS    0F  Initialization BIT
+10	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX10         End of program
+11	RRAB     EQU   5                                                                         END   EX10         End of program
+12	         END   EX10         End of program
+
+<------------ASS ------
+
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-22 11:27:56 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(10);DCL B BIT(16);B=A;END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+>>>>>>>>>>>>>>>>>>>>> Pass2 of semantic calculation <<<<<<<<<<<<<<<<<<<<<
+>>>> 0/45 Operation code: BUK
+>>>> 1/45 Operation code: IDE
+>>>> 2/45 Operation code: BUK
+>>>> 3/45 Operation code: IDE
+>>>> 4/45 Operation code: CIF
+>>>> 5/45 Operation code: IDE
+>>>> 6/45 Operation code: CIF
+>>>> 7/45 Operation code: IDE
+>>>> 8/45 Operation code: IPR
+>>>> 9/45 Operation code: OPR
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+>>>> 10/45 Operation code: BUK
+>>>> 11/45 Operation code: IDE
+>>>> 12/45 Operation code: CIF
+>>>> 13/45 Operation code: CIF
+>>>> 14/45 Operation code: DCF
+>>>> 15/45 Operation code: ODC
+>>>> 16/45 Operation code: TEL
+>>>> 17/45 Operation code: BUK
+>>>> 18/45 Operation code: IDE
+>>>> 19/45 Operation code: CIF
+>>>> 20/45 Operation code: RZR
+>>>> 21/45 Operation code: CIF
+>>>> 22/45 Operation code: RZR
+>>>> 23/45 Operation code: ODC
+>>>> 24/45 Operation code: TEL
+>>>> 25/45 Operation code: BUK
+>>>> 26/45 Operation code: IDE
+>>>> 27/45 Operation code: IPE
+>>>> 28/45 Operation code: BUK
+>>>> 29/45 Operation code: IDE
+>>>> 30/45 Operation code: IPE
+>>>> 31/45 Operation code: AVI
+>>>> 32/45 Operation code: OPA
+>>>> 33/45 Operation code: TEL
+>>>> 34/45 Operation code: BUK
+>>>> 35/45 Operation code: IDE
+>>>> 36/45 Operation code: BUK
+>>>> 37/45 Operation code: IDE
+>>>> 38/45 Operation code: CIF
+>>>> 39/45 Operation code: IDE
+>>>> 40/45 Operation code: CIF
+>>>> 41/45 Operation code: IDE
+>>>> 42/45 Operation code: IPR
+>>>> 43/45 Operation code: OEN
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD =          BCR   15,@RVIX     Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 11
+ASS_CARD.BUFCARD = RVIX     EQU   1                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 12
+ASS_CARD.BUFCARD = RBASE    EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 13
+ASS_CARD.BUFCARD = RRAB     EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 14
+ASS_CARD.BUFCARD =          END   EX10         End of program <--- 
+>>>> 44/45 Operation code: PRO
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+IASSTXT(lines) = 15
+--------- ASS ---------> 
+
+0	EX10     START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	B        DS    BL  Memory allocation
+4	         MVC    @BUF+2(6)  Move from cache A to @BUF
+5	         CVB    @RRAB, @BUF  Convert to binary.
+6	         STH    @RRAB, B  Store Halfword.
+7	         BCR   15,@RVIX     Exit from program
+8	A        DC    PL6'10'  Initialization DECIMAL
+9	B        DS    0F  Initialization BIT
+10	        DS    0F  Memory allocation for CVB
+11	RVIX     EQU   1                                                                RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX10         End of program
+12	RBASE    EQU   15                                                               RRAB     EQU   5                                                                         END   EX10         End of program
+13	RRAB     EQU   5                                                                         END   EX10         End of program
+14	         END   EX10         End of program
+
+<------------ASS ------
+
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-22 11:34:33 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(10);DCL B BIT(16);B=A;END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+---> void ZKARD()
+IASSTXT = 7
+ASS_CARD.BUFCARD =          BCR   15,@RVIX     Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 12
+ASS_CARD.BUFCARD = @RVIX    EQU   1                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 13
+ASS_CARD.BUFCARD = @RBASE   EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 14
+ASS_CARD.BUFCARD = @RRAB    EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 15
+ASS_CARD.BUFCARD =          END   EX10         End of program <--- 
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+IASSTXT(lines) = 16
+--------- ASS ---------> 
+
+0	EX10     START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	B        DS    BL  Memory allocation
+4	         MVC    @BUF+2(6)  Move from cache A to @BUF
+5	         CVB    @RRAB, @BUF  Convert to binary.
+6	         STH    @RRAB, B  Store Halfword.
+7	         BCR   15,@RVIX     Exit from program
+8	A        DC    PL6'10'  Initialization DECIMAL.
+9	B        DS    0F  Initialization BIT.
+10	         DS    0F  Memory allocation for CVB.
+11	@BUF         DC    PL8'0'  Buffer for CVB.
+12	@RVIX    EQU   1                                                                @RBASE   EQU   15                                                               @RRAB    EQU   5                                                                         END   EX10         End of program
+13	@RBASE   EQU   15                                                               @RRAB    EQU   5                                                                         END   EX10         End of program
+14	@RRAB    EQU   5                                                                         END   EX10         End of program
+15	         END   EX10         End of program
+
+<------------ASS ------
+
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-22 11:38:02 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(10);DCL B BIT(16);B=A;END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD =          BCR   15,@RVIX     Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 11
+ASS_CARD.BUFCARD = @RVIX    EQU   1                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 12
+ASS_CARD.BUFCARD = @RBASE   EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 13
+ASS_CARD.BUFCARD = @RRAB    EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 14
+ASS_CARD.BUFCARD =          END   EX10         End of program <--- 
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+IASSTXT(lines) = 15
+--------- ASS ---------> 
+
+0	EX10     START 0            Program starts
+1	         BALR  RBASE,0      Load base register
+2	         USING *,RBASE      Set base register
+3	         MVC    @BUF+2(6)  Move from cache A to @BUF
+4	         CVB    @RRAB, @BUF  Convert to binary.
+5	         STH    @RRAB, B  Store Halfword.
+6	         BCR   15,@RVIX     Exit from program
+7	A        DC    PL6'10'  Initialization DECIMAL.
+8	B        DS    0F  Initialization BIT.
+9	         DS    0F  Memory allocation for CVB.
+10	@BUF         DC    PL8'0'  Buffer for CVB.
+11	@RVIX    EQU   1                                                                @RBASE   EQU   15                                                               @RRAB    EQU   5                                                                         END   EX10         End of program
+12	@RBASE   EQU   15                                                               @RRAB    EQU   5                                                                         END   EX10         End of program
+13	@RRAB    EQU   5                                                                         END   EX10         End of program
+14	         END   EX10         End of program
+
+<------------ASS ------
+
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-22 11:39:47 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(10);DCL B BIT(16);B=A;END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD =          BCR   15,@RVIX     Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 11
+ASS_CARD.BUFCARD = @RVIX    EQU   14                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 12
+ASS_CARD.BUFCARD = @RBASE   EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 13
+ASS_CARD.BUFCARD = @RRAB    EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 14
+ASS_CARD.BUFCARD =          END   EX10         End of program <--- 
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+IASSTXT(lines) = 15
+--------- ASS ---------> 
+
+1	EX10     START 0            Program starts
+2	         BALR  RBASE,0      Load base register
+3	         USING *,RBASE      Set base register
+4	         MVC    @BUF+2(6)  Move from cache A to @BUF
+5	         CVB    @RRAB, @BUF  Convert to binary.
+6	         STH    @RRAB, B  Store Halfword.
+7	         BCR   15,@RVIX     Exit from program
+8	A        DC    PL6'10'  Initialization DECIMAL.
+9	B        DS    0F  Initialization BIT.
+10	         DS    0F  Memory allocation for CVB.
+11	@BUF         DC    PL8'0'  Buffer for CVB.
+12	@RVIX    EQU   14                                                               @RBASE   EQU   15                                                               @RRAB    EQU   5                                                                         END   EX10         End of program
+13	@RBASE   EQU   15                                                               @RRAB    EQU   5                                                                         END   EX10         End of program
+14	@RRAB    EQU   5                                                                         END   EX10         End of program
+15	         END   EX10         End of program
+
+<------------ASS ------
+
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-22 11:40:54 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(10);DCL B BIT(16);B=A;END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+---> void ZKARD()
+IASSTXT = 0
+ASS_CARD.BUFCARD = EX10     START 0            Program starts <--- 
+---> void ZKARD()
+IASSTXT = 1
+ASS_CARD.BUFCARD =          BALR  RBASE,0      Load base register <--- 
+---> void ZKARD()
+IASSTXT = 2
+ASS_CARD.BUFCARD =          USING *,RBASE      Set base register <--- 
+---> void ZKARD()
+IASSTXT = 6
+ASS_CARD.BUFCARD =          BCR   15,@RVIX     Exit from program <--- 
+---> void ZKARD()
+IASSTXT = 11
+ASS_CARD.BUFCARD = @RVIX    EQU   14                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 12
+ASS_CARD.BUFCARD = @RBASE   EQU   15                                                               BUK <--- 
+---> void ZKARD()
+IASSTXT = 13
+ASS_CARD.BUFCARD = @RRAB    EQU   5                                                                BUK <--- 
+---> void ZKARD()
+IASSTXT = 14
+ASS_CARD.BUFCARD =          END   EX10         End of program <--- 
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+IASSTXT(lines) = 15
+--------- ASS ---------> 
+
+1	EX10     START 0            Program starts
+2	         BALR  RBASE,0      Load base register
+3	         USING *,RBASE      Set base register
+4	         MVC    @BUF+2(6)  Move from cache A to @BUF
+5	         CVB    @RRAB, @BUF  Convert to binary.
+6	         STH    @RRAB, B  Store Halfword.
+7	         BCR   15,@RVIX     Exit from program
+8	A        DC    PL6'10'  Initialization DECIMAL.
+9	B        DS    0F  Initialization BIT.
+10	         DS    0F  Memory allocation for CVB.
+11	@BUF        DC    PL8'0'  Buffer for CVB.
+12	@RVIX    EQU   14                                                               @RBASE   EQU   15                                                               @RRAB    EQU   5                                                                         END   EX10         End of program
+13	@RBASE   EQU   15                                                               @RRAB    EQU   5                                                                         END   EX10         End of program
+14	@RRAB    EQU   5                                                                         END   EX10         End of program
+15	         END   EX10         End of program
+
+<------------ASS ------
+

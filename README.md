@@ -143,32 +143,18 @@ END_<IPR>  ──>  <OEN>
 
 current result:
 
-EXAMP    START 0            Program starts
-
-BALR  RBASE,0      Load base register
-
-USING *,RBASE      Set base register
-
-L     RRAB,A       Load var into register
-
-A     RRAB,B       Formation of intermediate value
-
-S     RRAB,C       Formation of intermediate value
-
-ST    RRAB,D       Generate value of arithmetic express
-
-BCR   15,14        Exit from program
-
-A        DC    F'3.'        Defination of var
-
-B        DC    F'4.'        Defination of var
-
-C        DC    F'5.'        Defination of var
-
-D        DC    F'0.'        Defination of var
-
-RBASE    EQU   15                            
-
-RRAB     EQU   5                             
-
-END   EXAMP        End of program
+EX10        START 0             Program starts                                             
+            BALR  RBASE,0       Load base register                                       
+            USING *,RBASE       Set base register                                      
+            MVC    @BUF+2(6)    Move from cache A to @BUF         
+            CVB    @RRAB, @BUF  Convert to binary.         
+            STH    @RRAB, B     Store Halfword.         
+            BCR   15,@RVIX      Exit from program                                  
+A           DC    PL6'10'       Initialization DECIMAL.
+B           DS    0F            Initialization BIT.         
+            DS    0F            Memory allocation for CVB.
+@BUF        DC    PL8'0'        Buffer for CVB.
+@RVIX       EQU   14                                                               
+@RBASE      EQU   15                                                               
+@RRAB       EQU   5                                                                         
+END         EX10                End of program                                     

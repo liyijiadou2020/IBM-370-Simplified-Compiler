@@ -615,7 +615,7 @@ void print_title_log() {
 
 void print_ASSTXT_to_file() {
   fprintf(fp_out, "\n%s \n", "SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT... ");
-  fprintf(fp_out, "%s = %d\n", "IASSTXT(lines)", IASSTXT);
+  
   fprintf(fp_out, "%s\n", "--------- ASS ---------> \n");
   for (int i = 0; i < IASSTXT; i++) {
     fprintf(fp_out, "%d\t%s\n", i+1, ASSTXT[i]);
@@ -712,7 +712,7 @@ void compress_ISXTXT()
     for (I2 = 0; I2 < 80; I2++)
       if (ISXTXT[I1][I2] != '\x0')
       {
-        if (ISXTXT[I1][I2] == ' ' && /* ·Ö¸ô·û */
+        if (ISXTXT[I1][I2] == ' ' && 
           (PREDSYM == ' ' || PREDSYM == ';' ||
             PREDSYM == ')' || PREDSYM == ':' ||
             PREDSYM == '('
@@ -958,7 +958,7 @@ L9: /* §°§Ò§â§Ñ§ä§ß§í§Û §á§à§Ú§ã§Ü 2 */
   {
     fprintf(fp_out, " [ERROR] %s %s\n", VXOD[idx_of_VXOD(SINT[J].DER, 3)].SYM, "Undefined symbol!");
     fflush(fp_out);
-    return 2; // ´íÎó
+    return 2;
   }
   else
     goto L8; // §¢§Ý§à§Ü §á§Ö§â§Ö§Ò§à§â§Ñ §Ô§Ú§á§à§ä§Ö§Ù §á§â§à§Õ§à§Ý§Ø§Ö§ß§Ú§Ö 2)
@@ -1033,10 +1033,6 @@ void ZKARD() /* §Ù§Ñ§á§Ú§ã§Ú §à§é§Ö§â§Ö§Õ§ß§à§Û §ã§Ô§Ö§ß§Ö-*/
 {            /* §â§Ú§â§à§Ó§Ñ§ß§ß§à§Û §Ù§Ñ§á§Ú§ã§Ú §Ó§í-  */
              /* §ç§à§Õ§ß§à§Ô§à §æ§Ñ§Û§Ý§Ñ §Ó §Þ§Ñ§ã§ã§Ú§Ó */
              /* ASSTXT                 */
-  fprintf(fp_out, "%s\n", "---> void ZKARD()");
-  fprintf(fp_out, "%s = %d\n", "IASSTXT", IASSTXT);
-  fprintf(fp_out, "%s = %s <--- \n", "ASS_CARD.BUFCARD", ASS_CARD.BUFCARD);
-  fflush(fp_out);
 
   char i;
   memcpy(ASSTXT[IASSTXT++], ASS_CARD.BUFCARD, 80);
@@ -1053,8 +1049,7 @@ void ZKARD() /* §Ù§Ñ§á§Ú§ã§Ú §à§é§Ö§â§Ö§Õ§ß§à§Û §ã§Ô§Ö§ß§Ö-*/
 void ZKARD2(const char* label, const char* directive, 
   const char* operand, const char* comment) 
 {
-  char buffer[80]; // §±§â§Ö§Õ§á§à§Ý§à§Ø§Ú§Þ, §é§ä§à §Þ§Ñ§Ü§ã§Ú§Þ§Ñ§Ý§î§ß§Ñ§ñ §Õ§Ý§Ú§ß§Ñ §ã§ä§â§à§Ü§Ú - 80 §ã§Ú§Þ§Ó§à§Ý§à§Ó
-  // §¶§à§â§Þ§Ñ§ä§Ú§â§å§Ö§Þ §ã§ä§â§à§Ü§å §ã§à§Ô§Ý§Ñ§ã§ß§à §Ù§Ñ§Õ§Ñ§ß§ß§à§Þ§å §ê§Ñ§Ò§Ý§à§ß§å
+  char buffer[80];
   if (strlen(operand) > 0) 
   {
     snprintf(buffer, sizeof(buffer), "%s        %s    %s  %s", label, directive, operand, comment);
@@ -1086,9 +1081,6 @@ void ZKARD2(const char* label, const char* directive,
               /* AVI -   "§Ñ§â§Ú§æ§Þ.§Ó§í§â§Ñ§Ø." */
 int AVI1()
 {
-  //fprintf(fp_out, "%s\n", "AVI1");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -1101,9 +1093,6 @@ int AVI1()
               /* BUK -   "§Ò§å§Ü§Ó§Ñ"        */
 int BUK1()
 {
-  //fprintf(fp_out, "%s\n", "BUK1");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -1116,9 +1105,6 @@ int BUK1()
               /* CIF -   "§è§Ú§æ§â§Ñ"        */
 int CIF1()
 {
-  //fprintf(fp_out, "%s\n", "CIF1");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -1131,9 +1117,6 @@ int CIF1()
               /* IDE -   "§Ú§Õ§Ö§ß§ä§Ú§æ§Ú§Ü§Ñ§ä§à§â"*/
 int IDE1()
 {
-  //fprintf(fp_out, "%s\n", "IDE1");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -1146,9 +1129,6 @@ int IDE1()
               /* IPE - "§Ú§Þ§ñ §á§Ö§â§Ö§Þ§Ö§ß§ß§à§Û" */
 int IPE1()
 {
-  //fprintf(fp_out, "%s\n", "IPE1");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -1161,9 +1141,6 @@ int IPE1()
               /* IPR -   "§Ú§Þ§ñ §á§â§à§Ô§â§Ñ§Þ§Þ§í" */
 int IPR1()
 {
-  //fprintf(fp_out, "%s\n", "IPR1");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -1176,9 +1153,6 @@ int IPR1()
               /* LIT -   "§Ý§Ú§ä§Ö§â§Ñ§Ý"      */
 int LIT1()
 {
-  //fprintf(fp_out, "%s\n", "LIT1");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -1191,9 +1165,6 @@ int LIT1()
               /* MAN -   "§Þ§Ñ§ß§ä§Ú§ã§ã§Ñ"     */
 int MAN1()
 {
-  //fprintf(fp_out, "%s\n", "MAN1");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -1206,9 +1177,6 @@ int MAN1()
               /* ODC - "§à§á§Ö§â§Ñ§ä.§±§­1- DCL"*/
 int ODC1()
 {
-  //fprintf(fp_out, "%s\n", "ODC1");
-  //fflush(fp_out);
-
   int i;
   FORM();                                   /* §æ§à§â§Þ§Ñ§ä§Ú§â§à§Ó§Ñ§ß§Ú§Ö §±§­1-§à§á§Ö§â§Ñ§ä§à§â§Ñ DCL*/
 
@@ -1282,9 +1250,6 @@ ODC11:                                            /* §Ö§ã§Ý§Ú §Ú§Õ§Ö§ß§ä§Ú§æ§Ú§Ü
               /* OEN - "§à§á§Ö§â§Ñ§ä.§±§­1-END" */
 int OEN1()
 {
-  //fprintf(fp_out, "%s\n", "OEN1");
-  //fflush(fp_out);
-
   char i = 0;
   FORM();                                        /* §æ§à§â§Þ§Ñ§ä§Ú§â§à§Ó§Ñ§ß§Ú§Ö §±§­1-§à§á§Ö-*/
   /* §â§Ñ§ä§à§â§Ñ END             */
@@ -1314,9 +1279,6 @@ int OEN1()
               /* §Ó§Ñ§ß§Ú§ñ §Ñ§â§Ú§æ§Þ§Ö§ä§Ú§é§Ö§ã§Ü§Ú§Û   */
 int OPA1()
 {
-  //fprintf(fp_out, "%s\n", "OPA1");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -1329,9 +1291,6 @@ int OPA1()
               /* OPR - "§à§á§Ö§â§Ñ§ä.§±§­1-PROC"*/
 int OPR1()
 {
-  //fprintf(fp_out, "%s\n", "OPR1");
-  //fflush(fp_out);
-
   FORM();                                        /* §æ§à§â§Þ§Ñ§ä§Ú§â§å§Ö§Þ §à§á§Ö§â§Ñ§ä§à§â   */
   /* §±§­1 PROC               */
 
@@ -1357,9 +1316,6 @@ int OPR1()
 
 int PRO1()
 {
-  //fprintf(fp_out, "%s\n", "PRO1");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -1373,9 +1329,6 @@ int PRO1()
 
 int RZR1()
 {
-  //fprintf(fp_out, "%s\n", "RZR1");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -1389,9 +1342,6 @@ int RZR1()
 
 int TEL1()
 {
-  //fprintf(fp_out, "%s\n", "TEL1");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -1408,9 +1358,8 @@ int ZNK1()
   return 0;
 }
 
-// Li
 
-int DCF1()
+int DCF1() // Li
 {
   return 0;
 }

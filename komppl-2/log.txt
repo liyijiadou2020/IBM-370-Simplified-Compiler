@@ -852,3 +852,84 @@ IASSTXT(lines) = 15
 
 <------------ASS ------
 
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-22 12:45:43 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(10);DCL B BIT(16);B=A;END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+IASSTXT(lines) = 15
+--------- ASS ---------> 
+
+1	EX10     START 0            Program starts
+2	         BALR  RBASE,0      Load base register
+3	         USING *,RBASE      Set base register
+4	         MVC    @BUF+2(6)  Move from cache A to @BUF
+5	         CVB    @RRAB, @BUF  Convert to binary.
+6	         STH    @RRAB, B  Store Halfword.
+7	         BCR   15,@RVIX     Exit from program
+8	A        DC    PL6'10'  Initialization DECIMAL.
+9	B        DS    0F  Initialization BIT.
+10	         DS    0F  Memory allocation for CVB.
+11	@BUF        DC    PL8'0'  Buffer for CVB.
+12	@RVIX    EQU   14                                                               @RBASE   EQU   15                                                               @RRAB    EQU   5                                                                         END   EX10         End of program
+13	@RBASE   EQU   15                                                               @RRAB    EQU   5                                                                         END   EX10         End of program
+14	@RRAB    EQU   5                                                                         END   EX10         End of program
+15	         END   EX10         End of program
+
+<------------ASS ------
+
+
+
+
+
+
+
+ PROGRAM START...
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// 2024-04-22 12:50:04 ///////
+//////////////////////////////////////////////////////////////////////
+
+---> void compress_ISXTXT()
+Text after compress:
+EX10:PROC OPTIONS(MAIN);DCL A DEC FIXED INIT(10);DCL B BIT(16);B=A;END EX10;
+
+---> void build_TPR()
+---> int sint_ANAL()
+---> int gen_COD()
+
+SYNTAX ANALYZE FINISHED! NOW PRINTING IASSTXT...  
+--------- ASS ---------> 
+
+1	EX10     START 0            Program starts
+2	         BALR  RBASE,0      Load base register
+3	         USING *,RBASE      Set base register
+4	         MVC    @BUF+2(6)  Move from cache A to @BUF
+5	         CVB    @RRAB, @BUF  Convert to binary.
+6	         STH    @RRAB, B  Store Halfword.
+7	         BCR   15,@RVIX     Exit from program
+8	A        DC    PL6'10'  Initialization DECIMAL.
+9	B        DS    0F  Initialization BIT.
+10	         DS    0F  Memory allocation for CVB.
+11	@BUF        DC    PL8'0'  Buffer for CVB.
+12	@RVIX    EQU   14                                                               @RBASE   EQU   15                                                               @RRAB    EQU   5                                                                         END   EX10         End of program
+13	@RBASE   EQU   15                                                               @RRAB    EQU   5                                                                         END   EX10         End of program
+14	@RRAB    EQU   5                                                                         END   EX10         End of program
+15	         END   EX10         End of program
+
+<------------ASS ------
+

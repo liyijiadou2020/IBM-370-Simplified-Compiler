@@ -10,8 +10,6 @@
               
 int AVI2() /* AVI -   "арифм.выраж." */
 {
-  //fprintf(fp_out, "%s\n", "AVI2");
-  //fflush(fp_out);
   char i;
   FORM();                                        /*форматируем правую часть*/
   /*арифметического ПЛ1-опе-*/
@@ -156,9 +154,6 @@ int AVI2() /* AVI -   "арифм.выраж." */
 
 int BUK2() /* BUK -   "буква"        */
 {
-  //fprintf(fp_out, "%s\n", "BUK2");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -173,9 +168,6 @@ int CIF2() /* CIF -   "цифра"        */
 
 int IDE2() /* IDE -   "идентификатор"*/
 {
-  //fprintf(fp_out, "%s\n", "IDE2");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -184,9 +176,6 @@ int IDE2() /* IDE -   "идентификатор"*/
 
 int IPE2()   /* IPE - "имя переменной" */
 {
-  //fprintf(fp_out, "%s\n", "IPE2");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -194,9 +183,6 @@ int IPE2()   /* IPE - "имя переменной" */
 
 int IPR2()              /* IPR -   "имя программы" */
 {
-  //fprintf(fp_out, "%s\n", "IPR2");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -204,9 +190,6 @@ int IPR2()              /* IPR -   "имя программы" */
 
 int LIT2()              /* LIT -   "литерал"      */
 {
-  //fprintf(fp_out, "%s\n", "LIT2");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -214,9 +197,6 @@ int LIT2()              /* LIT -   "литерал"      */
 
 int MAN2() /* MAN -   "мантисса"     */
 {
-  //fprintf(fp_out, "%s\n", "MAN2");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -224,9 +204,6 @@ int MAN2() /* MAN -   "мантисса"     */
 
 int ODC2() /* ODC - "операт.ПЛ1- DCL"*/
 {
-  //fprintf(fp_out, "%s\n", "ODC2");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -244,9 +221,6 @@ int ODC2() /* ODC - "операт.ПЛ1- DCL"*/
               /* раммы                  */
 int OEN2()
 {
-  //fprintf(fp_out, "%s\n", "OEN2");
-  //fflush(fp_out);
-
   char RAB[20];
   char i = 0;
   FORM();                                        /* форматируем ПЛ1-опера- */
@@ -369,9 +343,6 @@ int OEN2()
 
 int OPA2() /* OPA - "операт.присваивания арифметический */
 {
-  //fprintf(fp_out, "%s\n", "OPA2");
-  //fflush(fp_out);
-
   int i;
 
   FORM();                                        /*форматируем ПЛ1-оператор*/
@@ -450,7 +421,7 @@ int OPA2() /* OPA - "операт.присваивания арифметиче�
 int OPR2()
 {
   //fprintf(fp_out, "%s\n", "OPR2");
-  //fflush(fp_out);
+  
 
   char i = 0;
   FORM();                                        /* форматируем оператор   */
@@ -470,14 +441,14 @@ int OPR2()
 
   memcpy(ASS_CARD._BUFCARD.OPERAC, "BALR", 4); /* формируем BALR-операцию*/
   memcpy(ASS_CARD._BUFCARD.OPERAND,             /* Ассемблера             */
-    "RBASE,0", 7);
+    "@RBASE,0", 8);
   memcpy(ASS_CARD._BUFCARD.COMM,
     "Load base register", 22);
   ZKARD();                                       /* и запоминаем ее        */
 
   memcpy(ASS_CARD._BUFCARD.OPERAC, "USING", 5);/* формируем USING-псевдо-*/
   memcpy(ASS_CARD._BUFCARD.OPERAND,             /* операцию Ассемблера    */
-    "*,RBASE", 7);
+    "*,@RBASE", 8);
   memcpy(ASS_CARD._BUFCARD.COMM,
     "Set base register", 23);
   ZKARD();                                       /* и запоминаем ее        */
@@ -496,7 +467,7 @@ int OPR2()
 int PRO2()                                       /*прогр.формирует выходной*/
 {                                                /*файл                    */
   //fprintf(fp_out, "%s\n", "PRO2");
-  //fflush(fp_out);
+  
 
   FILE* fp;                                       /*набор рабочих переменных*/
 
@@ -506,9 +477,7 @@ int PRO2()                                       /*прогр.формирует
     return (7);                                    /* сообщение об ошибке    */
   else                                            /*иначе:                  */
     fwrite(ASSTXT, 80, IASSTXT, fp);            /* формируем тело об.файла*/
-  fclose(fp);                                  /*закрываем об'ектный файл*/
-            
-  print_ASSTXT_to_file();    
+  fclose(fp);                                  /*закрываем об'ектный файл*/              
   return (0);                                   /*завершить полдпрограмму */
 }
 
@@ -556,9 +525,6 @@ int RZR2() // Li:?
 
 int TEL2()
 {
-  //fprintf(fp_out, "%s\n", "TEL2");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -572,9 +538,6 @@ int TEL2()
 
 int ZNK2()
 {
-  //fprintf(fp_out, "%s\n", "ZNK2");
-  //fflush(fp_out);
-
   return 0;
 }
 
@@ -665,6 +628,7 @@ int gen_COD() /*интерпретации строк сте-*/
       }
 
     }
+    print_ASSTXT_to_file();
  // ---------- Li --------------
     
     return 0;    /* успешное завершение программы  */          

@@ -1,6 +1,7 @@
 #pragma once
 #include <stdio.h>
 #include <string.h>
+#include <time.h>
 
 #define MAXNISXTXT 50
 // #define NSINT     201
@@ -1041,8 +1042,6 @@ void ZKARD() /* §Ù§Ñ§á§Ú§ã§Ú §à§é§Ö§â§Ö§Õ§ß§à§Û §ã§Ô§Ö§ß§Ö-*/
     ASS_CARD.BUFCARD[i] = ' ';
   return;
 }
-
-
 
 /* Li      */
 /* §æ§å§ß§Ü§è§Ú§ñ §Õ§Ý§ñ §Ù§Ñ§á§Ú§ã§Ú §ã§æ§à§â§Þ§Ú§â§à§Ó§Ñ§ß§ß§í§ç §ã§ä§â§à§Ü §Ó §Þ§Ñ§ã§ã§Ú§Ó ASSTXT */

@@ -1677,14 +1677,14 @@ int OEN2()
   /* рабочий регистры общего*/
   /* назначения             */
 
-  memcpy(ASS_CARD._BUFCARD.METKA, "@RVIX", 5);  /* Li: todo, print problem */
+  memcpy(ASS_CARD._BUFCARD.METKA, "@RVIX", 5); 
   memcpy(ASS_CARD._BUFCARD.OPERAC, "EQU", 3);
   memcpy(ASS_CARD._BUFCARD.OPERAND, "14", 2);
   memcpy(ASS_CARD._BUFCARD.COMM, "@RVIX assign 14", 20);
   ZKARD();
 
   memcpy(ASS_CARD._BUFCARD.METKA, "@RBASE", 6); /* формирование EQU-псев- */
-  memcpy(ASS_CARD._BUFCARD.OPERAC, "EQU", 3);   /* дооперации определения */ /* 这里似乎被执行了两次？*/
+  memcpy(ASS_CARD._BUFCARD.OPERAC, "EQU", 3);   /* дооперации определения */
   memcpy(ASS_CARD._BUFCARD.OPERAND, "15", 2);  /* номера базового регистра общего назначения*/
   memcpy(ASS_CARD._BUFCARD.COMM, "@RBASE assign 15", 20);
   /*           и            */
